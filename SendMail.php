@@ -14,7 +14,7 @@
 	* 1 = For Displaying the client messages
 	* 2 = FOr Client and Server Messages. 
 	*/
-	$mail->SMTPDebug = 2;
+	$mail->SMTPDebug = 0;
 
 	// Used to display Debugging messages in friendly manner.	
 	$mail->Debugoutput = 'html';
@@ -36,13 +36,20 @@
 	* Username:'user@acfd.com';
 	* Password:'yoursecret';
 	*/
-	$mail->Username = 'ramanareddysane@gmail.com';
-	$mail->Password = 'ramanareddy000';
 
-	$mail->isHTML(false);
+	// $mail->Username = 'pixel.jntua@gmail.com';
+	// $mail->Password = 'pixel.jntu@';
+
+	$mail->Username = 'ramanareddysane20@gmail.com';
+	$mail->Password = 'Company@123.';
+
+	$mail->isHTML(true);
 	// Set From Address. Usually as username by using setFrom(p1,p2)
 	//Method from PHPMailer 
 	$mail->setFrom('pixel.jntua@gmail.com','Team Pixel');
+
+	// Set to address
+	$mail->addAddress('ramanareddysane20','Team Pixel');
 	// Set Reply adderss by using addReplyTo
 	$mail->addReplyTo('pixel.jntua@gmail.com','Team Pixel');
 
@@ -57,15 +64,69 @@
 	// 	echo " steve Image Embeded <br>";
 	// else
 	// 	echo "Not Embedded";
-	// include_once("emailtest.php");
 
-	// foreach ($emails as $value) {
-	// 	echo $value.'<br>';
-	// 	$mail->addBcc($value);
-	// }
-	$mail->addAddress('ramanareddysane@gmail.com','Ram');
+	include("emailtest.php");
+	echo "<br> <b> Testing </b> <br>";
+	foreach ($emails as $value) {
+		echo $value.'<br>';
+		$mail->addBCC($value);
+	}
 
-	$mail->msgHTML(file_get_contents("snr.php"));
+	/*echo "<br> <b> batch11 </b> <br>";
+	include("batch11.php");
+
+	foreach ($emails as $value) {
+		echo $value.'<br>';
+		$mail->addBCC($value);
+	}*/
+
+	/*echo "<br> <b> batch10 </b> <br>";
+	include("batch10.php");
+
+	foreach ($emails as $value) {
+		echo $value.'<br>';
+		$mail->addBCC($value);
+	}*/
+
+	/*echo "<br> <b> batch08 </b> <br>";
+	include("batch08.php");
+
+	foreach ($emails as $value) {
+		echo $value.'<br>';
+		$mail->addBCC($value);
+	}
+	*/
+	/*echo "<br> <b> batch06 </b> <br>";
+	include("batch06.php");
+
+	foreach ($emails as $value) {
+		echo $value.'<br>';
+		$mail->addBCC($value);
+	}*/
+
+	/*echo "<br> <b> dileepBatch </b> <br>";
+	include("dileepBatch.php");
+
+	foreach ($emails as $value) {
+		echo $value.'<br>';
+		$mail->addBCC($value);
+	}*/
+
+	/*echo "<br> <b> unknownBatch </b> <br>";
+	include("unknownBatch.php");
+
+	foreach ($emails as $value) {
+		echo $value.'<br>';
+		$mail->addBCC($value);
+	}*/
+
+	// $mail->addBcc('ramanareddysane@gmail.com','Ram');
+
+	// $mail->msgHTML(file_get_contents("snr.php"));
+	$mail->msgHTML(file_get_contents("final.html"));
+
+	// $mail->Body = "Hi! \n\n This is my first e-mail sent through PHPMailer.";
+
 	$mail->AltBody = 'This is an invitation for Pixel 2k16 - Dept of CSE, JNTU Anantapur';
 	echo "Sending.... <br>";
 
