@@ -1,0 +1,23 @@
+<?php
+$emails=array("raghava_ceo@yahoo.co.in", 
+			"lakshmi_gajawada@yahoo.com", 
+			"divya_sree91@yahoo.com", 
+			"madhana_radhika@yahoo.co.in", 
+			"g_venkatesh_cp35@yahoo.com", 
+			"vijji_togaru@yahoo.com", 
+			"haisreedhar525@yahoo.co.in", 
+			"mallik_avireni@yahoo.co.in", 
+			"madhuri_valivarthi@yahoo.com", 
+			"sudha_r25@yahoo.com", 
+			"nalinimochi@yahoo.com", 
+			"chowdammadhu@yahoo.co.in", 
+			"mahesh_kumar_c@rediffmail.com", 
+			"cnagarajunaik@yahoo.co.in", 
+			"chakricse1320@yahoo.com", 
+			"mviswanathreddy@yahoo.co.in", 
+			"durga_786us@yahoo.com", 
+			"hari_k_24@yahoo.co.in", 
+			"chandu_kandagatla@yahoo.co.in", 
+			"vijay_katturi@yahoo.com", 
+			"cutegop519@yahoo.co.in");
+?>
