@@ -25,8 +25,9 @@
 	<ul>
 		<li><a href="#section1" class="active"><span class="label">Intro</span></a></li>
 		<li><a href="#section2"><span class="label">Events</span></a></li>
-		<li><a href="#section3"><span class="label">Help</span></a></li>
+		<li><a href="#section3"><span class="label">Gallery</span></a></li>
 		<li><a href="#section4"><span class="label">Share</span></a></li>
+		<li><a href="#section5"><span class="label">Extras</span></a></li>
 	</ul>
 </nav><!-- .cd-vertical-nav -->
 
@@ -34,7 +35,7 @@
 
 <section id="section1" class="cd-section">
 	<div class="content-wrapper">
-		<h1>Vertical Fixed Navigation <b>#2</b></h1>
+		<?php include_once("first_section1.php"); ?>
 		<a href="#section2" class="cd-scroll-down cd-image-replace">scroll down</a>
 	</div>
 </section><!-- cd-section -->
@@ -47,17 +48,21 @@
 
 <section id="section3" class="cd-section">
 	<div class="content-wrapper">
-		<h2>Help</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.</p>
+		<?php include_once("gallery_section3.php") ?>
 	</div>
 </section><!-- cd-section -->
 
 <section id="section4" class="cd-section">
 	<div class="content-wrapper">
-		<h2>Share</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.</p>
+		<?php include_once("section4.php"); ?>
 	</div>
 </section><!-- cd-section -->
+
+<section id="section5" class="cd-section">
+	<div class = "content-wrapper">
+		<?php include_once("section5.php"); ?>
+	</div>
+</section>
 	
 <script src="js/jquery-2.1.4.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
