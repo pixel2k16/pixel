@@ -18,9 +18,11 @@
 	<script src="js/jquery.mobile.custom.min.js"></script>
 	<script src="js/mainevents.js"></script> <!-- Resource jQuery -->
 
-	<!-- for events navigations	 -->
+	<!-- for Gallery -->
 	<link rel="stylesheet" type="text/css" href="css/gallery.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+	<!-- For  -->
 
 	<script type="text/javascript" src="js/wow.min.js"></script>
 	<script>

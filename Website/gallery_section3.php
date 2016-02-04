@@ -1,4 +1,6 @@
+
 <div id="top-left">
+	<h1 id="heading">Gallery</h1>
 	 <div class="image-container wow zoomIn" data-wow-duration="1s">
 	 	<img src="img/img-2.jpg" id="sample-2">
 	 </div>
@@ -18,6 +20,6 @@
 
 <div id="bottom-right">
 	<nav class="cl-effect-10 wow bounceInLeft" wow-iteration="3">
-		<a href="#" data-hover="Go "><span>Wanna see</span></a>
+		<a href="gallery/" data-hover="Go "><span>Wanna see</span></a>
 	</nav>
 </div>
