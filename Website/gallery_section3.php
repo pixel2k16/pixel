@@ -15,3 +15,9 @@
 	 	<img src="img/img-4.jpg" id="sample-5">
 	 </div>
 </div>
+
+<div id="bottom-right">
+	<nav class="cl-effect-10">
+		<a href="#" data-hover="Go "><span>Wanna see</span></a>
+	</nav>
+</div>

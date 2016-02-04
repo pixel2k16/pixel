@@ -17,6 +17,13 @@
 		vertical-align: middle;
 	}
 
+	#bottom-right{
+		position: absolute;
+		right: 0;
+		top: 50%;
+		width: 35%;
+	}
+
 	.image-container img{
 		width: 35%;
 		height: 36vh;
@@ -76,6 +83,13 @@
 		margin-bottom: 2vh;
 	}
 
+	#bottom-right{
+		position: relative;
+		top: 33vh;
+		margin: 0 auto;
+		min-width: 200px;
+	}
+
 	#sample-1{
 		position: relative;
 		left: -19%;
@@ -115,7 +129,6 @@
 		border: 4px solid #fff;
 		box-shadow: 10px 10px 10px #8C1B07;
 	}
-
 	#sample-1{
 		position: relative;
 		left: 0%;
@@ -145,6 +158,82 @@
 		transform: rotate(156deg);
 		tate(90deg);
 	}
+}
 
 
+
+/* This is for link to gallery page */
+nav a {
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.35em;
+	font-family: 'Raleway', sans-serif;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+
+/* Effect 1: Brackets */
+
+
+/* Effect 10: reveal, push out */
+.cl-effect-10  {
+	position: relative;
+	z-index: 1;
+}
+
+.cl-effect-10 a {
+	overflow: hidden;
+	margin: 0 15px;
+	min-width: 180px;
+}
+
+.cl-effect-10 a span {
+	display: block;
+	padding: 10px 20px;
+	background: #FF6347;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.cl-effect-10 a::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	padding: 10px 20px;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	color: #FF6347;
+	content: attr(data-hover);
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transform: translateX(-25%);
+}
+
+.cl-effect-10 a:hover span,
+.cl-effect-10 a:focus span {
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	transform: translateX(100%);
+}
+
+.cl-effect-10 a:hover::before,
+.cl-effect-10 a:focus::before {
+	-webkit-transform: translateX(0%);
+	-moz-transform: translateX(0%);
+	transform: translateX(0%);
 }
