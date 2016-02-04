@@ -17,7 +17,7 @@
 </div>
 
 <div id="bottom-right">
-	<nav class="cl-effect-10">
+	<nav class="cl-effect-10 wow bounceInLeft" wow-iteration="3">
 		<a href="#" data-hover="Go "><span>Wanna see</span></a>
 	</nav>
 </div>
