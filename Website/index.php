@@ -17,6 +17,15 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="js/jquery.mobile.custom.min.js"></script>
 	<script src="js/mainevents.js"></script> <!-- Resource jQuery -->
+
+	<!-- for events navigations	 -->
+	<link rel="stylesheet" type="text/css" href="css/gallery.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script>
+ 		new WOW().init();
+ 	</script>
 	
 	<title>Vertical Fixed Navigation #2 | CodyHouse</title>
 </head>
@@ -47,7 +56,7 @@
 </section><!-- cd-section -->
 
 <section id="section3" class="cd-section">
-	<div class="content-wrapper">
+	<div class="content-wrapper" style="position:relative">
 		<?php include_once("gallery_section3.php") ?>
 	</div>
 </section><!-- cd-section -->

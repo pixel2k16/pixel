@@ -1,0 +1,150 @@
+
+	#gallery-content{
+	margin: auto;
+	padding: 1%;
+	position: relative;
+	display: block;
+	text-align: left;
+	}
+
+	#top-left{
+		position: relative;
+		text-align: center;
+		width: 65%;
+		background: tomato;
+		height: 100vh;
+		display: table;
+		vertical-align: middle;
+	}
+
+	.image-container img{
+		width: 35%;
+		height: 36vh;
+		border: 4px solid #fff;
+		box-shadow: 10px 10px 10px #A42B16;
+	}
+
+	.image-container{ display: inline; }
+
+
+
+@media screen and (min-width: 900px){
+	#sample-1{
+		position: relative;
+		left: -19%;
+		transform: rotate(21deg);
+	}
+	#sample-4{
+		position: relative;
+		left: -18%;
+		top: 36vh;
+		transform: rotate(9deg);
+	}
+	#sample-3{
+		position: relative;
+		left: 18%;
+		transform: rotate(-15deg);
+	}
+	#sample-5{
+		position: relative;
+		top: -37vh;
+	}
+	#sample-2{
+		position: relative;
+		left: 17%;
+		top: 37vh;
+		transform: rotate(119deg);
+		tate(90deg);
+	}
+
+}
+
+
+@media screen and (max-width: 899px){
+	
+	#gallery-content{
+	
+	}
+	#top-left{
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		background: tomato;
+		height: 65vh;
+		margin-bottom: 2vh;
+	}
+
+	#sample-1{
+		position: relative;
+		left: -19%;
+		top: -20vh;
+		transform: rotate(21deg);
+	}
+	#sample-4{
+		position: relative;
+		left: -18%;
+		top: 18vh;
+		transform: rotate(4deg);
+	}
+	#sample-3{
+		position: relative;
+		left: 18%;
+		top: -23vh;
+		transform: rotate(-15deg);
+	}
+	#sample-5{
+		position: relative;
+		top: -60vh;
+	}
+	#sample-2{
+		position: relative;
+		left: 17%;
+		top: 18vh;
+		transform: rotate(119deg);
+		tate(90deg);
+	}
+
+}
+
+@media screen and (max-width: 489px){
+	.image-container img{
+		width: 36vh;
+		height: 35%;
+		border: 4px solid #fff;
+		box-shadow: 10px 10px 10px #8C1B07;
+	}
+
+	#sample-1{
+		position: relative;
+		left: 0%;
+		top: -53vh;
+		transform: rotate(21deg);
+	}
+	#sample-4{
+		position: relative;
+		left: -5%;
+		top: -1vh;
+		transform: rotate(9deg);
+	}
+	#sample-3{
+		position: relative;
+		left: 0%;
+		transform: rotate(-19deg);
+		top: -28vh;
+	}
+	#sample-5{
+		position: relative;
+		top: -77vh;
+	}
+	#sample-2{
+		position: relative;
+		left: -6%;
+		top: 17vh;
+		transform: rotate(156deg);
+		tate(90deg);
+	}
+
+
+}

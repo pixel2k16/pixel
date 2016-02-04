@@ -420,8 +420,7 @@ Content Sections - basic style
 .cd-section:nth-of-type(even) {
   background-color: #70557e;
 }
-.cd-section > div {
-  /* vertically align <div> inside <section> */
+.cd-section > div {/* vertically align <div> inside <section> */
   display: table-cell;
   vertical-align: middle;
   text-align: center;
