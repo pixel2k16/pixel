@@ -38,12 +38,23 @@
 						</div> <!-- .cd-half-block.content -->
 					</li>
 					<li>
-
 						<div class="cd-half-block image"></div>
 
 						<div class="cd-half-block content">
 							<div>
 								<h2>Slide Number 4</h2>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam voluptatum tenetur ab, non beatae, impedit dolorem itaque voluptates facilis necessitatibus suscipit dolor rerum dolores dignissimos alias facere sunt aliquid.
+								</p>
+							</div>
+						</div> <!-- .cd-half-block.content -->
+					</li>
+					<li>
+						<div class="cd-half-block image"></div>
+
+						<div class="cd-half-block content light-bg">
+							<div>
+								<h2>Extra slider</h2>
 								<p>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam voluptatum tenetur ab, non beatae, impedit dolorem itaque voluptates facilis necessitatibus suscipit dolor rerum dolores dignissimos alias facere sunt aliquid.
 								</p>

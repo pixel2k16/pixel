@@ -33,16 +33,53 @@ jQuery(document).ready(function($){
 	}
 
 	function createSliderPagination(container){
-		var wrapper = $('<ol class="cd-slider-navigation"></ol>');
+		var wrapper = $('<ol class="cd-slider-navigation wow"></ol>');
 		container.children('.cd-slider').find('li').each(function(index){
-			var dotWrapper = (index == 0) ? $('<li class="selected"></li>') : $('<li></li>'),
-				dot = $('<a href="#0"></a>').appendTo(dotWrapper);
-			dotWrapper.appendTo(wrapper);
-			var dotText = ( index+1 < 10 ) ? '0'+ (index+1) : index+1;
-			dot.text(dotText);
+			var dotWrapper = (index == 0) ? $('<li class="selected"></li>') : $('<li></li>');
+			var dot = $('<a class="tooltip" ></a>').appendTo(dotWrapper);
+			var ttContent = $("<span class='tooltip-content'></span>");
+			ttContent.append(giveTooltipContent(index));
+			ttContent.appendTo(dotWrapper);
+		dotWrapper.appendTo(wrapper);
+		 var dotText = ( index+1 < 10 ) ? '0'+ (index+1) : index+1;
+		 dot.text(dotText);
+		updateName(dot,index);
 		});
 		wrapper.appendTo(container);
 		return wrapper.children('li');
+	}
+
+	function giveTooltipContent(index){
+		var text = "";
+		switch (index){
+			case 0:
+				text = "Technical presentation";
+				break;
+			case 1:
+				text = "Paper presentation";
+				break;
+			case 2:
+				text = "Poster Ppt";
+				break;
+			case 3:
+				text = "Online Quiz";
+				break;
+			case 4:
+				text = " Debugging";
+				break;
+			default:
+				text = "Event";
+				break;
+		}
+		return text;
+	}
+
+	function updateName(dot,index){
+		var	text = "...";
+		var styles={"background-image":"url(http://www.chrlesstone.com/images/uploads/hiresimages/presentations.jpg)",
+					"background-size":"contain",
+					"cursor":"pointer"}
+		dot.css(styles);
 	}
 
 	function updateSlider(n, navigation, slides) {

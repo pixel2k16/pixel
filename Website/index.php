@@ -22,7 +22,8 @@
 	<link rel="stylesheet" type="text/css" href="css/gallery.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 
-	<!-- For  -->
+	<!-- For Video -->
+	
 
 	<script type="text/javascript" src="js/wow.min.js"></script>
 	<script>

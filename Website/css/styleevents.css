@@ -31,11 +31,10 @@ Slider
 .cd-slider-wrapper {
   position: relative;
   height: 90vh;
-  padding: 10px;
 }
 @media only screen and (min-width: 900px) {
   .cd-slider-wrapper {
-    padding: 30px;
+    padding:;
   }
 }
 
@@ -84,6 +83,9 @@ Slider
 .cd-slider li:nth-of-type(4) .image {
   background-image: url(../img/img-4.jpg);
 }
+.cd-slider li:nth-of-type(5) .image {
+  background-image: url(../img/img-1.jpg);
+}
 .cd-slider .image {
   background-size: cover;
 }
@@ -109,8 +111,9 @@ Slider
   -moz-transition: background 0.3s;
   transition: background 0.3s;
 }
-.no-touch .cd-slider .btn:hover {
-  background: rgba(0, 0, 0, 0.6);
+
+.cd-slider li a{
+  cursor: pointer;
 }
 .cd-slider li:nth-of-type(2) .content {
   background-color: #ccd0c1;
@@ -120,6 +123,9 @@ Slider
 }
 .cd-slider li:nth-of-type(4) .content {
   background-color: #f46c6a;
+}
+.cd-slider li:nth-of-type(5) .content {
+  background-color: tomato;
 }
 .cd-slider h2 {
   font-size: 2.2rem;
@@ -232,8 +238,7 @@ Slider
 Slider Navigation
 
 -------------------------------- */
-.cd-slider-navigation {
-  /* you won't see this element in the html but it will be created using jQuery */
+.cd-slider-navigation {/* you won't see this element in the html but it will be created using jQuery */
   position: absolute;
   z-index: 3;
   left: 50%;
@@ -243,7 +248,7 @@ Slider Navigation
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  bottom: 30px;
+  bottom: 0;
 }
 .cd-slider-navigation li {
   display: inline-block;
@@ -267,8 +272,7 @@ Slider Navigation
 @media only screen and (min-width: 900px) {
   .cd-slider-navigation {
     padding: 0.5em 1em;
-    background-color: rgba(0, 0, 0, 0.8);
-    /* fixes a bug on Firefox with ul.cd-slider-navigation z-index */
+    background-color: rgba(12, 12, 12, 0.8);/* fixes a bug on Firefox with ul.cd-slider-navigation z-index */
     -webkit-transform: translateZ(2px) translateX(-50%);
     -moz-transform: translateZ(2px) translateX(-50%);
     -ms-transform: translateZ(2px) translateX(-50%);
@@ -303,4 +307,65 @@ Slider Navigation
     background-color: transparent;
     color: #f3b96c;
   }
+}
+
+
+
+/*
+* For Tootltip and it's
+* animation. 
+*/
+tooltip {
+  display: inline;
+  position: relative;
+  z-index: 999;
+}
+
+.tooltip-content {
+  position: absolute;
+  background: tomato url(../img/shae1.svg) no-repeat center bottom;
+  background-size: 100% 100%;
+  z-index: 9999;
+  width: 200px;
+  bottom: 100%;
+  margin-left: -100px;
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  cursor: default;
+  font-size: 16px;
+  line-height: 1.4;
+  pointer-events: none;
+  font-family: 'Kalam', cursive;
+  -webkit-transform: scale3d(0.1,0.2,1);
+  transform: scale3d(0.1,0.2,1);
+  -webkit-transform-origin: 50% 120%;
+  transform-origin: 50% 120%;
+  -webkit-transition: opacity 0.4s, -webkit-transform 0.4s;
+  transition: opacity 0.4s, transform 0.4s;
+  -webkit-transition-timing-function: ease, cubic-bezier(0.6,0,0.4,1);
+  transition-timing-function: ease, cubic-bezier(0.6,0,0.4,1);
+}
+
+.tooltip:hover + .tooltip-content {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: scale3d(1,1,1);
+  transform: scale3d(1,1,1);
+}
+
+/* Arrow */
+
+.tooltip-content::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 50%;
+  margin-left: -8px;
+  top: 100%;
+  background: tomato;
+  -webkit-transform: translate3d(0,-60%,0) rotate3d(0,0,1,45deg);
+  transform: translate3d(0,-60%,0) rotate3d(0,0,1,45deg);
 }
