@@ -2,8 +2,8 @@
 			<div class="cd-slider-wrapper">
 				<ul class="cd-slider">
 					<li class="is-visible">
-						<div class="cd-half-block image"></div>
-						<div class="cd-half-block content">
+						<div class="cd-half-block image wow sldeInRight "></div>
+						<div class="cd-half-block content wow slideInRight ">
 							<div>
 								<h2>Pointy Slider</h2>
 								<p>

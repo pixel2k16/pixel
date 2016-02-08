@@ -2,7 +2,7 @@
 <div id="top-left">
 	<h1 id="heading">Gallery</h1>
 	 <div class="image-container" >
-	 	<img src="img/img-2.jpg" class="wow zoomIn" data-wow-duration="1s" id="sample-2">
+	 	<img src="img/img-2.jpg" class="wow rotateIn" data-wow-duration="1s" id="sample-2">
 	 </div>
 	 <div class="image-container" >
 	 	<img src="img/img-1.jpg" class="wow zoomInLeft" data-wow-duration="1s" id="sample-4">
