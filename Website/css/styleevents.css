@@ -30,12 +30,7 @@ Slider
 -------------------------------- */
 .cd-slider-wrapper {
   position: relative;
-  height: 90vh;
-}
-@media only screen and (min-width: 900px) {
-  .cd-slider-wrapper {
-    padding:;
-  }
+  height: 100vh;
 }
 
 .cd-slider {
@@ -92,40 +87,16 @@ Slider
 .cd-slider .content {
   padding: 30px;
   color: #ffffff;
-  background-color: #767070;
+  background-color: #181C1F;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-.cd-slider .light-bg {
-  color: rgba(0, 0, 0, 0.6);
-}
-.cd-slider .btn {
-  display: inline-block;
-  background: rgba(0, 0, 0, 0.2);
-  padding: 1em 1.6em;
-  margin-top: 1em;
-  font-size: 1.3rem;
-  color: #ffffff;
-  border-radius: 50em;
-  -webkit-transition: background 0.3s;
-  -moz-transition: background 0.3s;
-  transition: background 0.3s;
 }
 
 .cd-slider li a{
   cursor: pointer;
 }
-.cd-slider li:nth-of-type(2) .content {
-  background-color: #ccd0c1;
-}
-.cd-slider li:nth-of-type(3) .content {
-  background-color: #f3b96c;
-}
-.cd-slider li:nth-of-type(4) .content {
-  background-color: #f46c6a;
-}
-.cd-slider li:nth-of-type(5) .content {
-  background-color: tomato;
+.cd-slider li{
+  
 }
 .cd-slider h2 {
   font-size: 2.2rem;
@@ -152,7 +123,7 @@ Slider
   }
   .cd-slider li.is-visible {
     pointer-events: auto;
-    z-index: 3;
+    z-index: 1;
     -webkit-transition: z-index 0s 0s;
     -moz-transition: z-index 0s 0s;
     transition: z-index 0s 0s;

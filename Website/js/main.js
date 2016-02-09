@@ -49,9 +49,6 @@ jQuery(document).ready(function($){
 	}
 
 	function smoothScroll(target) {
-        $('body,html').animate(
-        	{'scrollTop':target.offset().top},
-        	300
-        );
+        $('body,html').animate({'scrollTop':target.offset().top},300);
 	}
 });

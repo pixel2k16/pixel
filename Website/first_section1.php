@@ -1,4 +1,3 @@
-
 <!-- This is for pop up video -->
 <div class="teaser">
 	<div class="mask">
@@ -16,9 +15,9 @@
 		</div>
 	</div>
 </div>
-
-<script type="text/javascript">
-	 //This code loads the IFrame Player API code asynchronously.
+	
+<!-- Script to load Youtube api asynchronously.  -->
+<script type="text/javascript">	 //This code loads the IFrame Player API code asynchronously.
 	  var tag = document.createElement('script');
 
 	  tag.src = "https://www.youtube.com/iframe_api";
@@ -49,10 +48,10 @@
 	  function playvideo(){
 	  	player.playVideo();
 	  }
-	  
 </script>
 
-<div id="pixel"> <a class="vl link link--nukun" href="#">PI<span>X</span>EL</a> </div>
+<div id="pixel"> <a class="vl link link--nukun wow fadeIn"  data-wow-duration="1.5s" href="#">PI<span>X</span>EL</a></div>
+
 <script>
 	// For Demo purposes only (show hover effect on mobile devices)
 	[].slice.call( document.querySelectorAll('.grid a') ).forEach( function(el) {

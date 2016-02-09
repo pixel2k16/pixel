@@ -12,14 +12,10 @@
 
 	<!-- For First Section -->
 	<link rel="stylesheet" type="text/css" href="css/section1.css">
-	<link href="http://vjs.zencdn.net/5.6.0/video-js.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/linkstyles.css" />
 	<script type="text/javascript" src="js/video.js"></script>
 
-	<!-- If you'd like to support IE8 -->
-	<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
-  	
-
+	<!-- If you'd like to support IE8 -->  	
   	<!-- for events navigations	 -->
   	<link rel="stylesheet" href="css/resetevents.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/styleevents.css"> <!-- Resource style -->
@@ -50,6 +46,21 @@
 </nav><!-- .cd-vertical-nav -->
 
 <button class="cd-nav-trigger cd-image-replace">Open navigation<span aria-hidden="true"></span></button>
+
+<!-- for social networking elements -->
+<div class="deck">
+	<a href="https://www.youtube.com/channel/UCG-tEdg_D0d7JQZtYwrmVVw?sub_confirmation=1" 
+	class="social yt wow bounceInDown" data-wow-delay="0.2s" target="_blank"></a>
+	<a href="http://www.fb.com/pixel2k16" target="_blank" data-wow-delay="0.3s" class="social fb wow bounceInDown"></a>
+	<a href="http://www.twitter.com/pixel_jntua" data-wow-delay="0.4s" class="social twtr wow bounceInDown" target="_blank"></a>
+	<a href="mailto:pixel.jntua@gmail.com" data-wow-delay="0.5s" class="social mail wow bounceInDown" target="_blank"></a> 
+</div>
+<!-- Hamberger menu -->
+<div class="hmenu">
+	<div class="line wow jello" data-wow-delay="1.5s"> </div>
+	<div class="line wow rollIn" data-wow-delay="1s"></div>
+	<div class="line wow jello"  data-wow-delay="1.5s"></div>
+</div>
 
 <section id="section1" class="cd-section">
 	<div class="content-wrapper" id ="section1Container">

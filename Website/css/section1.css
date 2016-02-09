@@ -61,6 +61,50 @@
     height: 100%;
 }
 
+
+/* For fb, youtube links */
+.deck-wrapper{
+	position: fixed;
+	bottom: 20px;
+	left: 10px;
+}
+.deck{
+	position: relative;	
+}
+.deck a{
+	z-index: 9999;
+	width: 40px;
+	height: 36px;
+	background-size: contain;
+	-webkit-transition: all  ease-out 0.3s;
+	-moz-transition: all  ease-out 0.3s;
+	-o-transition: all ease-out 0.3s;
+	transition: all ease-out 0.3s;
+	position: fixed;
+	bottom: 20px;
+}
+.fb{left: 65px; background:url('../img/fb.png') no-repeat;}
+.twtr{left: 115px;background:url('../img/twt.png') no-repeat;}
+.yt{left: 16px;background:url('../img/yt.png') no-repeat;}
+.mail{left: 170px;background:url('../img/mail.png') no-repeat;}
+
+.deck a:hover{
+	bottom: 30px;
+}
+
+.hmenu{
+	z-index: 11;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+}
+.hmenu .line{
+	width: 35px;
+	height: 5px;
+	background:#fff;
+	margin-bottom: 20%;
+}
+
 @media screen and (max-width: 720px){
 	.outer{
 		width: 100%;
@@ -68,5 +112,11 @@
 	}
 	.link-container{
 		width: 95%;
+	}
+}
+
+@media screen and (max-width: 790px){
+	.hmenu{
+		display: none;
 	}
 }
