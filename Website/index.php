@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/stars.css">
 
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
@@ -62,7 +63,8 @@
 	<div class="line wow jello"  data-wow-delay="1.5s"></div>
 </div>
 
-<section id="section1" class="cd-section">
+</div>
+<section id="section1" class="cd-section present">
 	<div class="content-wrapper" id ="section1Container">
 		<?php include_once("first_section1.php"); ?>
 		<a href="#section2" class="cd-scroll-down cd-image-replace">scroll down</a>
@@ -93,7 +95,7 @@
 	</div>
 </section>
 	
-<script src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
 </html>

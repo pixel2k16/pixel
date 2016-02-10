@@ -1,4 +1,7 @@
 /* General link styles */
+
+#pixel{}
+
 .link {
 	outline: none;
 	text-decoration: none;
@@ -40,8 +43,8 @@
 }
 
 .link--nukun::after {
-	background: #ACD07A url('../img/shape1.svg');
-	background-size: cover;
+	background: url('../img/play.svg') no-repeat center;
+	background-size: contain;
 	height: 14%;
 	bottom: 10px;
 	-webkit-transform: translate3d(-300%,0,0) scale3d(0,1,1);

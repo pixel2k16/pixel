@@ -1,15 +1,15 @@
 /* -------------------------------- 
-
 Primary style
-
 -------------------------------- */
 *, *::after, *::before {
   box-sizing: border-box;
 }
 
+
 html {
   font-size: 62.5%;
 }
+
 
 body {
   font-size: 1.6rem;
@@ -18,20 +18,20 @@ body {
   background-color: #ffffff;
 }
 
+
 a {
   color: #ccd0c1;
   text-decoration: none;
 }
 
 /* -------------------------------- 
-
 Slider
-
 -------------------------------- */
 .cd-slider-wrapper {
   position: relative;
   height: 100vh;
 }
+
 
 .cd-slider {
   position: relative;
@@ -67,19 +67,19 @@ Slider
   background-repeat: no-repeat;
 }
 .cd-slider li:first-of-type .image {
-  background-image: url(../img/img-1.jpg);
+  background-image: url(../img/im-1.jpg);
 }
 .cd-slider li:nth-of-type(2) .image {
-  background-image: url(../img/img-2.jpg);
+  background-image: url(../img/ig-2.jpg);
 }
 .cd-slider li:nth-of-type(3) .image {
-  background-image: url(../img/img-3.jpg);
+  background-image: url(../img/mg-3.jpg);
 }
 .cd-slider li:nth-of-type(4) .image {
-  background-image: url(../img/img-4.jpg);
+  background-image: url(../img/mg-4.jpg);
 }
 .cd-slider li:nth-of-type(5) .image {
-  background-image: url(../img/img-1.jpg);
+  background-image: url(../img/mg-1.jpg);
 }
 .cd-slider .image {
   background-size: cover;
@@ -91,6 +91,7 @@ Slider
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 .cd-slider li a{
   cursor: pointer;
@@ -123,14 +124,14 @@ Slider
   }
   .cd-slider li.is-visible {
     pointer-events: auto;
-    z-index: 1;
+    z-index: 2;
     -webkit-transition: z-index 0s 0s;
     -moz-transition: z-index 0s 0s;
     transition: z-index 0s 0s;
   }
   .cd-slider li.is-visible.covered {
     /* list item still there, but covered by the list item entering the viewport (.is-visible) */
-    z-index: 2;
+    z-index: 1;
   }
   .cd-slider .cd-half-block {
     height: 100%;
@@ -203,6 +204,7 @@ Slider
     font-weight: 300;
   }
 }
+
 
 /* -------------------------------- 
 
@@ -282,6 +284,9 @@ Slider Navigation
 
 
 
+
+
+
 /*
 * For Tootltip and it's
 * animation. 
@@ -291,6 +296,7 @@ tooltip {
   position: relative;
   z-index: 999;
 }
+
 
 .tooltip-content {
   position: absolute;
@@ -319,6 +325,7 @@ tooltip {
   transition-timing-function: ease, cubic-bezier(0.6,0,0.4,1);
 }
 
+
 .tooltip:hover + .tooltip-content {
   opacity: 1;
   pointer-events: auto;
@@ -326,7 +333,9 @@ tooltip {
   transform: scale3d(1,1,1);
 }
 
+
 /* Arrow */
+
 
 .tooltip-content::after {
   content: '';

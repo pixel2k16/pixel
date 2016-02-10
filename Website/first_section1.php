@@ -1,3 +1,13 @@
+
+<div id="my">
+  <div id="space">
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+  </div>
+ </div>
 <!-- This is for pop up video -->
 <div class="teaser">
 	<div class="mask">

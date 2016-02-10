@@ -1,5 +1,6 @@
 jQuery(document).ready(function($){
-	var	scrolling = false;
+	var	scrolling = false,
+	clicked = false;
 	var contentSections = $('.cd-section'),
 		verticalNavigation = $('.cd-vertical-nav'),
 		navigationItems = verticalNavigation.find('a'),
@@ -49,6 +50,81 @@ jQuery(document).ready(function($){
 	}
 
 	function smoothScroll(target) {
-        $('body,html').animate({'scrollTop':target.offset().top},300);
+		// alert(target.attr("class"));
+        $('body,html').animate({'scrollTop':target.offset().top},300,function(){
+        	clicked = false;
+        });
+        target.addClass('present');
 	}
+
+	$(document).on('keydown', function(event){
+			if( event.which=='40') {
+				event.preventDefault();
+				nextSection();
+			} else if( event.which=='38') {
+				event.preventDefault();
+				prevSection();
+			}
+		});
+  	
+
+  	$(document).mousewheel(function(event, delta){
+        // alert(delta);
+  		event.preventDefault();
+        if(delta < 0)
+        	nextSection();
+        if(delta > 0)
+        	prevSection();
+    });
+
+
+	function nextSection(){
+		if(clicked == true){
+			return;
+		}
+		clicked = true;
+		var prevIndex;
+		contentSections.each(function(index){
+			if($(this).hasClass('prev')){
+				prevIndex = index;
+				// alert(index);
+			}
+		});
+
+		if(prevIndex == 3){
+			clicked = false;
+			return;
+		}
+		contentSections.filter('.prev').removeClass('prev');
+		var present = contentSections.filter('.present'),
+		next = present.next();
+		present.removeClass('present').addClass('prev');
+		smoothScroll(next);
+	}
+
+	function prevSection(){
+		if(clicked == true){
+			return;
+		}
+		clicked = true;
+		var nextIndex;
+		contentSections.each(function(index){
+			if($(this).hasClass('present')){
+				nextIndex = index;
+				// alert(index);
+			}
+		});
+
+		if(nextIndex == 0){
+			clicked = false;
+			return;
+		}
+		contentSections.filter('.present').removeClass('present');
+		var previous = contentSections.filter('.prev'),
+		before = previous.prev();
+		previous.removeClass('prev').addClass('present');
+		 before.addClass('prev');
+		smoothScroll(previous);
+	}
+
 });
