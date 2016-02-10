@@ -20,46 +20,49 @@
       radial-gradient(4px 4px at 130px 80px, #fff, rgba(0,0,0,0)), 
       radial-gradient(4px 4px at 160px 120px, #ddd, rgba(0,0,0,0));
   background-repeat: repeat;
-  background-size: 200px 200px;
+  background-size: 100px 100px;
+  -webkitanimation: zom 3s infinite;
+  -moz-animation: zoom 3s infinite;
+  -ms-animation: zom 3s infinite;
   animation: zoom 5s infinite;
   opacity: 0;
 }
 
 .stars:nth-child(1) {
   background-position: 50% 50%;
-  animation-delay: 0s;
+  animation-delay: 1.5s;
 }
 .stars:nth-child(2) {
-  background-position: 20% 60%;
-  animation-delay: 1s;
+  background-position: 60% 10%;
+  animation-delay: 2s;
 }
 .stars:nth-child(3) {
-  background-position: -20% -30%;
-  animation-delay: 2s;
+  background-position: -20% -60%;
+  animation-delay: 3s;
 }
 .stars:nth-child(4) {
   background-position: 40% -80%;
-  animation-delay: 3s;
+  animation-delay: 4s;
 }
 .stars:nth-child(5) {
-  background-position: -20% 30%;
-  animation-delay: 4s;
+  background-position: 20% -30%;
+  animation-delay: 5s;
 }
 
 @keyframes zoom {
   0% {
     opacity: 0;
-    transform: scale(0.3);
+    transform: scale(0.1,0.1);
     animation-timing-function: ease-in;
   } 
   50% {
     opacity: 1;
-    transform: scale(0.5);
-    animation-timing-function: ease-out;
+    transform: scale(0.5,0.5);
+    animation-timing-function: linear;
   }
   100% {
     opacity: 0.5;
-    transform: scale(1);
+    transform: scale(1.2,1.2);
   }
 }
 

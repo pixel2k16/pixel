@@ -127,4 +127,11 @@ jQuery(document).ready(function($){
 		smoothScroll(previous);
 	}
 
+	// Script to execute pixel animation one time
+	$('.vl').addClass("animated");
+	$('.vl').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+		$(this).removeClass("wow zoomInDown animated");
+		$(this).attr("style","");
+	});
+
 });

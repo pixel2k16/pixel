@@ -30,12 +30,21 @@
 
 	<script type="text/javascript" src="js/wow.min.js"></script>
 	<script>
- 		new WOW().init();
+		wow = new WOW({
+	      boxClass:'wow',            // default
+	      animateClass:'animated',   // default   
+	      offset: 0,                 // default
+	      mobile: true,              // default
+          live:false                 // default
+       	})
+ 		wow.init();
  	</script>
+ 	<script type="text/javascript" src="js/canv.js"></script>
 	
 	<title>Vertical Fixed Navigation #2 | CodyHouse</title>
 </head>
-<body>
+<body onload="start()" onresize="resize()"  onmousedown="context.fillStyle='rgba(0,0,0,'+opacity+')'" 
+	  onmouseup="context.fillStyle='rgb(0,0,0)'">
 <nav class="cd-vertical-nav">
 	<ul>
 		<li><a href="#section1" class="active"><span class="label">Intro</span></a></li>
@@ -51,10 +60,10 @@
 <!-- for social networking elements -->
 <div class="deck">
 	<a href="https://www.youtube.com/channel/UCG-tEdg_D0d7JQZtYwrmVVw?sub_confirmation=1" 
-	class="social yt wow bounceInDown" data-wow-delay="0.2s" target="_blank"></a>
-	<a href="http://www.fb.com/pixel2k16" target="_blank" data-wow-delay="0.3s" class="social fb wow bounceInDown"></a>
-	<a href="http://www.twitter.com/pixel_jntua" data-wow-delay="0.4s" class="social twtr wow bounceInDown" target="_blank"></a>
-	<a href="mailto:pixel.jntua@gmail.com" data-wow-delay="0.5s" class="social mail wow bounceInDown" target="_blank"></a> 
+	class="social yt wow bounceInDown" data-wow-delay="2.2s" target="_blank"></a>
+	<a href="http://www.fb.com/pixel2k16" target="_blank" data-wow-delay="2.3s" class="social fb wow bounceInDown"></a>
+	<a href="http://www.twitter.com/pixel_jntua" data-wow-delay="2.4s" class="social twtr wow bounceInDown" target="_blank"></a>
+	<a href="mailto:pixel.jntua@gmail.com" data-wow-delay="2.5s" class="social mail wow bounceInDown" target="_blank"></a> 
 </div>
 <!-- Hamberger menu -->
 <div class="hmenu">
@@ -97,5 +106,7 @@
 	
 <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
+<script type="text/javascript">
+</script>
 </body>
 </html>
