@@ -42,14 +42,13 @@ Navigation trigger - visible on small devices only
 .cd-nav-trigger {
   display: block;
   position: fixed;
-  z-index: 2;
+  z-index: 1999;
   bottom: 30px;
   right: 5%;
   height: 44px;
   width: 44px;
   border-radius: 0.25em;
-  background: rgba(234, 242, 227, 0.9);
-  /* reset button style */
+  background: rgba(234, 242, 227, 0.9);/* reset button style */
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -177,6 +176,11 @@ Vertical navigation
   bottom: 0;
 }
 @media only screen and (min-width: 800px) {
+
+  li:a[href=#section]{
+    background: rgba(2,1,2,0.4) url(../img/home.svg) no-repeat center;
+  }
+
   .cd-vertical-nav {/* reset style */
     right: 0;
     top: 0;
@@ -227,7 +231,7 @@ Vertical navigation
   }
   .cd-vertical-nav a {
     position: relative;
-    padding: 3em 0 0;
+    padding: 3.5em 0 0;
     margin: 1.4em auto;
     border-bottom: none;
     font-size: 1.2rem;
@@ -250,28 +254,52 @@ Vertical navigation
     -o-transform: translateZ(0);
     transform: translateZ(0);
   }
-  .cd-vertical-nav a::before {
-    /* filled circle */
+  .cd-vertical-nav a::before {/* filled circle */
     top: 0;
-    height: 32px;
-    width: 32px;
+    height: 37px;
+    width: 36px;
     border-radius: 50%;
-    background: #eaf2e3;
-    -webkit-transform: translateX(-50%) scale(0.25);
-    -moz-transform: translateX(-50%) scale(0.25);
     -ms-transform: translateX(-50%) scale(0.25);
     -o-transform: translateX(-50%) scale(0.25);
-    transform: translateX(-50%) scale(0.25);
+    transform: translateX(-50%) scale(2);
     -webkit-transition: -webkit-transform 0.4s, background-color 0.2s;
     -moz-transition: -moz-transform 0.4s, background-color 0.2s;
     transition: transform 0.4s, background-color 0.2s;
   }
+
+  .cd-vertical-nav a[href="#section1"]::before {
+    background: url(../img/home.svg) no-repeat;
+    background-size: cover;
+    
+  }
+  .cd-vertical-nav a[href="#section2"]::before {
+    background: url(../img/grid.svg) no-repeat;
+    background-size: cover;
+    
+  }
+    .cd-vertical-nav a[href="#section3"]::before {
+    background: url(../img/gallery.svg) no-repeat;
+    background-size: cover;
+    
+  }
+   .cd-vertical-nav a[href="#section4"]::before {
+    background: url(../img/reach.svg) no-repeat;
+    background-size: cover;
+    
+  }
+   .cd-vertical-nav a[href="#section5"]::before {
+    background: url(../img/home.svg) no-repeat;
+    background-size: cover;
+    
+  }
+
+
   .cd-vertical-nav a::after {/* icon */
     opacity: 100;
     top: 8px;
     height: 16px;
     width: 16px;
-    background: url(../img/img-3.jpg);
+    background: url(../img/home.svg);
     -webkit-transform: translateX(-50%) scale(0);
     -moz-transform: translateX(-50%) scale(0);
     -ms-transform: translateX(-50%) scale(0);
@@ -282,7 +310,7 @@ Vertical navigation
     transition: transform 0.4s 0s, opacity 0.1s 0.3s;
   }
   .cd-vertical-nav a.active::before, .no-touch .cd-vertical-nav a:hover::before {
-    background-color: #c0a672;
+    background-color: rgb(70, 125, 118);
   }
   .cd-vertical-nav li:first-of-type a::after {
     /* change icon using image sprites */
@@ -465,10 +493,10 @@ Content Sections - basic style
   bottom: 20px;
   width: 44px;
   height: 44px;
-  background: url(../img/darrow.png) no-repeat center center;
+  background: url(../img/darrow.svg) no-repeat center center;
   background-size: cover;
   -webkit-animation: showdown 1s linear infinite;
-    animation: showdown 1s linear infinite;
+  animation: showdown 1s linear infinite;
   }
 
 @keyframes showdown{

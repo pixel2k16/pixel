@@ -47,10 +47,10 @@
 	  onmouseup="context.fillStyle='rgb(0,0,0)'">
 <nav class="cd-vertical-nav">
 	<ul>
-		<li><a href="#section1" class="active"><span class="label">Intro</span></a></li>
+		<li><a href="#section1" class="active"><span class="label">Home</span></a></li>
 		<li><a href="#section2"><span class="label">Events</span></a></li>
 		<li><a href="#section3"><span class="label">Gallery</span></a></li>
-		<li><a href="#section4"><span class="label">Share</span></a></li>
+		<li><a href="#section4"><span class="label">Reach Us</span></a></li>
 		<li><a href="#section5"><span class="label">Extras</span></a></li>
 	</ul>
 </nav><!-- .cd-vertical-nav -->

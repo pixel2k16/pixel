@@ -79,7 +79,7 @@ Slider
   background-image: url(../img/img-4.jpg);
 }
 .cd-slider li:nth-of-type(5) .image {
-  background-image: url(../img/img-1.jpg);
+  background-image: url(../img/game.jpg);
 }
 .cd-slider .image {
   background-size: cover;
