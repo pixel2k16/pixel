@@ -1,5 +1,6 @@
 jQuery(document).ready(function($){
-	var papptcontents = $(".event-content").filter(".pappt").children();
+	// var papptcontents = $(".event-content").filter(".pappt").children();
+	
 	var	scrolling = false,
 	clicked = false;
 
@@ -98,11 +99,13 @@ jQuery(document).ready(function($){
 			}
 		});
 
-		papptcontents.each(function(){
+		// Code for add animation when come back to events section. 
+		var presenteventdetails = $('.cd-slider-wrapper').find(".is-visible").last().children().find(".event-content").children();
+		presenteventdetails.each(function(){
 			if(presentIndex == 0){
 				$(this).addClass("animated fadeInUp");
 			}else{
-				$(this).removeClass("animated fadeInUp");
+				$(this).removeClass();
 			}
 		});
 
@@ -118,6 +121,8 @@ jQuery(document).ready(function($){
 		smoothScroll(next);
 	}
 
+
+
 	function prevSection(){
 		if(clicked == true){
 			return;
@@ -131,13 +136,15 @@ jQuery(document).ready(function($){
 			}
 		});
 
-			papptcontents.each(function(){
-				if(nextIndex == 2){
-					$(this).addClass("animated fadeInUp");
-				}else{
-					$(this).removeClass("animated fadeInUp");
-				}
-			});
+		// Code for add animation when come back to events section. 
+		var presenteventdetails = $('.cd-slider-wrapper').find(".is-visible").last().children().find(".event-content").children();
+		presenteventdetails.each(function(){
+			if(nextIndex == 2){
+				$(this).addClass("animated fadeInDown");
+			}else{
+				$(this).removeClass();
+			}
+		});
 
 		if(nextIndex == 0){
 			clicked = false;

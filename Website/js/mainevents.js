@@ -105,25 +105,10 @@ jQuery(document).ready(function($){
 		$("h3").removeClass();
 		$("h2").removeClass();
 
-
 		var lines;
-		var found = false;
 		lines = $(presentslide).children().last().children().children();
-		lines.each(function(){
-			var type = $(this).prop('tagName');
-			
-			if(type == "H2"){
-				found = true;
-				$(this).addClass("animated fadeInRight");
-			}
-			if(type == "H3") {
-				if(!found){ $(this).addClass("animated fadeInDown"); }
-				if(found){ $(this).addClass("animated fadeInUp");}
-			}	
-		});
-		
-		
-
+		// function call to add animations to lines.  
+		addanim(lines);
 
 		//fixes a bug on Firefox with ul.cd-slider-navigation z-index
 		navigation.parent('ul').addClass('slider-animating')
@@ -132,6 +117,21 @@ jQuery(document).ready(function($){
 		});
 	}
 
+	// function to add animation to event description
+	function addanim(lines){
+		var found = false;
+		lines.each(function(){
+			var type = $(this).prop('tagName');
+			if(type == "H2") {
+				found = true;
+				$(this).addClass("animated fadeInRight");
+			}
+			if(type == "H3") {
+				if(!found){ $(this).addClass("animated fadeInDown"); }
+				if(found){ $(this).addClass("animated fadeInUp");}
+			}	
+		});
+	}
 
 	function enableSwipe(container) {
 		return ( container.parents('.touch').length > 0 );
