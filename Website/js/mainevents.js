@@ -1,6 +1,5 @@
 jQuery(document).ready(function($){
 	var sliderContainers = $('.cd-slider-wrapper');
-
 	if( sliderContainers.length > 0 ) initBlockSlider(sliderContainers);
 
 	function initBlockSlider(sliderContainers) {
@@ -53,19 +52,34 @@ jQuery(document).ready(function($){
 		var text = "";
 		switch (index){
 			case 0:
-				text = "Technical presentation";
-				break;
-			case 1:
 				text = "Paper presentation";
 				break;
+			case 1:
+				text = "Debugging";
+				break;
 			case 2:
-				text = "Poster Ppt";
+				text = "Online Coding";
 				break;
 			case 3:
-				text = "Online Quiz";
+				text = "Treasure Hunt";
 				break;
 			case 4:
-				text = " Debugging";
+				text = "TECHNICAL QUIZ";
+				break;
+			case 5:
+				text = "Short Films";
+				break;
+			case 6:
+				text = "Poster presentation";
+				break;
+			case 7:
+				text = "Photography";
+				break;
+			case 8:
+				text = "LAN Gaming";
+				break;
+			case 9:
+				text = "Culturals";
 				break;
 			default:
 				text = "Event";
@@ -76,21 +90,48 @@ jQuery(document).ready(function($){
 
 	function updateName(dot,index){
 		var	text = "...";
-		var styles={"background-image":"url(http://www.chrlesstone.com/images/uploads/hiresimages/presentations.jpg)",
-					"background-size":"contain",
-					"cursor":"pointer"}
-		dot.css(styles);
 	}
 
 	function updateSlider(n, navigation, slides) {
 		navigation.removeClass('selected').eq(n).addClass('selected');
-		slides.eq(n).addClass('is-visible').removeClass('covered').prevAll('li').addClass('is-visible covered').end().nextAll('li').removeClass('is-visible covered');
+		var presentslide = slides.eq(n);
+		var prevslides = presentslide.prevAll('li');
+		var nextslides = presentslide.nextAll('li');
+		presentslide.addClass('is-visible').removeClass('covered');
+		prevslides.addClass('is-visible covered animated');
+		nextslides.removeClass('is-visible covered fadeIn animated');
+		
+
+		$("h3").removeClass();
+		$("h2").removeClass();
+
+
+		var lines;
+		var found = false;
+		lines = $(presentslide).children().last().children().children();
+		lines.each(function(){
+			var type = $(this).prop('tagName');
+			
+			if(type == "H2"){
+				found = true;
+				$(this).addClass("animated fadeInRight");
+			}
+			if(type == "H3") {
+				if(!found){ $(this).addClass("animated fadeInDown"); }
+				if(found){ $(this).addClass("animated fadeInUp");}
+			}	
+		});
+		
+		
+
 
 		//fixes a bug on Firefox with ul.cd-slider-navigation z-index
-		navigation.parent('ul').addClass('slider-animating').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+		navigation.parent('ul').addClass('slider-animating')
+			.on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
 			$(this).removeClass('slider-animating');
 		});
 	}
+
 
 	function enableSwipe(container) {
 		return ( container.parents('.touch').length > 0 );

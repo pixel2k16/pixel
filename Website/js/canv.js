@@ -167,7 +167,6 @@ function mouse_wheel(evt){
 	}
 	star_speed+=(delta>=0)?-0.2:0.2;
 	if(evt.preventDefault) evt.preventDefault();
-	alert(delta);
  }
 
 function start()

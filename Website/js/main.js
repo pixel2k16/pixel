@@ -1,6 +1,8 @@
 jQuery(document).ready(function($){
+	var papptcontents = $(".event-content").filter(".pappt").children();
 	var	scrolling = false,
 	clicked = false;
+
 	var contentSections = $('.cd-section'),
 		verticalNavigation = $('.cd-vertical-nav'),
 		navigationItems = verticalNavigation.find('a'),
@@ -78,16 +80,29 @@ jQuery(document).ready(function($){
     });
 
 
+
 	function nextSection(){
 		if(clicked == true){
 			return;
 		}
 		clicked = true;
 		var prevIndex;
+		var presentIndex;
 		contentSections.each(function(index){
 			if($(this).hasClass('prev')){
 				prevIndex = index;
 				// alert(index);
+			}else if($(this).hasClass('present')){
+				presentIndex = index;
+				// alert(index);
+			}
+		});
+
+		papptcontents.each(function(){
+			if(presentIndex == 0){
+				$(this).addClass("animated fadeInUp");
+			}else{
+				$(this).removeClass("animated fadeInUp");
 			}
 		});
 
@@ -95,6 +110,7 @@ jQuery(document).ready(function($){
 			clicked = false;
 			return;
 		}
+
 		contentSections.filter('.prev').removeClass('prev');
 		var present = contentSections.filter('.present'),
 		next = present.next();
@@ -111,9 +127,17 @@ jQuery(document).ready(function($){
 		contentSections.each(function(index){
 			if($(this).hasClass('present')){
 				nextIndex = index;
-				// alert(index);
+				// alert(nextIndex);
 			}
 		});
+
+			papptcontents.each(function(){
+				if(nextIndex == 2){
+					$(this).addClass("animated fadeInUp");
+				}else{
+					$(this).removeClass("animated fadeInUp");
+				}
+			});
 
 		if(nextIndex == 0){
 			clicked = false;

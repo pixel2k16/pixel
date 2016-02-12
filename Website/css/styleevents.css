@@ -8,13 +8,15 @@ Primary style
 
 html {
   font-size: 62.5%;
+  width: 100%;
+  height: 100%;
 }
 
 
 body {
   font-size: 1.6rem;
   font-family: "Fira Sans", sans-serif;
-  color: #767070;
+  color: #100C0C;
   background-color: #ffffff;
 }
 
@@ -87,7 +89,7 @@ Slider
 .cd-slider .content {
   padding: 30px;
   color: #ffffff;
-  background-color: #181C1F;
+  background-color: #4B5C69;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -136,7 +138,7 @@ Slider
   .cd-slider .cd-half-block {
     height: 100%;
     width: 50%;
-    float: right;
+    float: right;event-content
   }
   .cd-slider .cd-half-block.content {
     -webkit-transform: translateX(200%);
@@ -176,8 +178,7 @@ Slider
     display: table;
     padding: 0 40px;
   }
-  .cd-slider .content > div {
-    /* vertically align <div> inside div.content */
+  .cd-slider .content > div {/* vertically align <div> inside div.content */
     display: table-cell;
     vertical-align: middle;
   }
@@ -226,6 +227,7 @@ Slider Navigation
 .cd-slider-navigation li {
   display: inline-block;
   margin: 0 .25em;
+  cursor: pointer;
 }
 .cd-slider-navigation li.selected a {
   background-color: #ffffff;
@@ -267,8 +269,7 @@ Slider Navigation
     height: 40px;
     width: 40px;
     line-height: 40px;
-    text-align: center;
-    /* reset style */
+    text-align: center;/* reset style */
     text-indent: 0;
     border: none;
     border-radius: 0;
@@ -348,4 +349,18 @@ tooltip {
   background: #00AEEF;
   -webkit-transform: translate3d(0,-60%,0) rotate3d(0,0,1,45deg);
   transform: translate3d(0,-60%,0) rotate3d(0,0,1,45deg);
+}
+
+.event-content{
+  line-height: 1.9;
+}
+.event-content h2 {
+    -webkit-animation-delay:0.2s;
+    -webkit-animation-duration:0.8s;
+    animation-delay:0.2s;
+}
+
+.event-content h3 {
+    -webkit-animation-delay:0.3s;
+    animation-delay:0.3s;
 }
