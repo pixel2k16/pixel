@@ -136,4 +136,39 @@ jQuery(document).ready(function($){
 	function enableSwipe(container) {
 		return ( container.parents('.touch').length > 0 );
 	}
+
+
+	// Media queries like function to adjust event detail contents
+	$(window).resize(function(){
+		if($(window).width() <= 450){
+			adjustContent();
+		}else{
+			applyDefault();
+		}
+	});
+
+	if($(window).width() <= 450){
+			adjustContent();
+	}
+
+	 // function to adjust content
+	 function adjustContent(){
+	 	// alert("");
+	 	var styles = {"text-align":"left","line-height":"1.6em"};
+	 	$(".cd-half-block.content > div").css(styles);
+	 	var eventContent = $(".cd-half-block.content > div");
+	 	
+	 	var newContent = eventContent;
+	 	newContent.each(function(index){
+			 // alert($(this).html());
+			var text = $(this).text();
+			$(this).text(" ").html(text);
+			 // alert($(this).html());
+	 	});
+	 }
+
+	 function applyDefault(){
+	 	$(".cd-half-block.content > div").removeAttr("style");
+	 }
+
 });

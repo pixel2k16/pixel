@@ -69,7 +69,8 @@ Slider
   background-repeat: no-repeat;
 }
 .cd-slider li:first-of-type .image {
-  background-image: url(../img/img-1.jpg);
+  background-image: url(../img/ppt.jpg);
+  background-size: cover;
 }
 .cd-slider li:nth-of-type(2) .image {
   background-image: url(../img/img-2.jpg);
@@ -83,13 +84,16 @@ Slider
 .cd-slider li:nth-of-type(5) .image {
   background-image: url(../img/game.jpg);
 }
+.cd-slider li:nth-of-type(10) .image {
+  background-image: url(../img/ecstasy.jpg);
+}
 .cd-slider .image {
   background-size: cover;
 }
 .cd-slider .content {
   padding: 30px;
   color: #ffffff;
-  background-color: #4B5C69;
+  background-color: #1D293A;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -181,7 +185,10 @@ Slider
   .cd-slider .content > div {/* vertically align <div> inside div.content */
     display: table-cell;
     vertical-align: middle;
+    /* text-align: left; */
   }
+
+.event-content.pappt {}
   .cd-slider .btn {
     padding: 1.4em 2em;
     font-size: 1.4rem;
@@ -222,7 +229,7 @@ Slider Navigation
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  bottom: 0;
+  bottom: 10px;
 }
 .cd-slider-navigation li {
   display: inline-block;

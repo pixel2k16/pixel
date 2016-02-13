@@ -1,8 +1,11 @@
-
 	#heading{
 		color: white;
 	}
 	
+	.gallery{
+		background: rgb(29, 41, 58);
+	}
+
 	#gallery-content{
 	margin: auto;
 	padding: 1%;
@@ -15,10 +18,11 @@
 		position: relative;
 		text-align: center;
 		width: 65%;
-		background: tomato;
+		background: rgba(20, 30, 41, 0.35);
 		height: 100vh;
 		display: table;
 		vertical-align: middle;
+		overflow: hidden;
 	}
 
 	#bottom-right{
@@ -38,31 +42,50 @@
 
 @media screen and (min-width: 900px){
 	#sample-1{
-		left: 21%;
-		top: 36vh;
-		transform: rotate(29deg);
-	}
-	#sample-4{
-		left: 24%;
-		top: 39vh;
-		transform: rotate(-13deg);
-		box-shadow: 10px 10px 10px #693228;
-	}
-	#sample-3{
-		left: 20%;
-		top: 32vh;
-		transform: rotate(-5deg);
-	}
-	#sample-5{
-	left: 21%;
-	top: 37vh;
+		left: 26%;
+		top: 44vh;
+		transform: rotate(-63deg);
 	}
 	#sample-2{
-		left: 21%;
-		top: 34vh;
-		transform: rotate(198deg);
+		left: 56%;
+		top: 9vh;
+		transform: rotate(19deg);
 		tate(90deg);
 	}
+	#sample-3{
+		left: 1%;
+		top: 8vh;
+		transform: rotate(-19deg);
+	}
+	#sample-4{
+		left: 2%;
+		top: 69vh;
+		transform: rotate(9deg);
+		box-shadow: 10px 10px 10px #693228;
+	}
+	#sample-5{
+	left: 54%;
+	top: 67vh;
+	}
+	#sample-6{
+		left: 24%;
+		top: 7vh;
+		transform: rotate(2deg);
+		box-shadow: 10px 10px 10px #693228;
+	}
+	#sample-7{
+		left: 54%;
+		top: 40vh;
+		transform: rotate(-15deg);
+	}
+	#sample-8{
+		left: -2%;
+		top: 40vh;
+		transform: rotate(9deg);
+		box-shadow: 10px 10px 10px #693228;
+	}
+
+	
 
 }
 
@@ -115,7 +138,24 @@
 		transform: rotate(-15deg);
 		tate(90deg);
 	}
-
+	#sample-6{
+		left: 27%;
+		top: 22vh;
+		transform: rotate(-15deg);
+		tate(90deg);
+	}
+	#sample-7{
+		left: 27%;
+		top: 22vh;
+		transform: rotate(-15deg);
+		tate(90deg);
+	}
+	#sample-8{
+		left: 27%;
+		top: 22vh;
+		transform: rotate(-15deg);
+		tate(90deg);
+	}
 }
 
 @media screen and (max-width: 489px){
@@ -144,6 +184,24 @@
 		left: 13%;
 		top: 17vh;
 		transform: rotate(156deg);
+		tate(90deg);
+	}
+	#sample-6{
+		left: 10%;
+		top: 20vh;
+		transform: rotate(-15deg);
+		tate(90deg);
+	}
+	#sample-7{
+		left: 10%;
+		top: 20vh;
+		transform: rotate(-15deg);
+		tate(90deg);
+	}
+	#sample-8{
+		left: 10%;
+		top: 20vh;
+		transform: rotate(8deg);
 		tate(90deg);
 	}
 }
@@ -189,7 +247,7 @@ nav a:focus {
 .cl-effect-10 a span {
 	display: block;
 	padding: 10px 20px;
-	background: #FF6347;
+	background: #1A2534;
 	-webkit-transition: -webkit-transform 0.3s;
 	-moz-transition: -moz-transform 0.3s;
 	transition: transform 0.3s;
@@ -204,7 +262,7 @@ nav a:focus {
 	width: 100%;
 	height: 100%;
 	background: #fff;
-	color: #FF6347;
+	color: #1A2534;
 	content: attr(data-hover);
 	-webkit-transition: -webkit-transform 0.3s;
 	-moz-transition: -moz-transform 0.3s;
