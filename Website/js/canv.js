@@ -8,7 +8,7 @@ function get_screen_size()
 
 var flag=true;
 var test=true;
-var n=612;
+var n=200;
 var w=0;
 var h=0;
 var x=0;
@@ -63,8 +63,12 @@ function init()
 
 function anim()
 	{
-	mouse_x=cursor_x-x;
-	mouse_y=cursor_y-y;
+	mouse_x=(cursor_x-x);
+	mouse_y=(cursor_y-y);
+	if(mouse_y > 130){
+		mouse_y= (mouse_y%50)+130; 
+	}
+	
 	context.fillRect(0,0,w,h);
 	for(var i=0;i<n;i++){
 		test=true;
@@ -96,6 +100,9 @@ function anim()
 		}
 		star[i][3]=x+(star[i][0]/star[i][2])*star_ratio;
 		star[i][4]=y+(star[i][1]/star[i][2])*star_ratio;
+		
+		console.log("i3:"+ star[i][3] +"and i4:"+ star[i][4]);
+		
 		if(star_x_save>0&&star_x_save<w&&star_y_save>0&&star_y_save<h&&test) {
 			context.lineWidth=(1-star_color_ratio*star[i][2])*2;
 			context.beginPath();
@@ -167,6 +174,7 @@ function mouse_wheel(evt){
 	}
 	star_speed+=(delta>=0)?-0.2:0.2;
 	if(evt.preventDefault) evt.preventDefault();
+	//alert(delta);
  }
 
 function start()
