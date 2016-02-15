@@ -18,7 +18,8 @@
 	padding: 10px 0;
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
-	font-family: serif;
+	position: relative;
+	/* left: 2%; */
 }
 
 .link--nukun:hover {

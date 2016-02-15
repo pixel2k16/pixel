@@ -484,7 +484,7 @@ Content Sections - basic style
 
 .cd-scroll-down {
   position: absolute;
-  left: 50%;
+  left: 48%;
   right: auto;
   /* -webkit-transform: translateX(-50%); */
   -moz-transform: translateX(-50%);

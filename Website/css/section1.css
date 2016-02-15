@@ -1,6 +1,74 @@
+/* For typographic pro fonts*/
+@font-face{
+font-family: "tpeb";
+src:url('fonts/TYPOGRAPH PRO Extra Bold.ttf');
+}
+@font-face{
+	font-family: "tpli";
+	src:url('fonts/TYPOGRAPH PRO Light Italic.ttf');
+}
+@font-face{
+	font-family: "tpl";
+	src:url('fonts/TYPOGRAPH PRO Light.ttf');
+}
+@font-face{
+	font-family: "tpsbi";
+	src:url('fonts/TYPOGRAPH PRO Semi Bold Italic.ttf');
+}
+@font-face{
+	font-family: "tpsb";
+	src:url('fonts/TYPOGRAPH PRO Semi Bold.ttf');
+}
+@font-face{
+	font-family: "tpuli";
+	src:url('fonts/TYPOGRAPH PRO Ultra Light Italic.ttf');
+}
+@font-face{
+	font-family: "tpul";
+	src:url('fonts/TYPOGRAPH PRO Ultra Light.ttf');
+}
+
+/* For front page details */
+
+.college{
+	position: relative;
+	line-height: 1.6em;
+}
+.tagline{
+	font-family: 'Raleway', sans-serif;
+}
+	
+sup {
+	font-size:xx-small; 
+	vertical-align:super;
+}
+.date{
+	display: block;
+	text-align: center;
+	z-index: 1;
+	margin-top: 3%; 
+}
+.wrapper{
+	text-align: center;
+	position: relative;
+	width: 100v;
+	color: #fff;
+}
+#pixel{
+	/* font-family: 'tpeb'; */
+}
+.link {
+	outline: none;
+	text-decoration: none;
+	position: relative;
+	font-size: 8em;
+	line-height: 1;
+	color: #9e9ba4;
+	display: inline-block;
+}
+
 
 /* For Video in pop up */
-
 .teaser{
 	display: none;
 	position: fixed;
@@ -120,4 +188,4 @@
 	.hmenu{
 		display: none;
 	}
-}
+}}

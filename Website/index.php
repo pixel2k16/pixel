@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>PIXEL 2K16 | JNTU Anantapur</title>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/stars.css">
@@ -74,14 +77,6 @@
 
 <button class="cd-nav-trigger cd-image-replace">Open navigation<span aria-hidden="true"></span></button>
 
-<!-- for social networking elements -->
-<div class="deck">
-	<a href="https://www.youtube.com/channel/UCG-tEdg_D0d7JQZtYwrmVVw?sub_confirmation=1" 
-	class="social yt wow bounceInDown" data-wow-delay="2.2s" target="_blank"></a>
-	<a href="http://www.fb.com/pixel2k16" target="_blank" data-wow-delay="2.3s" class="social fb wow bounceInDown"></a>
-	<a href="http://www.twitter.com/pixel_jntua" data-wow-delay="2.4s" class="social twtr wow bounceInDown" target="_blank"></a>
-	<a href="mailto:pixel.jntua@gmail.com" data-wow-delay="2.5s" class="social mail wow bounceInDown" target="_blank"></a> 
-</div>
 <!-- Hamberger menu -->
 <div class="hmenu">
 	<div class="line wow jello" data-wow-delay="1.5s"> </div>
