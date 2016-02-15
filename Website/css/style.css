@@ -256,8 +256,8 @@ Vertical navigation
   }
   .cd-vertical-nav a::before {/* filled circle */
     top: 0;
-    height: 37px;
-    width: 36px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
     -ms-transform: translateX(-50%) scale(0.25);
     -o-transform: translateX(-50%) scale(0.25);

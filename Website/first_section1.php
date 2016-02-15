@@ -54,8 +54,10 @@
 	  }
 </script>
 
-<div id="pixel"> <a class="vl link link--nukun wow zoomInDown" 
-			 data-wow-delay="2s" data-wow-duration="2.5s" href="#">PI<span>X</span>EL</a></div>
+<div id="pixel"> 
+	<a class="vl link link--nukun wow zoomInDown" data-wow-delay="2s" data-wow-duration="2.5s" href="#">PI<span>X</span>EL
+	</a>
+</div>
 
 <script>
 	// For Demo purposes only (show hover effect on mobile devices)

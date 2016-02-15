@@ -101,7 +101,6 @@ function anim()
 		star[i][3]=x+(star[i][0]/star[i][2])*star_ratio;
 		star[i][4]=y+(star[i][1]/star[i][2])*star_ratio;
 		
-		console.log("i3:"+ star[i][3] +"and i4:"+ star[i][4]);
 		
 		if(star_x_save>0&&star_x_save<w&&star_y_save>0&&star_y_save<h&&test) {
 			context.lineWidth=(1-star_color_ratio*star[i][2])*2;

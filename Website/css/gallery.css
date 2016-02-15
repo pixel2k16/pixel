@@ -44,45 +44,44 @@
 	#sample-1{
 		left: 26%;
 		top: 44vh;
-		transform: rotate(-63deg);
+		transform: rotate(-16deg);
 	}
 	#sample-2{
-		left: 56%;
-		top: 9vh;
+		left: 22%;
+		top: 37vh;
 		transform: rotate(19deg);
 		tate(90deg);
 	}
 	#sample-3{
-		left: 1%;
-		top: 8vh;
-		transform: rotate(-19deg);
+		left: 16%;
+		top: 40vh;
+		transform: rotate(-1deg);
 	}
 	#sample-4{
-		left: 2%;
-		top: 69vh;
-		transform: rotate(9deg);
-		box-shadow: 10px 10px 10px #693228;
+		left: 15%;
+		top: 46vh;
+		transform: rotate(10deg);
+		box-shadow: 10px 10px 10px #031021;
 	}
 	#sample-5{
-	left: 54%;
-	top: 67vh;
+	left: 32%;
+	top: 43vh;
 	}
 	#sample-6{
 		left: 24%;
-		top: 7vh;
+		top: 40vh;
 		transform: rotate(2deg);
-		box-shadow: 10px 10px 10px #693228;
 	}
 	#sample-7{
-		left: 54%;
+		left: 31%;
 		top: 40vh;
 		transform: rotate(-15deg);
 	}
 	#sample-8{
-		left: -2%;
+		left: 14%;
 		top: 40vh;
 		transform: rotate(9deg);
-		box-shadow: 10px 10px 10px #693228;
+		/* box-shadow: 10px 10px 10px #030E1D; */
 	}
 
 	

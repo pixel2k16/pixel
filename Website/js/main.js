@@ -1,6 +1,11 @@
 jQuery(document).ready(function($){
-	// var papptcontents = $(".event-content").filter(".pappt").children();
-	
+	var papptcontents = $(".event-content").filter(".pappt").children();
+		$("body").css("overflow","hidden");
+		setTimeout(
+			function(){
+			$(".cssload-preloader").addClass("animated flipOutX");
+		},3000);
+
 	var	scrolling = false,
 	clicked = false;
 

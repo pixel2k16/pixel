@@ -6,6 +6,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/stars.css">
+ 	<script type="text/javascript" src="js/canv.js"></script>
+
 
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
@@ -28,6 +30,9 @@
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<script type="text/javascript" src="js/gallery.js"></script>
 
+	<!-- For reach Us section -->
+	<link rel="stylesheet" type="text/css" href="css/reachUs.css">
+	
 	<script type="text/javascript" src="js/wow.min.js"></script>
 	<script>
 		wow = new WOW({
@@ -39,12 +44,24 @@
        	})
  		wow.init();
  	</script>
- 	<script type="text/javascript" src="js/canv.js"></script>
 	
 	<title>Vertical Fixed Navigation #2 | CodyHouse</title>
 </head>
 <body onload="start()" onresize="resize()"  onmousedown="context.fillStyle='rgba(0,0,0,'+opacity+')'" 
 	  onmouseup="context.fillStyle='rgb(0,0,0)'">
+<!-- for loading animation -->
+<div class="cssload-preloader " data-wow-duration="4s">
+	<div class="cssload-preloader-box">
+			<div>P</div>
+			<div>I</div>
+			<div>X</div>
+			<div>E</div>
+			<div>L</div>
+			<div>1</div>
+			<div>6</div>
+	</div>
+</div>
+
 <nav class="cd-vertical-nav">
 	<ul>
 		<li><a href="#section1" class="active"><span class="label">Home</span></a></li>
@@ -109,4 +126,4 @@
 <script type="text/javascript">
 </script>
 </body>
-</html>
+</html>	
