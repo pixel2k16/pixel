@@ -50,7 +50,7 @@
 <body onload="start()" onresize="resize()"  onmousedown="context.fillStyle='rgba(0,0,0,'+opacity+')'" 
 	  onmouseup="context.fillStyle='rgb(0,0,0)'">
 <!-- for loading animation -->
-<div class="cssload-preloader " data-wow-duration="4s">
+<div class="cssload-preloader" data-wow-duration="4s">
 	<div class="cssload-preloader-box">
 			<div>P</div>
 			<div>I</div>

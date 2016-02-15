@@ -454,6 +454,7 @@ Content Sections - basic style
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+  position: relative;
 }
 .cd-section h1, .cd-section h2 {
   width: 90%;

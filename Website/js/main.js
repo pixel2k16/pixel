@@ -1,9 +1,11 @@
+$(".cssload-preloader").css("display","none");
 jQuery(document).ready(function($){
 	var papptcontents = $(".event-content").filter(".pappt").children();
-		$("body").css("overflow","hidden");
+		$("html,body").css({"overflow":"hidden","height":"100%"});
 		setTimeout(
 			function(){
-			$(".cssload-preloader").addClass("animated flipOutX");
+			// $(".cssload-preloader").addClass("animated flipOutX");
+			$("html,body").css({"overflow":"auto","height":"auto"});
 		},3000);
 
 	var	scrolling = false,

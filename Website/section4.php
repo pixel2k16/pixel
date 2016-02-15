@@ -125,27 +125,17 @@ function initMap() {
 </script>
 <script src="https://maps.googleapis.com/maps/api/js? &signed_in=true&libraries=places&callback=initMap"
     async defer></script>
-    </div>
-    <div id="all">
-<div id="nav">
-    <img src="jntu-a-logo.jpg" alt="jntua logo" />
 </div>
-<center>
-  <div id="section">
-    <h3 >PIXEL-2K16</h3>
+<div class="address">
+  <img class="wow tada" src="jntu-a-logo.jpg" alt="jntua logo" />
+  <div class="section">
+    <h3 >PIXEL- <span style="font-family:'sans-serif'" >2K16</span></h3>
     <h3 >Department of Computer Science and Engineering</h3>
-    <h3 >Jntua College of Engineering, Anantapur</h3>
+    <h3 >JNTUA College of Engineering, Ananthapuramu</h3>
   </div>
-</center>
-	
-<div id="footer">
-  <address align="right">
-    Contact:<br/>
+  <div class="contacts">
+    <h3>Contact:</h3>
     N.Naveen kumar<br/>
-    ph.no:9999999999<br/>
-    mail: naveenknag@gmail.com<br/>
-    <br/>
-    <br/>
-  </address>
-</div>
+    &#9742; 7382352503<br/>
+  </div>
 </div>

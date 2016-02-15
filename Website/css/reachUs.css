@@ -161,7 +161,7 @@
 
 
 /* for map */
-#map {height: 90%;}
+#map {height: 100%;}
 .controls {
   margin-top: 10px;
   border: 1px solid transparent;
@@ -202,35 +202,44 @@
   font-size: 13px;
   font-weight: 300;
 }
-body{background-color:#2C3E50;
-color:#27AE60;
-}
+
 #header {
-    background-color:#2C3E50;
-    color: #464646;
     text-align:center;
     padding:0px;
     margin:2px;
-    height: 70vh;
+    height: 75vh;
     width: 100vw;
+    top: 0px;
+    background: #fff;
 }
-#nav {
-    line-height:30px;
-    background-color:#2C3E50;
-  
-    float:left;
-    padding:5px;        
+.address{
+  background: #1A2534;
+  color: #fff;
+  position: relative;
+  height: 25vh;
+  line-height: 1.4em;
+  font-family: Raleway;
 }
-#section {
-    width:100%;
-  text-align:ceter; 
-  background-color:#2C3E50;    
-  color:#27AE60;
+
+.address > img {
+  float: left;
+  margin: 10px;
+  height: 100px;
+  width: 100px;
 }
-#footer {
-    background-color:#2C3E50;
-    color:#27AE60;
-    clear:both;
-    text-align:right;
-   padding:10px;    
+
+.section{margin-top: 10px;}
+.contacts{display: inline-block;text-align: left;position: absolute;right: 3%;margin-top: 1vh;}
+
+@media screen and (max-width: 489px){
+  #header{
+    height: 60vh;
+  }
+  .address{
+    height: 40vh;
+  }
+  .contacts{
+    left: 34%;
+    margin-top: 2vh;
+  }
 }
