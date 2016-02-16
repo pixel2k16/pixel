@@ -39,13 +39,57 @@ jQuery(document).ready(function($){
 			var ttContent = $("<span class='tooltip-content'></span>");
 			ttContent.append(giveTooltipContent(index));
 			ttContent.appendTo(dotWrapper);
-		dotWrapper.appendTo(wrapper);
-		 var dotText = ( index+1 < 10 ) ? '0'+ (index+1) : index+1;
-		 dot.text(dotText);
-		updateName(dot,index);
+			dotWrapper.appendTo(wrapper);
+			var dotText = ( index+1 < 10 ) ? '0'+ (index+1) : index+1;
+			// console.log(getIconPath(dotText));
+			var bgimg = getIconPath(dotText);
+			// dot.text(dotText);
+			dot.css({"background-image":"url("+ bgimg +")"});
+			dot.css({"background-repeat":"no-repeat"});
+			dot.css({"background-size": "30px 30px"});
+			dot.css({"background-position":"center"});
 		});
 		wrapper.appendTo(container);
 		return wrapper.children('li');
+	}
+
+	function getIconPath(index){
+		var path = "eventIcons/";
+		switch(index){
+			case "01":
+				path += "ppt.png";
+				break;
+			case "02":
+				path += "debug.png";
+				break;
+			case "03":
+				path += "onlc.png";
+				break;
+			case "04":
+				path += "hunt.png";
+				break;
+			case "05":
+				path += "quiz.png";
+				break;
+			case "06":
+				path += "vid.png";
+				break;
+			case "07":
+				path += "poster.png";
+				break;
+			case "08":
+				path += "phot.png";
+				break;
+			case "09":
+				path += "lgme.png";
+				break;
+			case 10:
+				path += "dan.png";
+				break;
+			default:
+				path += "efut";
+		}
+		return path;
 	}
 
 	function giveTooltipContent(index){
@@ -64,7 +108,7 @@ jQuery(document).ready(function($){
 				text = "Treasure Hunt";
 				break;
 			case 4:
-				text = "TECHNICAL QUIZ";
+				text = "Technical Quiz";
 				break;
 			case 5:
 				text = "Short Films";
@@ -86,10 +130,6 @@ jQuery(document).ready(function($){
 				break;
 		}
 		return text;
-	}
-
-	function updateName(dot,index){
-		var	text = "...";
 	}
 
 	function updateSlider(n, navigation, slides) {

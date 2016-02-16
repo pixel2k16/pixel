@@ -78,14 +78,14 @@
  		data-wow-duration="2.5s">PI<span>X</span>EL</a>
 	</div>
 	<div class="tagline wow flipInX" data-wow-delay="7.5s">
-		<span style="position:relative;left:-2%" >Pixelate Ur Excellence</span>
+		<span style="position:relative;left:-1%" >Pixelate Ur Excellence</span>
 	</div>
 	<div class="date wow fadeIn" data-wow-delay="8.5s" 
  		data-wow-duration="1.5s">
-			<span style="position:relative;left:-2%">
+			<span style="position:relative;left:-1%">
 				<h3>March 19<sup>th</sup> &amp; 20<sup>th</sup>, 2016</h3>
 			</span><br>
-			<span style="position:relative;left:-2%"><h3>Registrations will open soon...</h3>
+			<span style="position:relative;left:-1%"><h3>Registrations will open soon...</h3>
 			</span>
 	</div>
 </div>

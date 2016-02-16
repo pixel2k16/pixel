@@ -238,6 +238,7 @@ Slider Navigation
 }
 .cd-slider-navigation li.selected a {
   background-color: #ffffff;
+  border-radius: 50%;
 }
 .cd-slider-navigation a {
   display: block;
@@ -285,7 +286,7 @@ Slider Navigation
     -moz-osx-font-smoothing: grayscale;
   }
   .cd-slider-navigation li.selected a {
-    background-color: transparent;
+    background-color: #1AAB90;
     color: #f3b96c;
   }
 }
@@ -312,6 +313,7 @@ tooltip {
   background-size: 100% 100%;
   z-index: 9999;
   width: 134px;
+  height: 100px;
   bottom: 100%;
   margin-left: -70px;
   padding: 2.5rem;
@@ -353,7 +355,7 @@ tooltip {
   left: 50%;
   margin-left: -8px;
   top: 100%;
-  background: #00AEEF;
+  background: #19AB90;
   -webkit-transform: translate3d(0,-60%,0) rotate3d(0,0,1,45deg);
   transform: translate3d(0,-60%,0) rotate3d(0,0,1,45deg);
 }

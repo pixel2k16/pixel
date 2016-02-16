@@ -256,8 +256,8 @@ Vertical navigation
   }
   .cd-vertical-nav a::before {/* filled circle */
     top: 0;
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     -ms-transform: translateX(-50%) scale(0.25);
     -o-transform: translateX(-50%) scale(0.25);
@@ -278,9 +278,8 @@ Vertical navigation
     
   }
     .cd-vertical-nav a[href="#section3"]::before {
-    background: url(../img/gallery.svg) no-repeat;
+    background: url('../img/gallery.svg') no-repeat;
     background-size: cover;
-    
   }
    .cd-vertical-nav a[href="#section4"]::before {
     background: url(../img/reach.svg) no-repeat;
