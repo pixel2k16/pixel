@@ -30,6 +30,10 @@ src:url('fonts/TYPOGRAPH PRO Extra Bold.ttf');
 
 /* For front page details */
 
+#my{
+	background: #000;
+}
+
 .college{
 	position: relative;
 	line-height: 1.6em;

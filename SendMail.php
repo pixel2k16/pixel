@@ -14,7 +14,7 @@
 	* 1 = For Displaying the client messages
 	* 2 = FOr Client and Server Messages. 
 	*/
-	$mail->SMTPDebug = 0;
+	$mail->SMTPDebug = 2;
 
 	// Used to display Debugging messages in friendly manner.	
 	$mail->Debugoutput = 'html';
@@ -26,8 +26,8 @@
 	* to set encryption ssl or ttl: SMTPAuth value is 'ssl' or 'tls'
 	* Whether to use SMTP authentication or not: SMTPAuth value is true or false
 	*/
-	$mail->Host = 'smtp.gmail.com';
-	$mail->Port = 587;
+	$mail->Host = 'mail.pixel2k16.in';
+	$mail->Port = 465;
 	$mail->SMTPSecure = 'tls';
 	$mail->SMTPAuth = true;
 
@@ -40,8 +40,8 @@
 	// $mail->Username = 'pixel.jntua@gmail.com';
 	// $mail->Password = 'pixel.jntu@';
 
-	$mail->Username = 'ramanareddysane20@gmail.com';
-	$mail->Password = 'Company@123.';
+	$mail->Username = 'noreply@pixel2k16.in';
+	$mail->Password = 'pixel.jntu@';
 
 	$mail->isHTML(true);
 	// Set From Address. Usually as username by using setFrom(p1,p2)
@@ -49,7 +49,7 @@
 	$mail->setFrom('pixel.jntua@gmail.com','Team Pixel');
 
 	// Set to address
-	$mail->addAddress('ramanareddysane20','Team Pixel');
+	$mail->addAddress('ramanareddysane@gmail.com','rma');
 	// Set Reply adderss by using addReplyTo
 	$mail->addReplyTo('pixel.jntua@gmail.com','Team Pixel');
 
@@ -65,12 +65,12 @@
 	// else
 	// 	echo "Not Embedded";
 
-	include("emailtest.php");
-	echo "<br> <b> Testing </b> <br>";
-	foreach ($emails as $value) {
-		echo $value.'<br>';
-		$mail->addBCC($value);
-	}
+	// include("emailtest.php");
+	// echo "<br> <b> Testing </b> <br>";
+	// foreach ($emails as $value) {
+	// 	echo $value.'<br>';
+	// 	$mail->addBCC($value);
+	// }
 
 	/*echo "<br> <b> batch11 </b> <br>";
 	include("batch11.php");

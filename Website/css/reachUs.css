@@ -228,7 +228,7 @@
   width: 100px;
 }
 
-.section{padding-top: 3vh;}
+.section{padding-top: 3vh;font-size: 110%;}
 .contacts{display: inline-block;text-align: left;position: absolute;right: 3%;margin-top: 1vh;}
 
 @media screen and (max-width: 489px){

@@ -1,10 +1,10 @@
-// $(".cssload-preloader").css("display","none");
+$(".cssload-preloader").css("display","none");
 jQuery(document).ready(function($){
 	var papptcontents = $(".event-content").filter(".pappt").children();
 		$("html,body").css({"overflow":"hidden","height":"100%"});
 		setTimeout(
 			function(){
-			$(".cssload-preloader").addClass("animated flipOutX");
+			// $(".cssload-preloader").addClass("animated flipOutX");
 			$("html,body").css({"overflow":"auto","height":"auto"});
 		},5000);
 
@@ -86,7 +86,6 @@ jQuery(document).ready(function($){
         if(delta > 0)
         	prevSection();
     });
-
 
 
 	function nextSection(){

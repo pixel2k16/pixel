@@ -69,24 +69,50 @@ Slider
   background-repeat: no-repeat;
 }
 .cd-slider li:first-of-type .image {
-  background-image: url(../img/ppt.jpg);
+  background: #1D293A url(../img/ppt.jpg) no-repeat;
   background-size: cover;
 }
 .cd-slider li:nth-of-type(2) .image {
-  background-image: url(../img/img-2.jpg);
+  background: #1D293A url(../img/debug.png) no-repeat;
+  background-size: cover;
 }
 .cd-slider li:nth-of-type(3) .image {
-  background-image: url(../img/img-3.jpg);
+  background: #1D293A url(../img/code.jpg) no-repeat;
+   background-size: cover;
 }
 .cd-slider li:nth-of-type(4) .image {
-  background-image: url(../img/img-4.jpg);
+  background: #1D293A url(../img/hunt.jpg) no-repeat;
+   background-size: cover;
 }
 .cd-slider li:nth-of-type(5) .image {
-  background-image: url(../img/game.jpg);
+  background: #1D293A url(../img/quiz.jpg) no-repeat;
+   background-size: cover;
 }
+.cd-slider li:nth-of-type(6) .image {
+  background: #1D293A url(../img/img.jpg) no-repeat;
+   background-size: cover;
+}
+
+.cd-slider li:nth-of-type(7) .image {
+  background: #1D293A url(../img/img-.jpg) no-repeat;
+   background-size: cover;
+}
+.cd-slider li:nth-of-type(8) .image {
+  background: #1D293A url(../img/photo.jpg) no-repeat;
+   background-size: cover;
+}
+.cd-slider li:nth-of-type(9) .image {
+  background: #1D293A url(../img/game.jpg) no-repeat;
+   background-size: cover;
+}
+
 .cd-slider li:nth-of-type(10) .image {
-  background-image: url(../img/ecstasy.jpg);
+  background: #1D293A url(../img/ecstasy.jpg) no-repeat;
+   background-size: cover;
 }
+
+
+
 .cd-slider .image {
   background-size: cover;
 }
@@ -167,6 +193,7 @@ Slider
   .cd-slider li.is-visible .cd-half-block.content,
   .cd-slider li.is-visible .cd-half-block.image {
     -webkit-transform: translateX(0%);
+    z-index: 3;
     -moz-transform: translateX(0%);
     -ms-transform: translateX(0%);
     -o-transform: translateX(0%);
@@ -291,11 +318,6 @@ Slider Navigation
   }
 }
 
-
-
-
-
-
 /*
 * For Tootltip and it's
 * animation. 
@@ -305,7 +327,6 @@ tooltip {
   position: relative;
   z-index: 999;
 }
-
 
 .tooltip-content {
   position: absolute;
@@ -372,4 +393,45 @@ tooltip {
 .event-content h3 {
     -webkit-animation-delay:0.3s;
     animation-delay:0.3s;
+}
+
+/* For events link */
+.event-content h3>a{
+  position: relative;
+  left: 0px;
+  margin-top: 10px;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-animation-delay:0.3s;
+  animation-delay:0.3s;
+  display: inline-block;
+  font-size: 150%;
+  color:#121E2F;
+  font-family: 'tpeb', 'Raleway','Sans';
+  box-shadow: 0px 0px 10px #121E2F;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s  ease-out;
+} 
+
+.event-content h3>a:hover {
+  color: #fff;
+  background: #121E2F;
+  left: 4px;
+}
+
+.evname{
+  display: inline-block;
+  padding: 14px;
+  color: white;
+  position: absolute;
+  bottom: 10%;
+  background: #000000;
+  z-index: 2;
+  left: 45%;
+  width: 10%;
+  font-family: Raleway;
+  right: auto;
+  font-weight: bolder;
 }
