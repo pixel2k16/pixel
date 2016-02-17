@@ -3,7 +3,7 @@
 		<h2> Contacts </h2>
 	</div>
 	<div class="row">
-		<div class="card-wrapper">
+		<div class="card-wrapper wow fadeInUp" data-wow-duration="0.5s">
 			<div class="card">
 				<div class="card-img suresh"></div>
 				<div class="card-details">
@@ -16,7 +16,7 @@
 				</div> <!-- Card details -->
 			</div><!-- Card -->
 		</div><!-- Card Wrapper -->
-		<div class="card-wrapper">
+		<div class="card-wrapper wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.3s">
 			<div class="card">
 				<div class="card-img naveen"></div>
 				<div class="card-details">
@@ -29,7 +29,7 @@
 				</div> <!-- Card details -->
 			</div><!-- Card -->
 		</div><!-- Card Wrapper -->
-		<div class="card-wrapper">
+		<div class="card-wrapper wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.7s">
 			<div class="card">
 				<div class="card-img ramana"></div>
 				<div class="card-details">
@@ -42,7 +42,7 @@
 				</div> <!-- Card details -->
 			</div><!-- Card -->
 		</div><!-- Card Wrapper -->
-		<div class="card-wrapper">
+		<div class="card-wrapper wow fadeInDown" data-wow-duration="0.5s"  data-wow-delay="0.5s">
 			<div class="card">
 				<div class="card-img surya"></div>
 				<div class="card-details">
