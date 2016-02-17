@@ -1,4 +1,4 @@
-  <div id="header" class="wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">
+  <div id="header" class="wow fadeInUp" data-wow-duration="0.7s">
     <input id="origin-input" class="controls" type="text"
         placeholder="Enter an origin location">
 
@@ -127,11 +127,11 @@ function initMap() {
     async defer></script>
 </div>
 <div class="address">
-  <img class="wow fadeInRight" data-wow-delay="1.5s" src="jntu-a-logo.jpg" alt="jntua logo" />
+  <img class="wow fadeInRight" data-wow-delay="1.5s" src="img/jntua-logo.png" alt="jntua logo" />
   <div class="section">
-    <h3 class="wow fadeInUp" data-wow-delay="1.5s">PIXEL- <span style="font-family:'sans-serif'" >2K16</span></h3>
-    <h3 class="wow fadeInUp" data-wow-delay="1.5s">Department of Computer Science and Engineering</h3>
-    <h3 class="wow fadeInUp" data-wow-delay="1.5s">JNTUA College of Engineering, Ananthapuramu</h3>
+    <h3 class="wow fadeInUp" data-wow-delay="1s">PIXEL- <span style="font-family:'sans-serif'" >2K16</span></h3>
+    <h3 class="wow fadeInUp" data-wow-delay="1s">Department of Computer Science and Engineering</h3>
+    <h3 class="wow fadeInUp" data-wow-delay="1s">JNTUA College of Engineering, Ananthapuramu</h3>
   </div>
   <div class="contacts wow fadeInLeft" data-wow-delay="1.5s">
     <h3>Contact:</h3>

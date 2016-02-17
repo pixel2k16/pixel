@@ -399,7 +399,7 @@ tooltip {
   left: 0px;
   margin-top: 10px;
   background: #fff;
-  padding: 5px;
+  padding: 0px 6px;
   border-radius: 5px;
   -webkit-animation-delay:0.3s;
   animation-delay:0.3s;

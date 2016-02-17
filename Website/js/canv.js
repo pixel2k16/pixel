@@ -65,8 +65,11 @@ function anim()
 	{
 	mouse_x=(cursor_x-x);
 	mouse_y=(cursor_y-y);
-	if(mouse_y > 130){
-		mouse_y= (mouse_y%50)+130; 
+
+	if(mouse_y < 0){
+		mouse_y= 0; 
+	}else if(mouse_y > 50){
+		mouse_y= 50; 
 	}
 	
 	context.fillRect(0,0,w,h);
