@@ -208,7 +208,6 @@
     padding:0px;
     margin:2px;
     height: 75vh;
-    width: 100vw;
     top: 0px;
     background: #fff;
 }
@@ -242,4 +241,3 @@
     left: 34%;
     margin-top: 2vh;
   }
-}

@@ -1,0 +1,114 @@
+.last-section{
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+	background: #819;
+	color: #fff;
+}
+
+.team-heading{
+	padding: 3vh;
+}
+
+.row{
+	width:80%;
+	margin: 0 auto;
+}
+
+.card-wrapper{
+	display: inline-block;
+	background: #FFF;
+	margin: 1%;
+}
+
+.card {
+	position: relative;
+	width: 380px;
+	height: 250px;
+	background: #819;
+	display: inline-block;
+	margin: 5px;
+	overflow: hidden;
+}
+
+.card-img.suresh{
+	background: #eee url('http://media.celebrity-pictures.ca/Celebrities/Anne-Hathaway/Anne-Hathaway-11-small.jpg') no-repeat;
+	background-size: cover;
+}
+.card-img.naveen{
+	background: #eee url('http://goodtoknow.media.ipcdigital.co.uk/111/00000cb5e/5556_orh100000w614/Anne-Hathaway.jpg') no-repeat;
+	background-size: cover;
+}
+.card-img.ramana{
+	background: #eee url('http://hdwallpaperia.com/wp-content/uploads/2013/11/Anne-Hathaway-Beautiful.jpg') no-repeat;
+	background-size: cover;
+}
+.card-img.surya{
+	background: #eee url('http://4hdwallpapers.com/wp-content/uploads/2013/05/Anne-Hathaway-Wallpapers.jpg') no-repeat;
+	background-size: cover;
+}
+.card-img{
+	width: 100%;
+	height: 88%;
+	transition: all .5s ease-in-out;
+	transform: perspective(800px) rotateX(-10deg);
+	transform-origin: top;
+}
+.card-details{
+	position: absolute;
+	top: 65%;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	color: #831;
+	transform: perspective(1500px) rotateX(45deg);
+	transition: all .5s ease-out;
+}
+
+
+.card-details .inner{
+	position: relative;
+	width: 80%;
+	text-align: left;
+	margin: 0 auto;
+	border-top: 2px solid silver;
+	padding-top: 1vh; 
+}
+
+.card-details > h2 {
+	color: black;
+	padding: 20px;
+}
+.card-details .inner > span{
+	position: relative;
+	top: 25px;
+	display: inline-block;
+	font-family: 'Raleway';
+	padding: 3%;
+	transition: top 0.5s;
+}
+
+
+.card-details .inner > span.ocp{
+	transition-delay: 0.2s
+}
+.card-details .inner > span.phn{
+	transition-delay: 0.3s
+}
+.card-details .inner > span.eml{
+	transition-delay: 0.4s	
+}
+
+.card:hover > .card-details{
+	color: green;
+	transform: perspective(0px) rotateX(0deg);
+	top: 0%;
+}
+
+.card:hover > .card-img{
+	transform:  perspective(700px) rotateX(-90deg);
+}
+.card:hover > .card-details .inner > span{
+	top: 0px;
+}
+

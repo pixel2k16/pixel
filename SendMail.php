@@ -40,8 +40,8 @@
 	// $mail->Username = 'pixel.jntua@gmail.com';
 	// $mail->Password = 'pixel.jntu@';
 
-	$mail->Username = 'noreply@pixel2k16.in';
-	$mail->Password = 'pixel.jntu@';
+	$mail->Username = 'pixelbc7';
+	$mail->Password = 'Ramsurya58$$';
 
 	$mail->isHTML(true);
 	// Set From Address. Usually as username by using setFrom(p1,p2)
@@ -50,6 +50,7 @@
 
 	// Set to address
 	$mail->addAddress('ramanareddysane@gmail.com','rma');
+	$mail->addAddress('surya.teja@outlook.in','surya');
 	// Set Reply adderss by using addReplyTo
 	$mail->addReplyTo('pixel.jntua@gmail.com','Team Pixel');
 

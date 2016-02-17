@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section, main {
 html{
 	width: 100%;
 	height: 100%;
+	overflow: hidd;
 }
 body {
 	line-height: 1;
@@ -59,10 +60,10 @@ table {
  
 /* Track */
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.0); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.0);
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background:#513131;
+    background: rgba(183, 90, 90, 0);
 }
  
 /* Handle */

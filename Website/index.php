@@ -36,6 +36,9 @@
 	<!-- For reach Us section -->
 	<link rel="stylesheet" type="text/css" href="css/reachUs.css">
 	
+	<!-- For lase section -->
+	<link rel="stylesheet" type="text/css" href="css/section5.css">
+    	
 	<script type="text/javascript" src="js/wow.min.js"></script>
 	<script>
 		wow = new WOW({
@@ -71,7 +74,7 @@
 		<li><a href="#section2"><span class="label">Events</span></a></li>
 		<li><a href="#section3"><span class="label">Gallery</span></a></li>
 		<li><a href="#section4"><span class="label">Reach Us</span></a></li>
-		<li><a href="#section5"><span class="label">Extras</span></a></li>
+		<li><a href="#section5"><span class="label">Contacts</span></a></li>
 	</ul>
 </nav><!-- .cd-vertical-nav -->
 
