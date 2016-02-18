@@ -29,7 +29,7 @@ jQuery(document).ready(function($){
     //smooth scroll to the second section
     scrollArrow.on('click', function(event){
     	event.preventDefault();
-        smoothScroll($(this.hash));
+        // smoothScroll($(this.hash));
     });
 
 	// open navigation if user clicks the .cd-nav-trigger - small devices only
@@ -64,7 +64,7 @@ jQuery(document).ready(function($){
         $('body,html').animate({'scrollTop':target.offset().top},300,function(){
         	clicked = false;
         });
-        target.addClass('present');
+        target.addClass('present').prev().addClass('prev');
 	}
 
 	$(document).on('keydown', function(event){
@@ -170,5 +170,4 @@ jQuery(document).ready(function($){
 		$(this).removeClass("wow zoomInDown animated");
 		$(this).attr("style","");
 	});
-
 });

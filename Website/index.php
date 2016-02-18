@@ -20,6 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="css/section1.css">
 	<link rel="stylesheet" type="text/css" href="css/linkstyles.css" />
 	<script type="text/javascript" src="js/video.js"></script>
+	<script type="text/javascript" src="js/section1.js"></script>
 
 	<!-- If you'd like to support IE8 -->  	
   	<!-- for events navigations	 -->

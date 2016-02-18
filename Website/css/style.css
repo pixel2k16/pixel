@@ -493,7 +493,7 @@ Content Sections - basic style
   bottom: 20px;
   width: 44px;
   height: 44px;
-  background: url(../img/darrow.svg) no-repeat center center;
+  background: url(../img/mouse.svg) no-repeat center center;
   background-size: cover;
   -webkit-animation: showdown 1s linear infinite;
   animation: showdown 1s linear infinite;

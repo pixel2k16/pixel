@@ -58,6 +58,11 @@ function init()
 	context=starfield.getContext('2d');
 	//context.lineCap='round';
 	context.fillStyle='rgb(0,2,0)';
+	// var background = new Image();
+	// background.src="http://www.zastavki.com/pictures/1920x1200/2011/Space_Space_planets_027475_.jpg";
+	// background.onload = function(){
+	// 	context.drawImage(background, 0 , 0 );
+	// };
 	context.strokeStyle='rgb(255,255,255)';
 	}
 
@@ -149,7 +154,7 @@ function key_manager(evt)
 			setTimeout(3000,release());
 			break;
 		case 13:
-			context.fillStyle='rgba(0,0,0,'+opacity+')';
+			// context.fillStyle='rgba(0,0,0,'+opacity+')';
 			break;
 		}
 	top.status='key='+((key<100)?'0':'')+((key<10)?'0':'')+key;
@@ -160,7 +165,7 @@ function release()
 	switch(key)
 		{
 		case 13:
-			context.fillStyle='rgb(0,0,0)';
+			// context.fillStyle='rgb(0,0,0)';
 			break;
 		}
 	}

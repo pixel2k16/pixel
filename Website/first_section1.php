@@ -84,12 +84,14 @@
  		data-wow-duration="1.5s">
 			<span style="position:relative;left:-1%">
 				<h3>March 19<sup>th</sup> &amp; 20<sup>th</sup>, 2016</h3>
-			</span><br>
-			<span style="position:relative;left:-1%"><h3>Registrations will open soon...</h3>
 			</span>
 	</div>
 </div>
 
+<div class="main-link-wrapper wow bounceIn" data-wow-duration="1.5s" data-wow-delay="0s">
+	<a href="#" class=" main-link register"> Register </a>
+	<a href="#" class=" main-link login"> Log in </a>
+</div>
 <script>
 	// For Demo purposes only (show hover effect on mobile devices)
 	[].slice.call( document.querySelectorAll('.grid a') ).forEach( function(el) {

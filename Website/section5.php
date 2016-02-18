@@ -9,7 +9,7 @@
 				<div class="card-details">
 					<h2>P. Suresh Babu </h2>
 					<div class="inner">
-						<span class="ocp">&#128100; Student Coordinator</span><br>
+						<span class="ocp">&#128100; Staff Coordinator</span><br>
 						<span class="phn">&#9742; 7382352503</span><br>
 						<span class="eml">&#9993; naveen_nnk9@yahoo.co.in</span><br>
 					</div>
@@ -35,7 +35,7 @@
 				<div class="card-details">
 					<h2> S. Ramana Reddy </h2>
 					<div class="inner">
-						<span class="ocp">&#128100; Staff Coordinator</span><br>
+						<span class="ocp">&#128100; Student Coordinator</span><br>
 						<span class="phn">&#9742; 9553703647</span><br>
 						<span class="eml">&#9993; ramanareddysane</span><br>
 					</div>

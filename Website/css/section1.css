@@ -178,6 +178,63 @@ sup {
 	margin-bottom: 20%;
 }
 
+/* For registration and log in button */
+
+.main-link-wrapper{
+	width: 100%;
+	position: absolute;
+	bottom: 10%;
+}
+
+.main-link{
+	background: #1D293A;
+	display: inline-block;
+	padding: 18px;
+	margin: 10px;
+	color: #fff;
+	position: relative;
+	top: 0px;
+	border-radius: 5px;
+	transform: rotate(0deg);
+	transition: all 0.4s ease;
+	-webkit-animation: wave 4s ease-in-out 0s infinite;
+	animation: wave 4s ease-in-out 0s infinite;
+}
+
+.main-link:hover{
+	color: #1D293A;
+	background: #fff; 
+	border-radius: 5px;
+}
+
+@keyframes wave{
+	0%{top:0px;transform: rotate(0deg);}
+	25%{top:-3px;transform: rotate(3deg);}
+	50%{top:0px;transform: rotate(0deg);}
+	75%{top:3px;transform: rotate(-3deg);}
+	100%{top:0px;transform: rotate(0deg);}
+}
+
+@-webkit-keyframes wave{
+	0%{top:0px;transform: rotate(0deg);}
+	25%{top:-3px;transform: rotate(3deg);}
+	50%{top:0px;transform: rotate(0deg);}
+	75%{top:3px;transform: rotate(-3deg);}
+	100%{top:0px;transform: rotate(0deg);}
+}
+
+
+.main-link.register{
+	right: 17%;
+}
+
+.main-link.login{
+	left: 14%;
+	animation-delay: 1s;
+}
+
+
+
 @media screen and (max-width: 720px){
 	.outer{
 		width: 100%;
