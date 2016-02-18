@@ -8,8 +8,18 @@ $(document).ready(function(){
 	});
 
 	// script for handling click events for log in button
-	$("a.main-link.login").click(function(event){
+	$("a.main-link.loginb").click(function(event){
 		event.preventDefault();
-		alert("log in");
+
+		// alert("afd");
+		$(".login-popup").show().removeClass(" animated slideOutRight ").addClass("animated slideInLeft");
 	});
+
+	$("a.login-close").click(function(event){
+		event.preventDefault();
+		// alert("afd");
+		$(".login-popup").removeClass("animated slideInLeft").addClass("animated slideOutRight");
+	});
+
+
 });

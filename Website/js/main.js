@@ -170,4 +170,5 @@ jQuery(document).ready(function($){
 		$(this).removeClass("wow zoomInDown animated");
 		$(this).attr("style","");
 	});
+
 });

@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
         <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/login.css" />

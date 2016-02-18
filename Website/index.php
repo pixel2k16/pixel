@@ -20,6 +20,9 @@
 	<link rel="stylesheet" type="text/css" href="css/section1.css">
 	<link rel="stylesheet" type="text/css" href="css/linkstyles.css" />
 	<script type="text/javascript" src="js/video.js"></script>
+
+	<!-- For log in pop-up -->
+	<link rel="stylesheet" type="text/css" href="css/login.css" />
 	<script type="text/javascript" src="js/section1.js"></script>
 
 	<!-- If you'd like to support IE8 -->  	
@@ -78,6 +81,8 @@
 		<li><a href="#section5"><span class="label">Contacts</span></a></li>
 	</ul>
 </nav><!-- .cd-vertical-nav -->
+
+<?php include_once('login-popup.php'); ?>
 
 <button class="cd-nav-trigger cd-image-replace">Open navigation<span aria-hidden="true"></span></button>
 
