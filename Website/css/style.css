@@ -556,3 +556,18 @@ no-js
   -o-transform: translateX(0);
   transform: translateX(0);
 }
+
+/* For displaying user name */
+/*#usr-name{
+  border-radius: 10px;
+  padding: 10px;
+  background: #000;
+  position: fixed;
+  color: #fff;
+  font-size: 1em;
+  top: 10px;
+  left: 10px;
+  z-index: 5;
+  display: inline-block;
+}
+*/

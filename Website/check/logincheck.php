@@ -13,24 +13,30 @@ if(!empty($_POST['pixelid'])  && !empty($_POST['password'])){
         while($row = $mysel->fetch_assoc()){
           $pixelid = $row["pixelid"];
           $password = $row["password"];
+          $name=$row["firstname"];
+
         }
 
-      if((strcasecmp($_POST['pixelid'], $pixelid) == 0) && $_POST['password']==$password){
+      if(strcasecmp($_POST['pixelid'],$pixelid) == 0 && strcasecmp($_POST['password'],$password) == 0){
         session_start();
         $_SESSION['pixelid']=$pixelid;
+        $_SESSION['usrname']=ucfirst(strtolower($name));
+
+        // echo $_SESSION['pixelid'];
         echo "success";
+    // header('Location: homelogged.php');
       }
-	  	else{
-	      echo "!Invalid details"; 
-	  }
-	}
-  else {
-    	echo "!Invalid details";
+      else{
+        echo "Invalid details";
+    }
   }
+      else {
+      echo "!Invalid details";
+      }
 
 }
 
 else{
-echo "!Fields could not be empty";
+ echo "!Fields could not be empty";
 }
 ?>

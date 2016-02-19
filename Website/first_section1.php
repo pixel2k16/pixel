@@ -88,10 +88,16 @@
 	</div>
 </div>
 
-<div class="main-link-wrapper wow bounceIn" data-wow-duration="1.5s" data-wow-delay="0s">
-	<a href="#" class=" main-link register"> Register </a>
-	<a href="#" class=" main-link loginb"> Log in </a>
-</div>
+<?php 
+	if(empty($username)){
+		?>
+			<div class="main-link-wrapper wow bounceIn" data-wow-duration="1.5s" data-wow-delay="0s">
+				<a href="#" class=" main-link register"> Register </a>
+				<a href="#" class=" main-link loginb"> Log in </a>
+			</div>
+		<?php
+	}
+?>
 <script>
 	// For Demo purposes only (show hover effect on mobile devices)
 	[].slice.call( document.querySelectorAll('.grid a') ).forEach( function(el) {

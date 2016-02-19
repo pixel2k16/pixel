@@ -90,11 +90,26 @@
 						url:"check/logincheck.php",
 						data: $(this).serialize()
 					}).done(function(result){
+						// alert(result);
 						if(result == "success"){
 							$("section.content").removeClass("animated slideInDown").addClass("animated slideOutDown");
 							$("#on-correct").fadeIn().addClass("animated slideInDown");
 							setTimeout(function(){
 								$(".login-popup").removeClass("animated slideInLeft").addClass("animated slideOutUp");
+								var nameStyles={ 'border-radius': '10px',
+												 'padding': '10px','background': '#722',
+												 'position': 'fixed',
+												 'color': '#fff',
+												 'font-size': '1em',
+												 'top': '10px',
+												 'left': '10px',
+												 'z-index': '5',
+												 'display': 'inline-block',
+												 'transform-origin':'top',
+												 'animation-delay':'1s'
+												};
+								$("<div id='usr-name'></div>").addClass("animated flipInX")
+								.css(nameStyles).html("Hi ramana").appendTo("body");
 							},1000);
 						}else {
 							if($("section.content").hasClass("shake")){

@@ -13,15 +13,16 @@ if(!empty($_POST['pixelid'])  && !empty($_POST['password'])){
         while($row = $mysel->fetch_assoc()){
           $pixelid = $row["pixelid"];
           $password = $row["password"];
+          $name=$row["firstname"];
 
         }
 
       if($_POST['pixelid']==$pixelid && $_POST['password']==$password){
         session_start();
         $_SESSION['pixelid']=$pixelid;
+        $_SESSION['usrname']=$name;
 
-
-          echo $_SESSION['pixelid'];
+        echo $_SESSION['pixelid'];
         echo "success";
 		header('Location: homelogged.php');
 
