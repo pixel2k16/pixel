@@ -1,7 +1,7 @@
 <?php
 	require_once('conf/mysql_init.php');
 
-	$name = $_POST['userid'];
+	$name = $_REQUEST['userid'];
 	// echo $mail ."<br>";
 	$q = "select pixelid from test_16 where pixelid = '$name'";
 	// echo "$q";

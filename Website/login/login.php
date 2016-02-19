@@ -14,7 +14,7 @@
 		<div class="login-container">
 			<a href="#" class="login-close"></a>
 			<section class="content">
-				<form  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+				<form id = "login-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
 					<!--Below mentioned 'Test' is for allowing space for animation-->
 					<h3 style="color: transparent;">Test</h3>
 					<span class="input input--kaede">
@@ -48,7 +48,6 @@
 		<script src="js/classie.js"></script>
 		
 		<script>
-			(function() {
 				// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
 				if (!String.prototype.trim) {
 					(function() {
@@ -73,6 +72,9 @@
 
 				function onInputFocus( ev ) {
 					classie.add( ev.target.parentNode, 'input--filled' );
+					if(ev.target.id == "input-1"){
+						alert("email");
+					}
 				}
 
 				function onInputBlur( ev ) {
@@ -80,7 +82,7 @@
 					if( inp.value.trim() === '' ) {
 						classie.remove( ev.target.parentNode, 'input--filled' );
 					}else if(inp.id == "input-1"){
-
+							alert("Adf");
 							$.ajax({method:"POST",
 									url:"pidcheck.php",
 									data:{userid: inp.value }
@@ -95,7 +97,11 @@
 									});
 					}
 				}
-			})();
+
+				$("#login-form").click(function(event){
+					event.preventDefault();
+					alert("adf");
+				});
 		</script>
     </body>
 </html>

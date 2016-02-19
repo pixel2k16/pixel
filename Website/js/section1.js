@@ -10,15 +10,16 @@ $(document).ready(function(){
 	// script for handling click events for log in button
 	$("a.main-link.loginb").click(function(event){
 		event.preventDefault();
-
 		// alert("afd");
-		$(".login-popup").show().removeClass(" animated slideOutRight ").addClass("animated slideInLeft");
+		$("#on-correct").fadeOut();
+		$("section.content").removeClass().addClass("content animated fadeIn");
+		$(".login-popup").show().removeClass().addClass(" login-popup animated slideInLeft");
 	});
 
 	$("a.login-close").click(function(event){
 		event.preventDefault();
 		// alert("afd");
-		$(".login-popup").removeClass("animated slideInLeft").addClass("animated slideOutRight");
+		$(".login-popup").removeClass().addClass(" login-popup animated slideOutRight");
 	});
 
 

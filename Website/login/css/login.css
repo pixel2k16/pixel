@@ -112,6 +112,10 @@ a {
 	text-align: center;
 }
 
+#input-submit{
+	cursor:pointer;
+}
+
 .input {
 	position: relative;
 	z-index: 1;
@@ -270,3 +274,9 @@ a {
 		font-size: 50.25%;;
 	}
 }
+
+
+#on-correct{
+	color: red;
+}
+

@@ -6,7 +6,7 @@
 	position: fixed;
 	top: 0px;
 	left: 0px;
-	z-index: 5;
+	z-index: 12;
 	width: 100%;
 	height: 100vh;
 	display: none;
@@ -38,12 +38,15 @@
 }
 
 .login-close{
-	width: 50px;
-	height: 50px;
-	background: #817;
+	width: 40px;
+	height: 40px;
 	display: inline-block;
 	position: absolute;
-	right: 10%;
+	right: 0%;
+	cursor: pointer;
+	z-index: 12;
+	background: url(../img/close.png) no-repeat;
+	background-size: contain;
 }
 
 /* For log in section */
@@ -98,6 +101,7 @@
 	color: white;
 	padding: 1em;
 	text-align: center;
+	cursor: pointer;
 }
 #input-forgot .input-login {
 	background-color: #FFFFFF;
@@ -105,6 +109,10 @@
 	color: #009688;
 	padding: 1em;
 	text-align: center;
+}
+
+#input-submit{
+	cursor:pointer;
 }
 
 .input {
@@ -232,6 +240,8 @@
 	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
 
+
+
 .input__label-content--kaede {
 	padding: 1.0em 0;
 }
@@ -266,3 +276,21 @@
 		font-size: 50.25%;;
 	}
 }
+
+#on-correct{
+	color: #54A954;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: 1;
+	border: 2px solid;
+	font-size: 250%;
+	padding: 25% 0px 0px 0px;
+}
+
+arge;
+}
+

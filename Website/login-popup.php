@@ -2,11 +2,11 @@
 	<div class="login-container">
 		<a href="#" class="login-close"></a>
 		<section class="content">
-			<form  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+			<form id="login-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
 				<!--Below mentioned 'Test' is for allowing space for animation-->
 				<h3 style="color: transparent;">Test</h3>
 				<span class="input input--kaede">
-					<input class="input__field input__field--kaede" name="username" required="required" type="text" id="input-1" maxlength="30" />
+					<input class="input__field input__field--kaede" name="pixelid" required="required" type="text" id="input-1" maxlength="30" />
 					<label class="input__label input__label--kaede" for="input-1">
 						<span class="input__label-content input__label-content--kaede">Enter PixelID</span>
 					</label>
@@ -23,7 +23,7 @@
 					<label class="input__label input__label--kaede">
 						<a href="#"><span class="input__label-content input__label-content--kaede">Forgot Password</span></a>
 					</label>
-					<input class="input__field input__field--kaede" type="submit" value="Login"/>
+					<input class="input__field input__field--kaede" id="input-submit" type="submit" value="Login"/>
 				</span>
 				<span class="login">
 					Not a member yet ?
@@ -31,11 +31,13 @@
 				</span>
 			</form>
 		</section>
+		<div id="on-correct">You're In</div>
 	</div><!-- /container -->
 </div> <!-- /Pop up -->
 <script src="js/classie.js"></script>
 <script>
 		// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+		$("#on-correct").fadeOut();
 		if (!String.prototype.trim) {
 			(function() {
 				// Make sure we trim BOM and NBSP
@@ -81,4 +83,26 @@
 							});
 			}
 		}
+		$("#login-form").submit(function(event){
+					event.preventDefault();
+					$.ajax({
+						method:"POST",
+						url:"check/logincheck.php",
+						data: $(this).serialize()
+					}).done(function(result){
+						if(result == "success"){
+							$("section.content").removeClass("animated slideInDown").addClass("animated slideOutDown");
+							$("#on-correct").fadeIn().addClass("animated slideInDown");
+							setTimeout(function(){
+								$(".login-popup").removeClass("animated slideInLeft").addClass("animated slideOutUp");
+							},1000);
+						}else {
+							if($("section.content").hasClass("shake")){
+								$("section.content").removeClass().addClass("content animated wobble");
+							}else{
+								$("section.content").removeClass().addClass("content animated shake");
+							}
+						}
+					});
+				});
 </script>
