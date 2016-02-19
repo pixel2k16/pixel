@@ -55,7 +55,5 @@
 				</div> <!-- Card details -->
 			</div><!-- Card -->
 		</div><!-- Card Wrapper -->
-
-		
 	</div>
 </div>

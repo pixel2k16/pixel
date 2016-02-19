@@ -22,5 +22,10 @@ $(document).ready(function(){
 		$(".login-popup").removeClass().addClass(" login-popup animated slideOutRight");
 	});
 
+	$("a.logout").click(function(){
+		// $(this).cs
+		 window.location.href = 'logout.php'		
+	});
+
 
 });

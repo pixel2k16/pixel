@@ -96,11 +96,11 @@
 <button class="cd-nav-trigger cd-image-replace">Open navigation<span aria-hidden="true"></span></button>
 
 <!-- Hamberger menu -->
-<div class="hmenu">
+<!-- <div class="hmenu">
 	<div class="line wow jello" data-wow-delay="1.5s"> </div>
 	<div class="line wow rollIn" data-wow-delay="1s"></div>
 	<div class="line wow jello"  data-wow-delay="1.5s"></div>
-</div>
+</div> -->
 
 <section id="section1" class="cd-section present">
 	<div class="content-wrapper" id ="section1Container">
@@ -132,30 +132,6 @@
 		<?php include_once("section5.php"); ?>
 	</div>
 </section>
-
-<?php 
-	if(!empty($username)){
-		?>
-		<script type="text/javascript">
-			var nameStyles={ 'border-radius': '10px',
-							 'padding': '10px','background': '#722',
-							 'position': 'fixed',
-							 'color': '#fff',
-							 'font-size': '1em',
-							 'top': '10px',
-							 'left': '10px',
-							 'z-index': '5',
-							 'display': 'inline-block',
-							 'transform-origin':'top',
-							 'animation-delay':'1s'
-							};
-			// alert(" "+<?php  echo "'$username'"; ?>);
-			$("<div id='usr-name'></div>").addClass("animated flipInX")
-			.css(nameStyles).html("hello "+<?php  echo "'$username'"; ?>).appendTo("body");
-		</script>
-<?php
-	}
-?>
 
 <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->

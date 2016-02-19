@@ -183,9 +183,8 @@ Vertical navigation
 
   .cd-vertical-nav {/* reset style */
     right: 0;
-    top: 0;
+    top: 25vh;
     bottom: auto;
-    height: 100vh;
     width: 90px;
     max-width: none;
     max-height: none;

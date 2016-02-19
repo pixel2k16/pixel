@@ -98,6 +98,59 @@
 		<?php
 	}
 ?>
+
+<?php 
+	if(!empty($username)){
+		?>
+		<script type="text/javascript">
+			var nameStyles={ 'border-radius': '10px',
+							 'padding': '10px','background': '#722',
+							 'position': 'fixed',
+							 'color': '#fff',
+							 'font-size': '1em',
+							 'top': '10px',
+							 'left': '10px',
+							 'z-index': '5',
+							 'display': 'inline-block',
+							 'transform-origin':'top',
+							 'animation-delay':'1s'
+							};
+			// alert(" "+<?php  echo "'$username'"; ?>);
+			$("<div id='usr-name'></div>").addClass("animated flipInX")
+			.css(nameStyles).html("hello "+<?php  echo "'$username'"; ?>).appendTo("#section1Container");
+		</script>
+<?php
+	}
+	
+	if(!empty($username)){
+		?>
+		<a class="logout" href="#">Log out</a>
+		<style type="text/css">
+			/* For log out button */
+			.logout{
+				display: inline-block;
+				position: fixed;
+				top: 1vh;
+				right: 3%;
+				color: #FBFBFB;
+				background: #071325;
+				padding: 2vh;
+				box-shadow: 0px 0px 1px black;
+				transition: all 0.5s;
+				z-index: 4;
+			}
+
+			.logout:hover{
+				color: #100C0C;
+				background: #fff;
+				box-shadow: 0px 10px 10px black;
+				top: 4vh;
+			}
+		</style>
+		<?php
+	}
+?>
+
 <script>
 	// For Demo purposes only (show hover effect on mobile devices)
 	[].slice.call( document.querySelectorAll('.grid a') ).forEach( function(el) {

@@ -85,6 +85,8 @@
 		}
 		$("#login-form").submit(function(event){
 					event.preventDefault();
+					// var pid = $(this);
+					// alert(pid);
 					$.ajax({
 						method:"POST",
 						url:"check/logincheck.php",
@@ -94,6 +96,7 @@
 						if(result == "success"){
 							$("section.content").removeClass("animated slideInDown").addClass("animated slideOutDown");
 							$("#on-correct").fadeIn().addClass("animated slideInDown");
+							$(".main-link-wrapper").html("").hide();
 							setTimeout(function(){
 								$(".login-popup").removeClass("animated slideInLeft").addClass("animated slideOutUp");
 								var nameStyles={ 'border-radius': '10px',
@@ -108,9 +111,11 @@
 												 'transform-origin':'top',
 												 'animation-delay':'1s'
 												};
+
 								$("<div id='usr-name'></div>").addClass("animated flipInX")
-								.css(nameStyles).html("Hi ramana").appendTo("body");
-							},1000);
+								.css(nameStyles).html("Hi ").appendTo("body");
+								location.reload();
+							},2000);
 						}else {
 							if($("section.content").hasClass("shake")){
 								$("section.content").removeClass().addClass("content animated wobble");
