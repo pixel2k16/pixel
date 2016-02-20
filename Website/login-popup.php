@@ -21,7 +21,7 @@
 			
 				<span class="input input--kaede">
 					<label class="input__label input__label--kaede">
-						<a href="#"><span class="input__label-content input__label-content--kaede">Forgot Password</span></a>
+						<a href="#" class="frgt-pswd"><span class="input__label-content input__label-content--kaede">Forgot Password</span></a>
 					</label>
 					<input class="input__field input__field--kaede" id="input-submit" type="submit" value="Login"/>
 				</span>
@@ -30,8 +30,23 @@
 					<a href="#" class="to_register">Join us</a>
 				</span>
 			</form>
+			<form id="forgot-form" action="/pixel/Website/register/forgot.php" method="POST">
+				<!--Below mentioned 'Test' is for allowing space for animation-->
+				<h3 style="color: transparent;">Test</h3>
+				<span class="input input--kaede">
+					<input class="input__field input__field--kaede" name="pixelid" required="required" type="text" id="input-3" maxlength="30">
+					<label class="input__label input__label--kaede" for="input-3">
+						<span class="input__label-content input__label-content--kaede">PixelID/MailID</span>
+					</label>
+				</span>
+				<span id="input-forgot">
+						<input class="input-submit gtpswd" type="submit" value="Get Password">							
+						<a class="input-login" href="login.php">Login here</a>						
+				</span>
+			</form>
 		</section>
 		<div id="on-correct">You're In</div>
+		<div id="on-sent"> An email was sent.</div>
 	</div><!-- /container -->
 </div> <!-- /Pop up -->
 <script src="js/classie.js"></script>

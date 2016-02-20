@@ -22,8 +22,57 @@ $(document).ready(function(){
 		$(".login-popup").removeClass().addClass(" login-popup animated slideOutRight");
 	});
 
+	$(".to_register").click(function(event){
+		event.preventDefault();
+		alert("Join Us");
+	});
+
+	$(".frgt-pswd").click(function(event){
+		event.preventDefault();
+		// alert("Forgot");
+		$("#login-form").removeClass().addClass("animated slideOutRight").fadeOut(function(){
+			$("#forgot-form").show().removeClass().addClass("animated slideInLeft");
+		});
+	});
+
+	
+	$(".input-login").click(function(event){
+		event.preventDefault();
+		// alert("Inp log in");
+		$("#forgot-form").removeClass().addClass("animated slideOutRight").fadeOut(function(){
+			$("#login-form").show().removeClass().addClass("animated slideInLeft");
+		});
+			
+
+	});
+
+
+	$("#forgot-form").submit(function(event){
+		event.preventDefault();
+		// alert($(this).serialize());
+		$.ajax({
+			method: "POST",
+			url: "check/getpswd.php",
+			data: $(this).serialize()
+			}).done(function(result){
+				// alert(result);
+				if(result == "sent"){
+					$("#on-sent").show().removeClass().addClass('animated slideInDown');
+					$("#forgot-form").removeClass().addClass("animated slideOutRight");
+					setTimeout(function(){
+						$("#forgot-form").hide();
+						$("#on-sent").show().append("Now try again.").removeClass().addClass('animated slideOutUp').hide();
+						$("#login-form").show().removeClass().addClass("animated slideInLeft");
+					},3000);
+				}else if (result == "notsent"){
+					alert("mail not sent. Try again or contact us. :)");
+				}
+			});
+
+	});
+
+
 	$("a.logout").click(function(){
-		// $(this).cs
 		 window.location.href = 'logout.php'		
 	});
 

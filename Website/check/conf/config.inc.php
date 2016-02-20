@@ -26,7 +26,11 @@
 	$headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
 	$headers .= 'From: <'.$from_mail.'>' . "\r\n";
 
-	mail($tomail, $subject, $body, $headers);
+	if(mail($tomail, $subject, $body, $headers)){
+		echo "yes";
+	}else {
+		echo "No";
+	}
 	}
 
 ?>

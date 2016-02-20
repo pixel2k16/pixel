@@ -21,6 +21,7 @@
 	top: 20%;
 	width: 80%;
 	max-width: 750px;
+	transition: he 1s ease;
 }
 
 .content {
@@ -102,6 +103,7 @@
 	padding: 1em;
 	text-align: center;
 	cursor: pointer;
+	font-size: 100%;
 }
 #input-forgot .input-login {
 	background-color: #FFFFFF;
@@ -291,6 +293,26 @@
 	padding: 25% 0px 0px 0px;
 }
 
-arge;
+#on-sent{
+	display: none;
+	color: #54A954;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: 1;
+	border: 2px solid;
+	font-size: 200%;
+	padding: 19% 20%;
 }
 
+
+#login-form{
+}
+
+#forgot-form{
+	 display: none;
+
+}

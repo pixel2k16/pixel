@@ -50,6 +50,8 @@
 	padding: 1em;
 	text-align: center;
 }
+
+input.input-submit {}
 #input-forgot .input-login {
 	background-color: #FFFFFF;
 	border: none;
