@@ -12,7 +12,6 @@
 							And to innovate your academic focus.</h3>
 						<h3>Get a great experience as your innovation, knowledge <br>
 							and aptitude will be evaluated by an exceptional judging panel.</h3>
-						<h3><a href="#">Register</a></h3>
 					</div>
 				</div> <!-- .cd-half-block.content -->
 			</li>
@@ -25,7 +24,6 @@
 						<h2>DIG 'D' BUG</h2>
 						<h3>Have a great Code walkthrough Elate<br>
 							 your jazz and find the flaw...</h3>
-						<h3><a href="#">Register</a></h3>
 					</div>
 				</div> <!-- .cd-half-block.content -->
 			</li>
@@ -40,7 +38,6 @@
 						<h2>CODE MARATHON</h2>
 						<h3>to fulfil your zest…<br>
 							So, get ready to invade the code world.</h3>
-						<h3><a href="#">Register</a></h3>
 					</div>
 				</div> <!-- .cd-half-block.content -->
 			</li>
@@ -53,7 +50,6 @@
 						<h2>ENIGMA</h2>
 						<h3>An excellent event to thrill you <br>
 						 and to enhance your thinking power.</h3>
-						<h3><a href="#">Register</a></h3>
 					</div>
 				</div> <!-- .cd-half-block.content -->
 			</li>
@@ -67,7 +63,6 @@
 						<h3>Empowers students with a new understanding of what has been, 
 							what is now and what can be in the technical field.</h3>
 						<h3>Participate, test your knowledge and learn new things.</h3>
-						<h3><a href="#">Register</a></h3>
 					</div>
 				</div> <!-- .cd-half-block.content -->
 			</li>
@@ -81,7 +76,6 @@
 						<h3> the youth by providing them a massive platform to prove their worth,<br>
 							giving them a pragmatic exposure to the real world challenge.</h3>
 						<h3>Apply the creativity to your style and make it aesthetically pleasing…</h3>
-						<h3><a href="#">Register</a></h3>
 					</div>
 				</div> <!-- .cd-half-block.content -->
 			</li>
@@ -90,11 +84,10 @@
 				<div class="cd-half-block content light-bg">
 					<div class="event-content">
 						<h3>“The purpose of Visualisation is insight not pictures”<br>
-							Following the quote, We are here to give you a vivacious platform to</h3>
-						<h3>show case your ability to put forward your views with our </h3>
+							Following the quote, We are here to give you a vivacious platform </h3>
+						<h3>to show case your ability to put forward your views with our </h3>
 						<h2>SKETCH IT OUT</h2>
 						<h3>So, bring out your insights with a vibrant visual presentation.<br> And have a great discussion with experts.</h3>
-						<h3><a href="#">Register</a></h3>
 					</div>
 				</div> <!-- .cd-half-block.content -->
 			</li>
@@ -107,7 +100,6 @@
 						 Fotographia A platform to exhibit your excellence and supremacy.</h3>
 						<h3>So, hurry up folks, Pick your camera <br>
 						 to encounter the essence of excitement. </h3>
-						<h3><a href="#">Register</a></h3>
 					</div>
 				</div> <!-- .cd-half-block.content -->
 			</li>

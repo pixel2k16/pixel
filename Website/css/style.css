@@ -445,7 +445,7 @@ Content Sections - basic style
   transition: top 1s ease-in-out;
 }
 .cd-section:nth-of-type(even) {
-  background-color: #2E3031;
+  background-color: #fff;
 }
 .cd-section > div {/* vertically align <div> inside <section> */
   display: table-cell;

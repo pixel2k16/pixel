@@ -384,6 +384,7 @@ tooltip {
 
 .event-content{
   line-height: 1.9;
+  font-family: 'Raleway','sans-serif';
 }
 .event-content h2 {
     -webkit-animation-delay:0.2s;
