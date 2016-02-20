@@ -4,7 +4,7 @@ $(document).ready(function(){
 	$("a.main-link.register").click(function(event){
 		event.preventDefault();
 		// alert("register");
-		// window.location.href="http://www.google.com";
+		 window.location.href="/pixel/Website/register";
 	});
 
 	// script for handling click events for log in button

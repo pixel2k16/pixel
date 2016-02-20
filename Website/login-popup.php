@@ -99,8 +99,8 @@
 							$(".main-link-wrapper").html("").hide();
 							setTimeout(function(){
 								$(".login-popup").removeClass("animated slideInLeft").addClass("animated slideOutUp");
-								var nameStyles={ 'border-radius': '10px',
-												 'padding': '10px','background': '#722',
+								var nameStyles={ 'border-radius': '5px',
+												 'padding': '10px','background': 'rgb(7, 19, 37)',
 												 'position': 'fixed',
 												 'color': '#fff',
 												 'font-size': '1em',

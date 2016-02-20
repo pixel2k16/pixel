@@ -92,7 +92,7 @@
 	if(empty($username)){
 		?>
 			<div class="main-link-wrapper wow bounceIn" data-wow-duration="1.5s" data-wow-delay="0s">
-				<a href="#" class=" main-link register"> Register </a>
+				<a href="/register/" class=" main-link register"> Register </a>
 				<a href="#" class=" main-link loginb"> Log in </a>
 			</div>
 		<?php
@@ -103,8 +103,8 @@
 	if(!empty($username)){
 		?>
 		<script type="text/javascript">
-			var nameStyles={ 'border-radius': '10px',
-							 'padding': '10px','background': '#722',
+			var nameStyles={ 'border-radius': '5px',
+							 'padding': '10px','background': 'rgb(7, 19, 37)',
 							 'position': 'fixed',
 							 'color': '#fff',
 							 'font-size': '1em',
