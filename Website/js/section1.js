@@ -24,7 +24,9 @@ $(document).ready(function(){
 
 	$(".to_register").click(function(event){
 		event.preventDefault();
-		alert("Join Us");
+		// alert("Join Us");
+		window.location.href="/pixel/Website/register";
+
 	});
 
 	$(".frgt-pswd").click(function(event){
@@ -50,6 +52,8 @@ $(document).ready(function(){
 	$("#forgot-form").submit(function(event){
 		event.preventDefault();
 		// alert($(this).serialize());
+		var submitBtn = $(this).find("input[type='submit']");
+		submitBtn.val("Right away..");
 		$.ajax({
 			method: "POST",
 			url: "check/getpswd.php",
@@ -57,15 +61,23 @@ $(document).ready(function(){
 			}).done(function(result){
 				// alert(result);
 				if(result == "sent"){
+					submitBtn.val("Got it");
 					$("#on-sent").show().removeClass().addClass('animated slideInDown');
 					$("#forgot-form").removeClass().addClass("animated slideOutRight");
 					setTimeout(function(){
+						submitBtn.val("Get Password");
 						$("#forgot-form").hide();
-						$("#on-sent").show().append("Now try again.").removeClass().addClass('animated slideOutUp').hide();
+						$("#on-sent").show().append("Now try again.").removeClass().addClass('animated slideOutUp');
 						$("#login-form").show().removeClass().addClass("animated slideInLeft");
 					},3000);
 				}else if (result == "notsent"){
 					alert("mail not sent. Try again or contact us. :)");
+				}else{
+					// alert("adf");
+					submitBtn.val("Try again");
+					setTimeout(function(){
+						submitBtn.val("Get Password");
+					},1000)
 				}
 			});
 
