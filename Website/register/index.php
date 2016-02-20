@@ -15,16 +15,34 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/set1.css" />
+		<link rel="stylesheet" type="text/css" href="../css/animate.css">
+
+
+		<script type="text/javascript" src="../js/wow.min.js"></script>
+		<script>
+			wow = new WOW({
+		      boxClass:'wow',            // default
+		      animateClass:'animated',   // default   
+		      offset: 0,                 // default
+		      mobile: true,              // default
+	          live:false                 // default
+	       	})
+	 		wow.init();
+ 	</script>
+ 	<style type="text/css">
+ 	::-webkit-scrollbar  {display: none;}
+ 	</style>
     </head>
     <body>
 		<div class="bcg">
-					<center><h1>Registration Page</h1></center>
+		<img class="pilogo wow fadeInDown" data-wow-delay="2s" style="display: none;" src="img/pixel.png" />
+			<center><h1 class="wow slideInRight" data-wow-delay="2s">Registration</h1></center>
 		</div>
 		<div class="container">
-			<section class="content">
+			<section class="content wow fadeInUp" data-wow-delay="2s" style="display: none;">
 				<form id="reg-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
 					<!--Below mentioned 'Test' is for allowing space for animation-->
-					<h3 style="color: transparent;">Registration Page</h3>
+					<h3  style="color: transparent;">Registration</h3>
 					<span class="input input--kaede">
 						<input class="input__field input__field--kaede" type="text" name="username" required="required" id="input-1" maxlength="30"/>
 						<label class="input__label input__label--kaede" for="input-1">
@@ -86,6 +104,9 @@
 		</div><!-- /container -->
 		<script src="js/classie.js"></script>
 		<script>
+			//show registraion form and logo
+			$(".pilogo").removeAttr("style");
+			$(".content").removeAttr("style");
 			// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
 			if (!String.prototype.trim) {
 				(function() {

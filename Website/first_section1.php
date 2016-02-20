@@ -91,7 +91,7 @@
 <?php 
 	if(empty($username)){
 		?>
-			<div class="main-link-wrapper wow bounceIn" data-wow-duration="1.5s" data-wow-delay="0s">
+			<div class="main-link-wrapper wow bounceIn" data-wow-duration="1.5s" data-wow-delay="10s">
 				<a href="/register/" class=" main-link register"> Register </a>
 				<a href="#" class=" main-link loginb"> Log in </a>
 			</div>
