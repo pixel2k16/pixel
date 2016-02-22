@@ -9,7 +9,7 @@
 </div>
 
 <div id="my">
-	<canvas id="starfield"  style="position:absolute;top:0px;left:0px;width:100%;height:100%;"></canvas>	
+	<canvas id="starfield"  style="position:absolute;top:0px;left:0px;width:100%;height:100%;background: #000;"></canvas>	
 </div>
 <!-- This is for pop up video -->
 <div class="teaser">

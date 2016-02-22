@@ -132,6 +132,14 @@
 								location.reload();
 							},2000);
 						}else {
+							var loginbtn = $("#login-form").find("input[type = 'submit']");
+							// alert(loginbtn);
+							loginbtn.css("color","red");
+							loginbtn.attr("value","Wrong Password");
+							setTimeout(function(){ 
+								loginbtn.css("color","initial");
+								loginbtn.attr("value","Login");
+							 },2000);
 							if($("section.content").hasClass("shake")){
 								$("section.content").removeClass().addClass("content animated wobble");
 							}else{

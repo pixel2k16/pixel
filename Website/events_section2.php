@@ -73,8 +73,8 @@
 						<h2>CORTOFLICKS</h2>
 						<h3>A classic first stage for the new film makers like you to reach the <br>
 							audience. Our event inculcates and channelizes the exuberance of</h3>
-						<h3> the youth by providing them a massive platform to prove their worth,<br>
-							giving them a pragmatic exposure to the real world challenge.</h3>
+						<h3> the youth by providing them a massive platform to prove their <br>
+							worth, giving them a pragmatic exposure to the real world challenge.</h3>
 						<h3>Apply the creativity to your style and make it aesthetically pleasing…</h3>
 					</div>
 				</div> <!-- .cd-half-block.content -->

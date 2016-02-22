@@ -26,8 +26,8 @@
 	* to set encryption ssl or ttl: SMTPAuth value is 'ssl' or 'tls'
 	* Whether to use SMTP authentication or not: SMTPAuth value is true or false
 	*/
-	$mail->Host = 'mail.pixel2k16.in';
-	$mail->Port = 465;
+	$mail->Host = 'smtp.gmail.com';
+	$mail->Port = 587;
 	$mail->SMTPSecure = 'tls';
 	$mail->SMTPAuth = true;
 
@@ -37,11 +37,11 @@
 	* Password:'yoursecret';
 	*/
 
-	// $mail->Username = 'pixel.jntua@gmail.com';
-	// $mail->Password = 'pixel.jntu@';
+	$mail->Username = 'ramanareddysane20@gmail.com';
+	$mail->Password = 'Company@123.';
 
-	$mail->Username = 'pixelbc7';
-	$mail->Password = 'Ramsurya58$$';
+	// $mail->Username = 'pixelbc7';
+	// $mail->Password = 'Ramsurya58$$';
 
 	$mail->isHTML(true);
 	// Set From Address. Usually as username by using setFrom(p1,p2)
@@ -49,8 +49,8 @@
 	$mail->setFrom('pixel.jntua@gmail.com','Team Pixel');
 
 	// Set to address
-	$mail->addAddress('ramanareddysane@gmail.com','rma');
-	$mail->addAddress('surya.teja@outlook.in','surya');
+	$mail->addAddress('ramanareddysane@gmail.com','ramana');
+	$mail->addAddress('praveen.kadimi534@gmail.com','Praveen');
 	// Set Reply adderss by using addReplyTo
 	$mail->addReplyTo('pixel.jntua@gmail.com','Team Pixel');
 

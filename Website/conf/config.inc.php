@@ -2,7 +2,7 @@
 	define('DB_HOST', 'localhost');
     define('DB_USER', 'root');
     define('DB_PASSWORD', '');
-    define('DB_DATABASE', 'pixel_test');
+    define('DB_DATABASE', 'pixelbc7_pixel');
 	//Function to sanitize values received from the form. Prevents SQL injection
 	function clean($str) {
 		$str = @trim($str);

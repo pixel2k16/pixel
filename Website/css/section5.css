@@ -32,11 +32,11 @@
 }
 
 .card-img.suresh{
-	background: #eee url('http://media.celebrity-pictures.ca/Celebrities/Anne-Hathaway/Anne-Hathaway-11-small.jpg') no-repeat;
+	background: #eee url('../img/suresh.jpg') no-repeat;
 	background-size: cover;
 }
 .card-img.naveen{
-	background: #eee url('http://goodtoknow.media.ipcdigital.co.uk/111/00000cb5e/5556_orh100000w614/Anne-Hathaway.jpg') no-repeat;
+	background: #eee url('../img/naveen.jpg') no-repeat;
 	background-size: cover;
 }
 .card-img.ramana{
@@ -45,6 +45,10 @@
 }
 .card-img.surya{
 	background: url(../img/manju.jpg);
+	background-size: cover;
+}
+.card-img.hod{
+	background: url(../img/vasu.png);
 	background-size: cover;
 }
 .card-img{

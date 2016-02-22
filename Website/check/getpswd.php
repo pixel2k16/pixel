@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
 		$headers .= 'From: <support@pixelcse.org>' . "\r\n";
 
-		$result=mysql_query("select * from test_16 where pixelid='$pixelid' OR mailid='$pixelid'",$con);
+		$result=mysql_query("select * from registered where pixelid='$pixelid' OR mailid='$pixelid'",$con);
 		while($row=mysql_fetch_array($result)){
 			if(mysql_num_rows($result)==0){
 				$note=1;

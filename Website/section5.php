@@ -5,7 +5,7 @@
 	<div class="row">
 		<div class="card-wrapper wow fadeInDown" data-wow-duration="0.5s"  data-wow-delay="0.5s">
 			<div class="card">
-				<div class="card-img surya"></div>
+				<div class="card-img hod"></div>
 				<div class="card-details">
 					<h2>Dr. S.Vasundra</h2>
 					<div class="inner">

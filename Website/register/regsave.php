@@ -3,7 +3,7 @@
 if(!empty($_POST['username']) && !empty($_POST['emailid'])&& !empty($_POST['pass1'])&& !empty($_POST['pass2']) && !empty($_POST['contactno']) && !empty($_POST['colgname']) ){
   if($_POST['pass1']==$_POST['pass2'])
   {
-  $myconn= new mysqli("localhost","root","","pixel_test");
+  $myconn= new mysqli("localhost","root","","pixelbc7_pixel");
 
       if($myconn->connect_errno){
         die("connection error");
@@ -13,11 +13,11 @@ if(!empty($_POST['username']) && !empty($_POST['emailid'])&& !empty($_POST['pass
 			  <span style="color:red"><center>!Invalid EmailID</center></span><?php
 			}
       else {
-          $mysel = $myconn->query("select * from test_16 where mailid='".$_POST['emailid']."'; ");
+          $mysel = $myconn->query("select * from registered where mailid='".$_POST['emailid']."'; ");
           if($mysel->num_rows>0) {
               echo "!Email-id already exists";
           } else {
-              $mysel = $myconn->query("select count( * ) as TOT FROM test_16");
+              $mysel = $myconn->query("select count( * ) as TOT FROM registered");
               if($mysel->num_rows>0){
                 while($row = $mysel->fetch_assoc()){
                   $tot=$row['TOT'];
@@ -28,7 +28,7 @@ if(!empty($_POST['username']) && !empty($_POST['emailid'])&& !empty($_POST['pass
            			$tot = 1;
            		}
               $pixelid="PID".str_pad($tot+1, 3, "0", STR_PAD_LEFT);
-             $quer = "insert into test_16 VALUES('".$_POST['username']."','$pixelid','".$_POST['pass1']."','".$_POST['emailid']."','".$_POST['contactno']."','".$_POST['colgname']."','0');";
+             $quer = "insert into registered VALUES('".$_POST['username']."','$pixelid','".$_POST['pass1']."','".$_POST['emailid']."','".$_POST['contactno']."','".$_POST['colgname']."');";
                 // echo "$quer";
                 $mysql = $myconn->query($quer);
                 if($mysql == true){

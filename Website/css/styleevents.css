@@ -92,7 +92,7 @@ Slider
 }
 
 .cd-slider li:nth-of-type(7) .image {
-  background: #1D293A url(../img/img-.jpg) no-repeat;
+  background: #1D293A url(../img/poster.png) no-repeat;
    background-size: cover;
 }
 .cd-slider li:nth-of-type(8) .image {
@@ -435,5 +435,10 @@ tooltip {
   width: 10%;
   font-family: Raleway;
   right: auto;
+  min-width: 98px;
   font-weight: bolder;
+}
+
+@media screen and (max-width:360px){
+  .evname{ display:none;}
 }

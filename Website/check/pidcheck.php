@@ -3,7 +3,7 @@
 
 	$name = $_REQUEST['userid'];
 	// echo $mail ."<br>";
-	$q = "select pixelid from test_16 where pixelid = '$name'";
+	$q = "select pixelid from registered where pixelid = '$name'";
 	// echo "$q";
 	$result = mysql_query($q,$con);
 	echo mysql_num_rows($result);

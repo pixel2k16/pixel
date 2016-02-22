@@ -1,13 +1,13 @@
 <?php
 if(!empty($_POST['pixelid'])  && !empty($_POST['password'])){
 
-    $myconn= new mysqli("localhost","root","","pixel_test");
+    $myconn= new mysqli("localhost","root","","pixelbc7_pixel");
 
       if($myconn->connect_errno){
         die("connection error");
       }
 
-      $mysel = $myconn->query("select * from test_16 where pixelid='".$_POST['pixelid']."'; ");
+      $mysel = $myconn->query("select * from registered where pixelid='".$_POST['pixelid']."'; ");
 
       if($mysel->num_rows>0){
         while($row = $mysel->fetch_assoc()){

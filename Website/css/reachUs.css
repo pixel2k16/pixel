@@ -227,7 +227,7 @@
   width: 100px;
 }
 
-.section{padding-top: 3vh;font-size: 110%;}
+.section{/* padding-top: 3vh; */font-size: 110%;}
 .contacts{display: inline-block;text-align: left;position: absolute;right: 3%;top: 7%;margin-top: 1vh;}
 
 @media screen and (max-width: 489px){
@@ -239,5 +239,6 @@
   }
   .contacts{
     left: 34%;
-    margin-top: 2vh;
+    margin-top: 23vh;
+    bottom: 10px;
   }

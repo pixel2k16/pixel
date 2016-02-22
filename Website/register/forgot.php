@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$note=0;
 		$subject="Retreival of password";
 		
-		$result=mysql_query("select * from test_16 where pixelid='$pixelid' OR mailid='$pixelid'",$con);
+		$result=mysql_query("select * from pixelbc7_pixel where pixelid='$pixelid' OR mailid='$pixelid'",$con);
 		while($row=mysql_fetch_array($result)){	
 	
 			if(mysql_num_rows($result)==0){

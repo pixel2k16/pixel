@@ -19,6 +19,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/stars.css">
  	<script type="text/javascript" src="js/canv.js"></script>
+ 	<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
 
 
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
