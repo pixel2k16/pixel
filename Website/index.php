@@ -106,7 +106,7 @@
 <section id="section1" class="cd-section present">
 	<div class="content-wrapper" id ="section1Container">
 		<?php include_once("first_section1.php"); ?>
-		<a href="#section2" class="cd-scroll-down cd-image-replace">scroll down</a>
+		<a href="#section2" class="cd-scroll-down cd-image-replace"  data-wow-delay="10s"></a>
 	</div>
 </section><!-- cd-section -->
 

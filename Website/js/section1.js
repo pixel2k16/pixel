@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+	setTimeout(function(){
+		$(".cd-scroll-down").fadeIn("slow");
+	},9500);
 	// script for handling click events for register 
 	$("a.main-link.register").click(function(event){
 		event.preventDefault();

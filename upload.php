@@ -5,8 +5,6 @@
 	<link rel="stylesheet" type="text/css" href="tem.css">
 </head>
 <body>
-<h2>HTML5 File Upload Progress Bar Tutorial</h2>
-
 <div class="Upload" role="button" aria-label="Upload file"></div>
 
 <form id="upload_form" enctype="multipart/form-data" method="post">

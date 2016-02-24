@@ -237,10 +237,7 @@ sup {
 
 /*For about Us section*/
 .about-wrapper{
-	z-index: 1;
-	position: absolute;
-	left: 33%;
-	top: 20%;
+	
 }
 .about{
 	outline: none;
@@ -258,7 +255,6 @@ sup {
 }
 
 .dept{
-	
 	left: 155px;
 	transition: all 0.5s;
 }
@@ -269,9 +265,6 @@ sup {
 	right: 155px;
 	transition: all 0.5s;
 }
-.about-wrapper:hover {
-
-}
 .about-wrapper:hover > .dept {
 	left: 0px;
 }
@@ -280,17 +273,14 @@ sup {
 }
 
 /* For pixel logo water mark section */
-
-/*.image-wrapper {
-	z-index: 0;
-	opacity: 0.1;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 0px;
-	background: url(../img/pixel.png) center/50% no-repeat ; 
+.image-wrapper {
+	display: inline-block;
+	z-index: 1;
+	width: 120px;
+	height: 120px;
+	background:  url(../img/pixel.png) center/100% no-repeat;
 }
-*/
+
 
 
 

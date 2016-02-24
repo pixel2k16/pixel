@@ -484,7 +484,6 @@ Content Sections - basic style
   position: absolute;
   left: 49%;
   right: auto;
-  /* -webkit-transform: translateX(-50%); */
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
@@ -496,6 +495,7 @@ Content Sections - basic style
   background-size: cover;
   -webkit-animation: showdown 1s linear infinite;
   animation: showdown 1s linear infinite;
+  display: none;
   }
 
 @keyframes showdown{

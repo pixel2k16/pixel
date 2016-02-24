@@ -1,8 +1,8 @@
 
 <!-- for pixel water mark -->
-<!-- <div class="image-wrapper">
-
-</div> -->
+<div style="z-index: 1;	position:absolute;top: 8%;height: 120px;width: 100%;text-align: center;">
+	<div class="image-wrapper wow bounceInDown"  data-wow-delay="9.5s"></div>
+</div>
 <!-- for social networking elements -->
 <div class="deck">
 	<a href="https://www.youtube.com/channel/UCG-tEdg_D0d7JQZtYwrmVVw?sub_confirmation=1" 
@@ -162,10 +162,13 @@
 </script>
 
 <!-- For about us section -->
-<div class="about-wrapper wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="9.5s">
-	<a href="#" class="about dept">About Dept.</a>
-	<a href="#" class="about pix">About Us</a>
-	<a href="#" class="about clg">About College</a>
+
+<div style="z-index: 1;margin-top: 10px" > 
+	<div class="about-wrapper wow bounceIn" data-wow-duration="1.5s" data-wow-delay="9.5s">
+		<a href="#" class="about dept">About Dept.</a>
+		<a href="#" class="about pix">About Us</a>
+		<a href="#" class="about clg">About College</a>
+	</div>
 </div>
 <script type="text/javascript">
 	$(document).ready(function(){
