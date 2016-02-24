@@ -480,9 +480,9 @@ Content Sections - basic style
 }
 
 .cd-scroll-down {
-  cursor: default;
+  cursor: pointer;
   position: absolute;
-  left: 48%;
+  left: 49%;
   right: auto;
   /* -webkit-transform: translateX(-50%); */
   -moz-transform: translateX(-50%);

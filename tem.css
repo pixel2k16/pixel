@@ -1,0 +1,73 @@
+#upload_form{
+		display: inline-block;
+		background: #123;
+		position: relative;
+	}
+	.choose{
+		display: inline-block;
+		background: #876;
+		color: #fff;
+		padding: 10px 0px;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		width: 78px;
+		text-align: center;
+	}
+
+	.filename{
+		/* background: #875869; */
+		color: #fff;
+		padding: 10px;
+		display: inline-block;
+		position: absolute;
+		left: 100px;
+		top: 10px;
+	}
+
+	#status{
+		color: #fff;
+		display: inline-block;
+	}
+
+	input[id='upload']{
+		color: #fff;
+		background: #123;
+		border: none;
+		padding: 10px;
+		margin: 10px;
+		margin-top: 51px;
+		border: 1px solid white;
+	}
+	input[type='file']{
+		display: inline-block;
+		color: #fff;
+		background: #123;
+		border: 2px solid white;
+		position: absolute;
+		left: 0px;
+		opacity: 0;
+		z-index: 1;
+		text-align: center;
+		cursor: pointer;
+		width: 86px;
+		height: 50px;
+	}
+
+
+	progress {
+    	background: #C8D7E4;
+    	margin:  20px;
+  }
+	progress::-webkit-progress-bar {
+	    background-color: #C8D7E4;
+	}
+	progress::-webkit-progress-value {
+	    background-color: #6697C3;
+	}
+	progress::-moz-progress-bar {
+	    background-color: #C8D7E4;
+	}
+	progress::-moz-progress-value {
+	    background-color: #6697C3;
+	}

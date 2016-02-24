@@ -1,7 +1,9 @@
 <?php
 	define('DB_HOST', 'localhost');
     define('DB_USER', 'root');
+    // define('DB_USER', 'pixelbc7');
     define('DB_PASSWORD', '');
+    // define('DB_PASSWORD', 'Ramsurya58$$');
     define('DB_DATABASE', 'pixelbc7_pixel');
 	//Function to sanitize values received from the form. Prevents SQL injection
 	function clean($str) {

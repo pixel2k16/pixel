@@ -6,7 +6,7 @@ jQuery(document).ready(function($){
 			function(){
 			$(".cssload-preloader").addClass("animated flipOutX");
 			$("html,body").css({"overflow":"auto","height":"auto"});
-		},5000);
+		},2000);
 
 	var	scrolling = false,
 	clicked = false;
@@ -29,7 +29,7 @@ jQuery(document).ready(function($){
     //smooth scroll to the second section
     scrollArrow.on('click', function(event){
     	event.preventDefault();
-        // smoothScroll($(this.hash));
+        nextSection();
     });
 
 	// open navigation if user clicks the .cd-nav-trigger - small devices only

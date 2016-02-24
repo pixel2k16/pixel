@@ -1,7 +1,8 @@
 <?php
 if(!empty($_POST['pixelid'])  && !empty($_POST['password'])){
 
-    $myconn= new mysqli("localhost","root","","pixelbc7_pixel");
+    // $myconn= new mysqli("localhost","root","","pixelbc7_pixel");
+    $myconn= new mysqli("localhost","pixelbc7","Ramsurya58$$","pixelbc7_pixel");
 
       if($myconn->connect_errno){
         die("connection error");

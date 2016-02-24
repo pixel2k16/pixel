@@ -1,4 +1,8 @@
 
+<!-- for pixel water mark -->
+<!-- <div class="image-wrapper">
+
+</div> -->
 <!-- for social networking elements -->
 <div class="deck">
 	<a href="https://www.youtube.com/channel/UCG-tEdg_D0d7JQZtYwrmVVw?sub_confirmation=1" 
@@ -7,7 +11,6 @@
 	<a href="http://www.twitter.com/pixel_jntua" data-wow-delay="8.4s" class="social twtr wow bounceInDown" target="_blank"></a>
 	<a href="mailto:pixel.jntua@gmail.com" data-wow-delay="8.5s" class="social mail wow bounceInDown" target="_blank"></a> 
 </div>
-
 <div id="my">
 	<canvas id="starfield"  style="position:absolute;top:0px;left:0px;width:100%;height:100%;background: #000;"></canvas>	
 </div>
@@ -155,5 +158,21 @@
 	// For Demo purposes only (show hover effect on mobile devices)
 	[].slice.call( document.querySelectorAll('.grid a') ).forEach( function(el) {
 		el.onclick = function() { return false; }
+	});
+</script>
+
+<!-- For about us section -->
+<div class="about-wrapper wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="9.5s">
+	<a href="#" class="about dept">About Dept.</a>
+	<a href="#" class="about pix">About Us</a>
+	<a href="#" class="about clg">About College</a>
+</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".about-wrapper").hover(function(){
+			$(".pix").html("About Pixel");
+		},function(){
+			$(".pix").html("About Us");
+		});
 	});
 </script>

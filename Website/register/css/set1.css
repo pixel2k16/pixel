@@ -219,6 +219,19 @@ input.input-submit {}
 	}
 }
 
+@media screen and (max-width: 500px) {
+	.pilogo {
+		width:60px;
+		position:relative;
+		top:32px;
+		left:43%;
+	}
+	
+	.bcg h1 {
+		font-size:1.3em;
+	}
+}
+
 .on-success{
 	background: whitesmoke;
 	border: 2px solid #1E6B64;

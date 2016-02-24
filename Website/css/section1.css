@@ -53,6 +53,7 @@ sup {
 	margin-top: 3%; 
 }
 .wrapper{
+	z-index: 1;
 	text-align: center;
 	position: relative;
 	width: 100v;
@@ -234,6 +235,64 @@ sup {
 }
 
 
+/*For about Us section*/
+.about-wrapper{
+	z-index: 1;
+	position: absolute;
+	left: 33%;
+	top: 20%;
+}
+.about{
+	outline: none;
+	height: 100%;
+	text-decoration: none;
+	color: #fff;
+	background: #1D293A;
+	padding: 20px;
+	font-family: 'Raleway','sans';
+	display: inline-block;
+	position: relative;
+	width: 150px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.dept{
+	
+	left: 155px;
+	transition: all 0.5s;
+}
+.pix{
+	z-index: 2;
+}
+.clg{
+	right: 155px;
+	transition: all 0.5s;
+}
+.about-wrapper:hover {
+
+}
+.about-wrapper:hover > .dept {
+	left: 0px;
+}
+.about-wrapper:hover > .clg {
+	right: 0px;
+}
+
+/* For pixel logo water mark section */
+
+/*.image-wrapper {
+	z-index: 0;
+	opacity: 0.1;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	background: url(../img/pixel.png) center/50% no-repeat ; 
+}
+*/
+
+
 
 @media screen and (max-width: 720px){
 	.outer{
@@ -249,4 +308,5 @@ sup {
 	.hmenu{
 		display: none;
 	}
-}}
+}
+

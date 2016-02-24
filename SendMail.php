@@ -14,7 +14,7 @@
 	* 1 = For Displaying the client messages
 	* 2 = FOr Client and Server Messages. 
 	*/
-	$mail->SMTPDebug = 2;
+	$mail->SMTPDebug = 1;
 
 	// Used to display Debugging messages in friendly manner.	
 	$mail->Debugoutput = 'html';
