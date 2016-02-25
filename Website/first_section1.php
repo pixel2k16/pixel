@@ -1,4 +1,3 @@
-
 <!-- for pixel water mark -->
 <div style="z-index: 1;	position:absolute;top: 8%;height: 120px;width: 100%;text-align: center;">
 	<div class="image-wrapper wow bounceInDown"  data-wow-delay="9.5s"></div>
@@ -95,7 +94,7 @@
 	if(empty($username)){
 		?>
 			<div class="main-link-wrapper wow bounceIn" data-wow-duration="1.5s" data-wow-delay="10s">
-				<a href="/register/" class=" main-link register"> Register </a>
+				<a href="/register/" target="_blank" class=" main-link register"> Register </a>
 				<a href="#" class=" main-link loginb"> Log in </a>
 			</div>
 		<?php
@@ -165,9 +164,9 @@
 
 <div style="z-index: 1;margin-top: 10px" > 
 	<div class="about-wrapper wow bounceIn" data-wow-duration="1.5s" data-wow-delay="9.5s">
-		<a href="#" class="about dept">About Dept.</a>
-		<a href="#" class="about pix">About Us</a>
-		<a href="#" class="about clg">About College</a>
+		<a href="#dept"  target="_blank"  class="about dept">About Dept.</a>
+		<a href="#pixel" target="_blank"  class="about pix">About Us</a>
+		<a href="#col"   target="_blank"  class="about clg">About College</a>
 	</div>
 </div>
 <script type="text/javascript">

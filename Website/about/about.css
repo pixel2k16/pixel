@@ -1,0 +1,112 @@
+a {
+	text-decoration: none;
+	display:inline-block;
+	width:170px;
+	text-align: center;
+}
+
+.about-body {
+	margin: 0;
+	font-family: "Raleway","sans";
+	}
+
+p {
+	line-height:1.2em;
+	text-transform: unset;
+	margin: 40px 175px;
+	text-align: justify;
+	line-height: 1.7em;
+	text-indent: 40px;
+}
+
+h3 {
+	margin :0 0 1em 0;
+}
+
+h2 {
+	position:relative;
+}
+
+.special {
+	color:#989191;
+	font-weight: bold;
+	letter-spacing:1.5px;
+	font-size:115%;
+}
+
+/***********************************
+NAVIGATION
+************************************/
+
+nav {
+	text-align: center;
+	padding: 15px 0px;
+	margin: 0px 0 0;
+}
+
+nav >img {
+	width:120px;
+	position: absolute;
+	left: 10px;
+	top:4px;
+}
+nav ul {	
+	list-style: none;
+	margin: 0px 10px;
+	padding:0;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	font-weight: 800;
+	font-size: 1.5em;
+}
+
+
+/***********************************
+COLORS
+************************************/
+
+/*site body*/
+body {
+	background-color:#fff;
+	color:#999;
+}
+
+/*anchor color*/
+a {
+	color: #066b62;
+}
+
+/*heading*/
+header {
+	background: #066b62;
+	border-color: #599a68;
+}
+
+/*h1 and h2*/
+h1, h2 {
+	color:#fff;
+}
+/*navigation*/
+
+nav {
+	background: #066b62;
+}
+
+/*visited and normal link*/
+nav a, nav a:visited {
+	color:#fff;
+}
+
+/*selected and hover link*/
+nav a.selected , nav a:hover{
+	color:#0DCAB9;
+}
+
+.about{
+	display: none;
+}

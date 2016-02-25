@@ -46,9 +46,7 @@ $(document).ready(function(){
 		// alert("Inp log in");
 		$("#forgot-form").removeClass().addClass("animated slideOutRight").fadeOut(function(){
 			$("#login-form").show().removeClass().addClass("animated slideInLeft");
-		});
-			
-
+		});	
 	});
 
 
@@ -91,5 +89,33 @@ $(document).ready(function(){
 		 window.location.href = 'logout.php'		
 	});
 
+
+	// For About section
+	$(".about-wrapper").hover(function(){
+			$(".pix").html("About Pixel");
+		},function(){
+			$(".pix").html("About Us");
+		});
+
+		$(".about").click(function(event){
+			event.preventDefault();
+			// alert(this.hash);
+			postwith("about/",this.hash);
+		});
+
+		function postwith (to,secname) {
+		  var myForm = document.createElement("form");
+		  myForm.method="post" ;
+		  myForm.action = to ;
+		  myForm.target="_blank";
+		    var myInput = document.createElement("input") ;
+		    myInput.setAttribute("name", 'sec') ;
+		    myInput.setAttribute("value", secname );
+		    myForm.appendChild(myInput) ;
+		    $(myForm).css("display",'none');
+		  document.body.appendChild(myForm) ;
+		  myForm.submit();
+		  document.body.removeChild(myForm) ;
+		}
 
 });

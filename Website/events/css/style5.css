@@ -7,11 +7,16 @@
 }
 
 body  {
-	background: #1abc9c;
+	position: relative;
+	background: #17263A;
+	font-family: 'Raleway','sans';
 }
 
 .container {
 	padding: 80px;
+	display: none;
+	animation-duration: 0.5s;
+	-webkit-animation-duration: 0.5s;
 }
 
 .bt-menu {
@@ -31,7 +36,7 @@ body  {
 
 .bt-menu.bt-menu-open {
 	height: 100%;
-	border-width: 0px 0px 50px 220px;
+	border-width: 0px 0px 0px 220px;
 	background-color: rgba(0,0,0,0.3);
 	-webkit-transition: border-width 0.3s, background-color 0.3s;
 	transition: border-width 0.3s, background-color 0.3s;
@@ -238,3 +243,120 @@ body  {
 .bt-menu ul li a:focus:before {
 	color: #1abc9c;
 }
+
+/*added by ramana*/
+.usrname{
+	color: #fff;
+	display: inline-block;
+	padding: 15px 20px;
+	background: #141E29;
+	position: fixed;
+	top: 0px;
+	right: 2%;
+	font-size: 120%;
+	box-shadow: 0px 0px 10px black;
+	border-radius: 0px 0px 9px 9px;
+}
+
+.reg-wrapper{
+	clear: both;
+	background:;
+	padding: 10px 0px;
+	text-align: center;
+	position: relative;
+	top: 20px;
+}
+
+a.register{
+	display: inline-block;
+	background: #17263A;
+	text-align: center;
+	padding: 10px 20px;
+	box-shadow: 0px 2px 5px black;
+	border-radius: 2px;
+	transition: all .2s ease-in-out;
+}
+a.register:hover{
+	color: #17263A;
+	background: #fff;
+}
+.container {
+	width: 75%;
+	margin: 0 auto;
+	max-width: 800px;
+	background:#141E29;
+	color:#fff;
+	box-shadow: 0px 0px 10px black;
+}
+
+#ppt{display: block;}
+ol li {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+ol p {
+	text-indent: 0px;
+	margin:8px 0px;
+}
+a {
+	text-decoration: none; 	
+	color:#fff;
+}
+.contacts {
+	position:relative;
+	text-align: center;
+}
+.contact {
+	display:inline-block;
+	text-align: left;
+	margin:0px 20px;
+	float:left;
+}
+.contact-header {
+	margin: 10px 0px;
+	text-align:left;
+}
+.contact.left {}
+.contact.right {}
+
+.main-link.loginb{
+}
+
+.main-link {
+	background: #141E29;
+	display: inline-block;
+	padding: 18px;
+	margin: 10px;
+	color: #fff;
+	position: fixed;
+	top: 10px;
+	transform: rotate(0deg);
+	transition: all 0.4s ease;
+	right: 10px;
+}
+.main-link:hover{
+	color: #1D293A;
+	background: #fff;
+	border-radius: 5px;
+}
+
+
+@media screen and (max-width: 30em) {
+	body {
+		font-size: 90%;
+	}
+	.container {
+		width:100px;
+		padding:10px;
+		
+	}
+}
+
+@media screen and (max-height: 29em) {
+	.container {
+		height: auto;
+		width: 95%;
+	}
+
+}
+	
