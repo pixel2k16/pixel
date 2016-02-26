@@ -101,7 +101,6 @@
 		left: 0;
 		display: block;
 		width: 100%;
-		background: tomato;
 		height: 65vh;
 		margin-bottom: 2vh;
 	}
@@ -161,46 +160,47 @@
 	.sample{
 
 	}
-	#sample-1{
-		left: 8%;
-		transform: rotate(21deg);
-	}
-	#sample-4{
-		left: 13%;
-		top: 16vh;
-		transform: rotate(9deg);
-	}
-	#sample-3{
-		left: 8%;
-		transform: rotate(-2deg);
-		top: 17vh;
-	}
-	#sample-5{
-		top: 17vh;
-		left: 9%;
-	}
 	#sample-2{
-		left: 13%;
-		top: 17vh;
-		transform: rotate(156deg);
+		left: 2%;
+		top: 12vh;
+		transform: rotate(0deg);
 		tate(90deg);
 	}
-	#sample-6{
-		left: 10%;
+	#sample-4{
+		left: 2%;
+		top: 14vh;
+		transform: rotate(0deg);
+	}
+	#sample-3{
+		left: 2%;
+		top: 16vh;
+		transform: rotate(0deg);
+	}
+	#sample-1{
+		left: 2%;
 		top: 20vh;
-		transform: rotate(-15deg);
+		transform: rotate(0deg);
+	}
+	#sample-5{
+		top: 24vh;
+		left: 2%;
+	}
+	#sample-6{
+		left: 2%;
+		top: 22vh;
+		transform: rotate(0deg);
 		tate(90deg);
 	}
 	#sample-7{
-		left: 10%;
+		left: 2%;
 		top: 20vh;
-		transform: rotate(-15deg);
+		transform: rotate(0deg);
 		tate(90deg);
 	}
 	#sample-8{
-		left: 10%;
-		top: 20vh;
-		transform: rotate(8deg);
+		left: 2%;
+		top: 18vh;
+		transform: rotate(0deg);
 		tate(90deg);
 	}
 }
