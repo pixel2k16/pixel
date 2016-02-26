@@ -1,3 +1,13 @@
+<!-- For campus ambassador link-->
+<div class="cap ext">
+	<a href="#">Be an ambassador</a>
+	<a class="ext-icon">ic</a>
+</div>
+<div class="hsp ext">
+	<a href="#">Hospitality</a>
+	<a class="ext-icon">ic</a>
+</div>
+	
 <!-- for pixel water mark -->
 <div style="z-index: 1;	position:absolute;top: 8%;height: 120px;width: 100%;text-align: center;">
 	<div class="image-wrapper wow bounceInDown"  data-wow-delay="9.5s"></div>

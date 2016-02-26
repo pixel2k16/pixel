@@ -281,6 +281,43 @@ sup {
 	background:  url(../img/pixel.png) center/100% no-repeat;
 }
 
+/*For campus ambassador link*/
+.cap {
+		top: 50%;
+    	left: -180px;
+	}
+	.hsp {
+		top: 40%;
+		left: -119px;
+	}	
+	.ext{
+    	background: #509;
+    	display: inline-block;
+    	position: absolute;
+    	transition: all 0.5s ease-in-out;
+    	z-index: 2;
+ 	}
+	.ext:hover {
+		left: 0px;
+	}
+	.ext > * { 
+		display: inline-block;
+	} 
+
+	.ext a {
+		cursor: pointer;
+		margin: 0px;
+		outline: none;
+		text-decoration: none;
+		color: #fff;
+		background: #509;
+		padding: 10px 20px;
+	}
+
+	.ext > .ext-icon {
+		background: #142;
+	}
+
 
 
 

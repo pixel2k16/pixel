@@ -1,4 +1,35 @@
 $(document).ready(function(){
+
+	$(".container").removeAttr("style").hide();
+	if(evtid != " "){
+		// alert(evtid);
+		setTimeout(function(){$(evtid).fadeIn().addClass("present");},1000)
+	}else{
+		$("#ppt").fadeIn().addClass("present");
+	}
+
+	// Check for registered events to display register button or not. 
+	var events = $(".container").has(".reg-wrapper");
+	events.each(function(){
+		var presentElement = $(this);
+		id = presentElement.attr("id");
+		// alert(id);
+		$.ajax({
+			method: "POST",
+			url : "check/isreg.php",
+			data : {table : id }
+		}).done(function(result){
+			 // alert(result);
+			 if(result == "exists"){
+			 	presentElement.find(".reg-wrapper").remove().end()
+			 	.find(".reg-status").html("&#128515; Registered");;
+			 }
+		});
+
+	});
+
+
+
 	$("li a[href^='#']").click(function(event){
 		// alert("adfs");
 		event.preventDefault();
@@ -92,17 +123,46 @@ $(document).ready(function(){
 	//Register button
 	$(".register").click(function(event){
 		event.preventDefault();
-		var eventid = $(this).parent().parent().attr("id");
+		var pres = $(this);
+		var parent = $(this).parent().parent();
+		var eventid = parent.attr("id");
+		var status = parent.children(".reg-status").hide();
+		// alert($(this).text());
+		pres.text("Just a sec..");		
 		$.ajax({
 			method: "POST",
 			url: "check/eventreg.php",
-			data :{ table: eventid}
+			data :{ table: eventid }
 		}).done(function(result){
-			alert(result);
-		});
-
-		alert(eventid);
+			//alert(result);
+			if(result == "yes"){
+				pres.addClass("animated fadeOutUp");
+				status.addClass("animated slideInLeft").html("&#128515;").fadeIn(function(){
+						status.append(" Done. ").removeClass("animated slideInLeft");
+						setTimeout(function(){ status.fadeOut();},1000);
+						setTimeout(function(){ status.html("&#9989; successfully registered").fadeIn(); },2000);
+				});
+			}else if(result == "no"){
+				pres.addClass("animated fadeOutUp");
+				status.addClass("animated slideInLeft").html("&#128515;").fadeIn(function(){
+						status.html("&#128542; Oops.. Try again.").fadeOut(function(){
+							pres.removeClass("fadeOutUp").addClass("fadeInDown");
+						});
+				});
+			}else if(result == "login"){
+				status.removeClass("fadeOutUp animated");
+				status.addClass("animated fadeInDown").html("&#128515;").fadeIn( "slow", function(){
+				status.html("&#128544; Please log in to continue");
+				setTimeout(function(){  
+					status.removeClass("fadeInDown").fadeOut().addClass("fadeOutUp"); 
+					},2000)
+					setTimeout(function(){
+						pres.text("Register");
+					},2000);
+				});
+			} 
 	});
 
+ });
 
 });

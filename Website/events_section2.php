@@ -14,6 +14,7 @@
 							And to innovate your academic focus.</h3>
 						<h3>Get a great experience as your innovation, knowledge <br>
 							and aptitude will be evaluated by an exceptional judging panel.</h3>
+						<h3><a href="#ppt" class="more">Know more</a></h3>
 					</div>
 				</div> <!-- .cd-half-block.content -->
 			</li>
@@ -28,6 +29,7 @@
 						- Are You Smarter Than Us?</span>
 						<h3>Have a great Code walkthrough Elate<br>
 							 your jazz and find the flaw...</h3>
+						<h3><a href="#debug" class="more">Know more</a></h3>
 					</div>
 				</div> <!-- .cd-half-block.content -->
 			</li>
@@ -44,6 +46,7 @@
 						- Let Your Code Do the Talking</span>
 						<h3>to fulfil your zest…<br>
 							So, get ready to invade the code world.</h3>
+						<h3><a href="#code" class="more">Know more</a></h3>
 					</div>
 				</div> <!-- .cd-half-block.content -->
 			</li>
@@ -58,6 +61,7 @@
 						- Better You Think, Better You Find. </span>
 						<h3>An excellent event to thrill you <br>
 						 and to enhance your thinking power.</h3>
+						<h3><a href="#enigma" class="more">Know more</a></h3>
 					</div>
 				</div> <!-- .cd-half-block.content -->
 			</li>
@@ -74,6 +78,7 @@
 						<h3>Empowers students with a new understanding of what has been, 
 							what is now and what can be in the technical field.</h3>
 						<h3>Participate, test your knowledge and learn new things.</h3>
+						<h3><a href="#quiz" class="more">Know more</a></h3>
 					</div>
 				</div> <!-- .cd-half-block.content -->
 			</li>
@@ -89,6 +94,7 @@
 						<h3> the youth by providing them a massive platform to prove their <br>
 							worth, giving them a pragmatic exposure to the real world </h3>
 						<h3>challenge. Apply the creativity to your style and make it aesthetically pleasing…</h3>
+						<h3><a href="#short" class="more">Know more</a></h3>
 					</div>
 				</div> <!-- .cd-half-block.content -->
 			</li>
@@ -103,6 +109,7 @@
 						<span style="font-size:15px;position:relative;top:-20px;left:68px;">
 						-Craft it Your Way </span>
 						<h3>So, bring out your insights with a vibrant visual presentation.<br> And have a great discussion with experts.</h3>
+						<h3><a href="#poster" class="more">Know more</a></h3>
 					</div>
 				</div> <!-- .cd-half-block.content -->
 			</li>
@@ -117,6 +124,7 @@
 						 Fotographia A platform to exhibit your excellence and supremacy.</h3>
 						<h3>So, hurry up folks, Pick your camera <br>
 						 to encounter the essence of excitement. </h3>
+						<h3><a href="#photo" class="more">Know more</a></h3>
 					</div>
 				</div> <!-- .cd-half-block.content -->
 			</li>
@@ -131,6 +139,7 @@
 						<h3>be the hero of our gaming world.</h3>
 						<h3> We put forward an exhilarating platform GAME ZONE</h2> 
 							<h3>To people like you, going nuts about gaming.</h3>
+						<h3><a href="#game" class="more">Know more</a></h3>
 					</div>
 				</div> <!-- .cd-half-block.content -->
 			</li>
@@ -143,8 +152,7 @@
 						-Get Lost in it! </span>
 					<h3>Do you wanna experience the real feel of going nuts?</h3>
 					<h3>Exhilarate with a vast number of solo and group performances,</h3>
-					<h3>dramas and much more on the night of 19th March.</h3>
-						
+					<h3>dramas and much more on the night of 19th March.</h3>	
 					</div>
 
 				</div> <!-- .cd-half-block.content -->

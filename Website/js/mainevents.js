@@ -144,6 +144,7 @@ jQuery(document).ready(function($){
 
 		$("h3").removeClass();
 		$("h2").removeClass();
+		$("a.more").removeClass("animated fadeInUp");
 
 		var lines;
 		lines = $(presentslide).children().last().children().children();
@@ -169,7 +170,7 @@ jQuery(document).ready(function($){
 			if(type == "H3") {
 				if(!found){ $(this).addClass("animated fadeInDown"); }
 				if(found){ $(this).addClass("animated fadeInUp");}
-			}	
+			}
 		});
 	}
 
@@ -211,4 +212,25 @@ jQuery(document).ready(function($){
 	 	$(".cd-half-block.content > div").removeAttr("style");
 	 }
 
+	 // For appropriate links to open an event page
+	 $("a.more").click(function(event){
+	 	alert("Adf");
+			event.preventDefault();
+			// alert(this.hash);
+			postwitheventname("events/index.php",this.hash);
+	});
+	function postwitheventname (to,eventname) {
+	  var myForm = document.createElement("form");
+	  myForm.method="post" ;
+	  myForm.action = to ;
+	  myForm.target = "_blank";
+	    var myInput = document.createElement("input") ;
+	    myInput.setAttribute("name", 'event') ;
+	    myInput.setAttribute("value", eventname );
+	    myForm.appendChild(myInput) ;
+	    $(myForm).css("display",'none');
+	  document.body.appendChild(myForm) ;
+	  myForm.submit() ;
+	  document.body.removeChild(myForm) ;
+	}
 });

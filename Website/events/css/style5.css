@@ -210,7 +210,7 @@ body  {
 }
 
 .bt-menu ul:first-of-type li a {
-	padding: 0 20px;
+	padding-left: 35px;
 	box-shadow: inset 0 1px rgba(0,0,0,0.2);
 	color: #fff;
 	text-transform: uppercase;
@@ -244,6 +244,25 @@ body  {
 	color: #1abc9c;
 }
 
+.bt-menu ul li a{
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+	background-position: center left;
+}
+
+
+/*images for side menu*/
+
+#bt-menu ul li:nth-child(1) a{	background-image: url("../img/ppt.png");}
+#bt-menu ul li:nth-child(2) a{	background-image: url("../img/debug.png");}
+#bt-menu ul li:nth-child(3) a{	background-image: url("../img/code.png");}
+#bt-menu ul li:nth-child(4) a{	background-image: url("../img/hunt.png");}
+#bt-menu ul li:nth-child(5) a{	background-image: url("../img/quiz.png");}
+#bt-menu ul li:nth-child(6) a{	background-image: url("../img/cam.png");}
+#bt-menu ul li:nth-child(7) a{	background-image: url("../img/poster.png");}
+#bt-menu ul li:nth-child(8) a{	background-image: url("../img/photo.png");}
+#bt-menu ul li:nth-child(9) a{	background-image: url("../img/game.png");}
+
 /*added by ramana*/
 .usrname{
 	color: #fff;
@@ -268,6 +287,7 @@ body  {
 }
 
 a.register{
+	outline: none;
 	display: inline-block;
 	background: #17263A;
 	text-align: center;
@@ -304,13 +324,12 @@ a {
 }
 .contacts {
 	position:relative;
-	text-align: center;
+	text-align: left;
 }
 .contact {
 	display:inline-block;
 	text-align: left;
 	margin:0px 20px;
-	float:left;
 }
 .contact-header {
 	margin: 10px 0px;
@@ -340,6 +359,13 @@ a {
 	border-radius: 5px;
 }
 
+.reg-status{
+	padding: 10px 20px;
+	text-align: center;
+	position: relative;
+	top: 20px;
+	font-size: 200%;
+}
 
 @media screen and (max-width: 30em) {
 	body {

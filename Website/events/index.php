@@ -1,13 +1,24 @@
-<?php
+<?php 
 	session_start();
+	$evtname = " ";
 	$username = "";
-	$pixelid = "";
+	$pixelid = " ";
 	if(!empty($_SESSION['usrname'])){
 		$username = $_SESSION['usrname'];
 		$pixelid = $_SESSION['pixelid'];
 	}
 	// echo $username;
-?>
+	// Recieve post data that was recieved from main page. 
+	if(isset($_POST['event'])){
+		$evtname = $_POST['event'];
+	}
+	?>
+
+	<script type="text/javascript">
+		 var evtid;
+		 evtid = <?php echo "'$evtname'"; ?>;
+		 // alert(evtid);
+	</script>
 
 <!DOCTYPE html>
 <html lang="en" class="no-js">
@@ -65,7 +76,7 @@
 					?> <a href="#" class="main-link loginb"> Log in </a> <?php
 				}
 			?>
-		<div class="container present" id="ppt">
+		<div class="container" id="ppt" style="display: none;">
 			<h1>PAPER PRESENTATION</h1>	
 		    <h3>Instructions:</h3>
 		 	<ol>
@@ -102,6 +113,8 @@
 			<div class="reg-wrapper">
 				<a href="#" class="register">Register</a>
 			</div>
+			<!-- for status of registration -->
+			<div class="reg-status"></div>
 		</div> <!-- Paper Presentation -->
 
 
@@ -128,10 +141,6 @@
 					<span>&#128241; <a href="tel:8332052628">8332052628</a><br>
 				</div>
 			</div>
-			<!-- For registration and upload abstract forms -->
-			<div class="reg-wrapper">
-				<a href="#" class="register">Register</a>
-			</div>	
 		</div> <!-- Debugging -->
 
 		<div class="container" id="code">
@@ -178,8 +187,13 @@
 						<span>&#128104; A. Manikanta </span><br>
 						<span>&#128241; <a href="tel:7674911987">7674911987</a><br>
 					</div>
+				</div>	
+				<!-- For registration and upload abstract forms -->
+				<div class="reg-wrapper">
+					<a href="#" class="register">Register</a>
 				</div>
-			</header>		
+				<!-- for status of registration -->
+				<div class="reg-status"></div>
 		</div> <!-- treasure hunt -->
 
 		<div class="container" id="quiz">
@@ -226,6 +240,14 @@
 					<span>&#128241; <a href="tel:7673992517">7673992517</a><br>
 				</div>
 			</div>
+
+			<!-- For registration and upload abstract forms -->
+			<div class="reg-wrapper">
+				<a href="#" class="register">Register</a>
+			</div>
+			<!-- for status of registration -->
+			<div class="reg-status"></div>
+
 		</div> <!-- Short Films -->
 
 		<div class="container" id="poster">
@@ -247,6 +269,14 @@
 					<span>&#128241; <a href="tel:9491476038">9491476038</a><br>
 				</div>
 			</div>
+
+			<!-- For registration and upload abstract forms -->
+			<div class="reg-wrapper">
+				<a href="#" class="register">Register</a>
+			</div>
+			<!-- for status of registration -->
+			<div class="reg-status"></div>
+
 		</div> <!-- Poster Presentation -->
 
 		<div class="container" id="photo">
@@ -274,7 +304,15 @@
 					<span>&#128104; T. Swyrik</span><br>
 					<span>&#128241; <a href="tel:8331889577">8331889577</a><br>
 				</div>
-			</div>		
+			</div>
+
+			<!-- For registration and upload abstract forms -->
+			<div class="reg-wrapper">
+				<a href="#" class="register">Register</a>
+			</div>
+			<!-- for status of registration -->
+			<div class="reg-status"></div>	
+				
 		</div> <!-- Photography -->
 
 		<div class="container" id="game">
