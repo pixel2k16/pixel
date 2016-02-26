@@ -7,11 +7,7 @@
 	<a href="#">Hospitality</a>
 	<a class="ext-icon">ic</a>
 </div>
-	
-<!-- for pixel water mark -->
-<div style="z-index: 1;	position:absolute;top: 8%;height: 120px;width: 100%;text-align: center;">
-	<div class="image-wrapper wow bounceInDown"  data-wow-delay="9.5s"></div>
-</div>
+
 <!-- for social networking elements -->
 <div class="deck">
 	<a href="https://www.youtube.com/channel/UCG-tEdg_D0d7JQZtYwrmVVw?sub_confirmation=1" 
@@ -76,6 +72,10 @@
 </script>
 
 <div class="wrapper">
+	<!-- for pixel water mark -->
+	<div>
+		<div class="image-wrapper wow bounceInDown"  data-wow-delay="9.5s"></div>
+	</div>
 	<div class="college wow fadeIn" data-wow-delay="6s" 
  		data-wow-duration="1.5s">
 		<span style="position:relative;">

@@ -437,7 +437,11 @@ tooltip {
   right: auto;
   min-width: 98px;
   font-weight: bolder;
+  opacity:0.9;
+  border-radius:10px 10px 0px 0px;
 }
 
-@media screen and (max-width:360px){
+@media screen and (max-width:480px){
   .evname{ display:none;}
+  .cd-slider .content { line-height: 1;padding: 10px;}
+}

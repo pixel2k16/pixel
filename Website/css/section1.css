@@ -56,7 +56,6 @@ sup {
 	z-index: 1;
 	text-align: center;
 	position: relative;
-	width: 100v;
 	color: #fff;
 }
 #pixel{
@@ -190,7 +189,7 @@ sup {
 .main-link{
 	background: #1D293A;
 	display: inline-block;
-	padding: 18px;
+	padding: 10px 15px;
 	margin: 10px;
 	color: #fff;
 	position: relative;
@@ -230,7 +229,7 @@ sup {
 }
 
 .main-link.loginb{
-	left: 14%;
+	left: 16%;
 	animation-delay: 1s;
 }
 
@@ -245,7 +244,7 @@ sup {
 	text-decoration: none;
 	color: #fff;
 	background: #1D293A;
-	padding: 20px;
+	padding: 15px;
 	font-family: 'Raleway','sans';
 	display: inline-block;
 	position: relative;
@@ -279,6 +278,7 @@ sup {
 	width: 120px;
 	height: 120px;
 	background:  url(../img/pixel.png) center/100% no-repeat;
+	position: relative;
 }
 
 /*For campus ambassador link*/
@@ -337,3 +337,16 @@ sup {
 	}
 }
 
+@media screen and (max-width: 480px){
+
+	.dept, .clg{ display: none;}
+	.pix {padding: 10px;width: auto;}
+	.main-link { padding: 10px;}
+	.wrapper{top: -40px;}
+	.image-wrapper{ width: 70px;height: 70px; }
+	.about-wrapper{
+    	position: relative;
+ 	}
+ 	.cd-scroll-down{visibility: hidden;};
+	.main-link-wrapper{	}
+}

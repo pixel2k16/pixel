@@ -195,17 +195,29 @@ jQuery(document).ready(function($){
 	 // function to adjust content
 	 function adjustContent(){
 	 	// alert("");
-	 	var styles = {"text-align":"left","line-height":"1.6em"};
+	 	var styles = {"text-align":"justify","line-height":"1.4em"};
 	 	$(".cd-half-block.content > div").css(styles);
 	 	var eventContent = $(".cd-half-block.content > div");
 	 	
 	 	var newContent = eventContent;
 	 	newContent.each(function(index){
 			 // alert($(this).html());
+			 var more_link="";
+			 if($(this).has("a")){
+			 	more_link = $(this).find("a");
+			 	more_link.css({'display':'inline-block','text-align':'center','margin-top':'10px'
+			 		,'color':'#fff','position':'relative','left':'35%','background':'#081523','padding':'2px 5px'});
+			 }
 			var text = $(this).text();
-			$(this).text(" ").html(text);
-			 // alert($(this).html());
-	 	});
+			
+			// Check if it has Know more button and remove the text. 
+			if(text.search("Know more") != -1)
+				text = text.replace("Know more","");
+
+			$(this).html("<p style='text-indent: 14px;padding: 0px;color: #fff;width: 100%;margin: 0px;font-size: 15px;'>"+ text +"</p>");
+			// Add anchor link tha was saved at the beginning to bring back the know more button behaviour. 
+			$(this).append(more_link);
+	 	}); // For each div content. 
 	 }
 
 	 function applyDefault(){
@@ -214,10 +226,11 @@ jQuery(document).ready(function($){
 
 	 // For appropriate links to open an event page
 	 $("a.more").click(function(event){
-	 	alert("Adf");
+	 		// alert("Adf");
 			event.preventDefault();
 			// alert(this.hash);
 			postwitheventname("events/index.php",this.hash);
+			
 	});
 	function postwitheventname (to,eventname) {
 	  var myForm = document.createElement("form");
