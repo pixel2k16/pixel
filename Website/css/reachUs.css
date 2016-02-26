@@ -223,22 +223,19 @@
 .address > img {
   float: left;
   margin: 10px;
-  height: 100px;
   width: 100px;
 }
 
-.section{/* padding-top: 3vh; */font-size: 110%;}
+.section{padding-top: 3vh;font-size: 110%;position: absolute;width: 100%;}
 .contacts{display: inline-block;text-align: left;position: absolute;right: 3%;top: 7%;margin-top: 1vh;}
 
 @media screen and (max-width: 489px){
-  #header{
-    height: 60vh;
-  }
-  .address{
-    height: 40vh;
-  }
+  .address{ height: 40vh; }
+  #header{ height: 60vh; }
+  .address > img { width: 50px;position: relative;top: 9vh;}
+  .section{top: 0px;width: 70%;right: 0px;font-size: 90%;text-align: left;}
   .contacts{
-    left: 34%;
-    margin-top: 23vh;
-    bottom: 10px;
-  }
+    width: 70%;
+    top: 24vh;
+    right: 0px;
+}
