@@ -218,6 +218,11 @@ jQuery(document).ready(function($){
 			// Add anchor link tha was saved at the beginning to bring back the know more button behaviour. 
 			$(this).append(more_link);
 	 	}); // For each div content. 
+		
+		//To remove backgrund for tooltip ( event icons )
+		$(".tooltip").each(function(){
+			$(this).removeAttr("style");
+		});
 	 }
 
 	 function applyDefault(){
