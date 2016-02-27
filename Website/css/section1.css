@@ -291,18 +291,14 @@ sup {
 		left: -119px;
 	}	
 	.ext{
-    	background: #509;
     	display: inline-block;
     	position: absolute;
     	transition: all 0.5s ease-in-out;
     	z-index: 2;
- 	}
-	.ext:hover {
-		left: 0px;
-	}
-	.ext > * { 
-		display: inline-block;
-	} 
+  }
+	.ext:hover {left: 0px;}
+	.ext:hover > a:first-child{ background: #fff;color: #15212F; }
+	.ext > * { display: inline-block;} 
 
 	.ext a {
 		cursor: pointer;
@@ -310,12 +306,18 @@ sup {
 		outline: none;
 		text-decoration: none;
 		color: #fff;
-		background: #509;
+		background: #15212F;
 		padding: 10px 20px;
+		transition: all 0.4s linear 0.2s;
 	}
 
+	/*.ext a:first-child:hover{ background: #fff;color: #15212F  }*/
+
 	.ext > .ext-icon {
-		background: #142;
+		background: #081523 url('../img/cap30.png') no-repeat center;
+		height: 37px;
+		position: relative;
+		top: 12px;
 	}
 
 

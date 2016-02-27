@@ -1,11 +1,11 @@
 <!-- For campus ambassador link-->
 <div class="cap ext">
-	<a href="#">Be an ambassador</a>
-	<a class="ext-icon">ic</a>
+	<a href="cap/" target="=_blank">Be an ambassador</a>
+	<a class="ext-icon"></a>
 </div>
-<div class="hsp ext">
+<div class="hsp ext" style="display: none">
 	<a href="#">Hospitality</a>
-	<a class="ext-icon">ic</a>
+	<a class="ext-icon">..</a>
 </div>
 
 <!-- for social networking elements -->
