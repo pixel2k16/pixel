@@ -1,0 +1,228 @@
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body  {
+    position: relative;
+    background: #17263A;
+    font-family: 'Raleway','sans';
+}
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color:#fff;
+}
+
+#body {
+    width:80%;
+    margin: 10vh auto;
+    color: #fff;
+}
+
+form {
+    margin-bottom: 1em;
+}
+.input__field--kaede{
+    
+}
+
+.all {
+    display: block;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.matter {
+    background: #141E29;
+    text-align: top;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    padding:15px;
+    margin:10px 0px;
+    text-align: justify;
+}
+
+
+
+/*questions*/
+#q {
+    font-weight: 400;
+}
+/*answers*/
+#a {
+    color:#bbb;
+    padding-left: 20px;
+}
+
+ul { padding: 0 0 0 5px; }
+
+ul li {
+        list-style: none;
+        margin-bottom: 5px;
+        line-height: 2;
+}
+
+
+/*For Contacts*/
+.contacts {
+    position:relative;
+    text-align:left;
+}
+
+.contact {
+    display:inline-block;
+    text-align: left;
+    margin:0px 20px;
+    
+}
+
+.contact-header {
+    margin: 10px 0px;
+    text-align:left;
+}
+
+
+/*added by ramana*/
+.usrname{
+    color: #fff;
+    display: inline-block;
+    padding: 15px 20px;
+    background: #141E29;
+    position: fixed;
+    top: 0px;
+    left: 2%;
+    font-size: 120%;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 0px 0px 9px 9px;
+    z-index: 2;
+}
+
+.main-link.loginb{
+}
+
+.main-link {
+    background: #141E29;
+    display: inline-block;
+    padding:  15px 30px;
+    color: #fff;
+    position: fixed;
+    top: 10px;
+    transform: rotate(0deg);
+    transition: all 0.4s ease;
+    right: 30px;
+}
+.main-link:hover{
+    color: #1D293A;
+    background: #fff;
+    border-radius: 5px;
+}
+
+/*for registration form*/
+#hspreg {
+    color: #fff;
+    position: relative;
+    top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#hspreg > input[type="submit"]{
+    border: none;
+    color: #fff;
+    background: #141E29;
+    padding: 10px 20px;
+    font-size: 150%;
+    outline: none;
+    border-radius: 15px 15px 5px 5px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+}
+
+#hspreg > input[type="submit"]:hover {
+color: #141E29;
+background: #fff;box-shadow: 0;
+box-shadow: 0px 0px 10px black;
+}
+
+input[type="radio"] {display:  none;}
+
+input[type="radio"] + label {
+  font-size: 150%;
+  display: inline-block;
+  padding: 10px 20px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input[type="radio"] + label span {
+  display: inline-block;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + label span {background-color: #fff;color: #141E29;}
+
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span {
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  font-size: 150%;
+  min-width: 45px;
+}
+
+.status{
+    margin-bottom: 40px;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+     display: none; 
+    background: #f31;
+    transition: all 0.3s linear;
+}
+
+/*End of css by ramana*/
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 480px) {
+    #body {width: 100%;margin-top: 13vh;}
+    .all {height: auto;}
+    #lgout{right: 1%;padding: 13px;border-radius: 0px 0px 0px 15px;}
+    .usrname {left: 0px;padding: 13px;font-size: 90%;border-radius: 0px 0px 15px 0px;}
+    ul li{line-height: 1.5;margin-bottom: 1vh;}
+    .matter {
+        box-shadow: 0 0 5px black;
+        border-radius: 5px;
+        margin:5px 0px;
+        text-align: justify;
+    }
+    h1{ font-size: 1.7em;}
+    h2{font-size: 1.1em;}
+    .contact{line-height: 1.6;margin-bottom: 20px;}
+    label{display: block;margin-bottom: 10px;}
+    input[type="radio"] + label{display: inline;font-size: 121%;}
+    #hspreg{text-align: left;}
+    #hspreg > input[type="submit"]{position: relative; left: 23%; top: 13px;}
+    input[type="radio"] + label span, input[type="radio"]:checked + label span{min-width: 35px;}
+    .main-link.loginb{ right: 0; top: 0; border-radius: 0px 0px 0px 15px; }
+    
+
+}}

@@ -60,6 +60,7 @@ body  {
 	width: 50px;
 	height: 50px;
 	cursor: pointer;
+	outline: none;
 }
 
 .bt-menu-trigger span {
@@ -279,11 +280,11 @@ body  {
 
 .reg-wrapper{
 	clear: both;
-	background:;
 	padding: 10px 0px;
 	text-align: center;
 	position: relative;
 	top: 20px;
+	z-index: 3;
 }
 
 a.register{
@@ -338,8 +339,7 @@ a {
 .contact.left {}
 .contact.right {}
 
-.main-link.loginb{
-}
+.main-link.loginb{top: 1%;}
 
 .main-link {
 	background: #141E29;
@@ -367,15 +367,35 @@ a {
 	font-size: 200%;
 }
 
-@media screen and (max-width: 30em) {
+
+/*to hide navigation while it is not expanding. */
+.bt-menu ul {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+.bt-menu-open ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+@media screen and (max-width: 480px) {
 	body {
 		font-size: 90%;
 	}
 	.container {
-		width:100px;
+		margin: 15vh auto;
+		width: 95%;
 		padding:10px;
-		
+		padding-bottom: 10vh;
 	}
+	#lgout{ top: 6%; right: 9%; padding: 1vh; }
+	.usrname {font-size: 90%;right: 0px;padding: 10px;}
+	.contact{line-height: 1.6;}
+	.left{ margin-bottom: 20px; }
+	.main-link.loginb{right: 1%;padding: 13px 20px;background: #fff;color: #141E29;border-radius: 0px 12px;}
 }
 
 @media screen and (max-height: 29em) {

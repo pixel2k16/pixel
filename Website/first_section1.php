@@ -1,20 +1,25 @@
 <!-- For campus ambassador link-->
-<div class="cap ext">
-	<a href="cap/" target="=_blank">Be an ambassador</a>
-	<a class="ext-icon"></a>
+<div class="wow fadeInLeft" data-wow-delay="6s">
+	<div class="hsp ext" >
+		<a href="hospitality" target="_blank">Hospitality</a>
+		<a class="ext-icon"></a>
+	</div>	
 </div>
-<div class="hsp ext" style="display: none">
-	<a href="#">Hospitality</a>
-	<a class="ext-icon">..</a>
+<div class="wow fadeInLeft" data-wow-delay="5s">
+	<div class="cap ext">
+		<a href="cap/" target="=_blank">Be an ambassador</a>
+		<a class="ext-icon"></a>
+	</div>	
+
 </div>
 
 <!-- for social networking elements -->
 <div class="deck">
 	<a href="https://www.youtube.com/channel/UCG-tEdg_D0d7JQZtYwrmVVw?sub_confirmation=1" 
-	class="social yt wow bounceInDown" data-wow-delay="8.2s" target="_blank"></a>
-	<a href="http://www.fb.com/pixel2k16" target="_blank" data-wow-delay="8.3s" class="social fb wow bounceInDown"></a>
-	<a href="http://www.twitter.com/pixel_jntua" data-wow-delay="8.4s" class="social twtr wow bounceInDown" target="_blank"></a>
-	<a href="mailto:pixel.jntua@gmail.com" data-wow-delay="8.5s" class="social mail wow bounceInDown" target="_blank"></a> 
+	class="social yt wow bounceInDown" data-wow-delay="5.2s" target="_blank"></a>
+	<a href="http://www.fb.com/pixel2k16" target="_blank" data-wow-delay="5.3s" class="social fb wow bounceInDown"></a>
+	<a href="http://www.twitter.com/pixel_jntua" data-wow-delay="5.4s" class="social twtr wow bounceInDown" target="_blank"></a>
+	<a href="mailto:pixel.jntua@gmail.com" data-wow-delay="5.5s" class="social mail wow bounceInDown" target="_blank"></a> 
 </div>
 <div id="my">
 	<canvas id="starfield"  style="position:absolute;top:0px;left:0px;width:100%;height:100%;background: #000;"></canvas>	
@@ -74,25 +79,31 @@
 <div class="wrapper">
 	<!-- for pixel water mark -->
 	<div>
-		<div class="image-wrapper wow bounceInDown"  data-wow-delay="9.5s"></div>
+		<div class="image-wrapper wow bounceInDown"  data-wow-delay="6.5s"></div>
 	</div>
-	<div class="college wow fadeIn" data-wow-delay="6s" 
+	<div class="college wow fadeIn" data-wow-delay="3s" 
  		data-wow-duration="1.5s">
 		<span style="position:relative;">
 			<h3>JNTUACEA </h3> 
 		</span>
 		<span <span style="position:relative;">
-			<h3>Department of CSE Presents</h3>
+				<h3 class="temp" >Department of CSE Presents</h3>
+			<script>
+				$('.temp').circleType({fitText:true, radius: 384});
+			</script>
 		</span>
 	</div>
 	<div id="pixel">
- 		<a class="vl link link--nukun wow zoomInDown" href="#" data-wow-delay="6s"
+ 		<a class="vl link link--nukun wow zoomInDown" href="#" data-wow-delay="3s"
  		data-wow-duration="2.5s">PI<span>X</span>EL</a>
 	</div>
-	<div class="tagline wow flipInX" data-wow-delay="7.5s">
-		<span style="position:relative;left:-1%" >Pixelate Ur Excellence</span>
+	<div class="tagline wow zoomIn" data-wow-delay="4.5s">
+		<span class="temp1" style="position:relative;left:-1%" >Pixelate Ur Excellence</span>
+		<script>
+			$('.temp1').circleType({radius: 384, dir:-1});
+		</script>
 	</div>
-	<div class="date wow fadeIn" data-wow-delay="8.5s" 
+	<div class="date wow fadeIn" data-wow-delay="5.5s" 
  		data-wow-duration="1.5s">
 			<span style="position:relative;left:-1%">
 				<h3>March 19<sup>th</sup> &amp; 20<sup>th</sup>, 2016</h3>
@@ -103,7 +114,7 @@
 <?php 
 	if(empty($username)){
 		?>
-			<div class="main-link-wrapper wow bounceIn" data-wow-duration="1.5s" data-wow-delay="10s">
+			<div class="main-link-wrapper wow bounceIn" data-wow-duration="1.5s" data-wow-delay="7s">
 				<a href="/register/" target="_blank" class=" main-link register"> Register </a>
 				<a href="#" class=" main-link loginb"> Log in </a>
 			</div>
@@ -173,7 +184,7 @@
 <!-- For about us section -->
 
 <div style="z-index: 1;margin-top: 10px" > 
-	<div class="about-wrapper wow bounceIn" data-wow-duration="1.5s" data-wow-delay="9.5s">
+	<div class="about-wrapper wow bounceIn" data-wow-duration="1.5s" data-wow-delay="6.5s">
 		<a href="#dept"  target="_blank"  class="about dept">About Dept.</a>
 		<a href="#pixel" target="_blank"  class="about pix">About Us</a>
 		<a href="#col"   target="_blank"  class="about clg">About College</a>

@@ -3,8 +3,6 @@
 		<a href="#" class="login-close"></a>
 		<section class="content">
 			<form id="login-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
-				<!--Below mentioned 'Test' is for allowing space for animation-->
-				<h3 style="color: transparent;">Test</h3>
 				<span class="input input--kaede">
 					<input class="input__field input__field--kaede" name="pixelid" required="required" type="text" id="input-1" maxlength="30" />
 					<label class="input__label input__label--kaede" for="input-1">
@@ -31,8 +29,6 @@
 				</span>
 			</form>
 			<form id="forgot-form" action="/pixel/Website/register/forgot.php" method="POST">
-				<!--Below mentioned 'Test' is for allowing space for animation-->
-				<h3 style="color: transparent;">Test</h3>
 				<span class="input input--kaede">
 					<input class="input__field input__field--kaede" name="pixelid" required="required" type="text" id="input-3" maxlength="30">
 					<label class="input__label input__label--kaede" for="input-3">

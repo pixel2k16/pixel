@@ -37,9 +37,13 @@ src:url('fonts/TYPOGRAPH PRO Extra Bold.ttf');
 .college{
 	position: relative;
 	line-height: 1.6em;
+	top: -2vh;
 }
 .tagline{
 	font-family: 'Raleway', sans-serif;
+	position: relative;
+	top: 1vh;
+	left: 0%;
 }
 	
 sup {
@@ -56,10 +60,13 @@ sup {
 	z-index: 1;
 	text-align: center;
 	position: relative;
+	top: -5vh;
 	color: #fff;
 }
 #pixel{
 	/* font-family: 'tpeb'; */
+	position: relative;
+	top: -3vh;
 }
 .link {
 	outline: none;
@@ -284,7 +291,7 @@ sup {
 /*For campus ambassador link*/
 .cap {
 		top: 50%;
-    	left: -180px;
+		left: -180px;
 	}
 	.hsp {
 		top: 40%;
@@ -314,12 +321,13 @@ sup {
 	/*.ext a:first-child:hover{ background: #fff;color: #15212F  }*/
 
 	.ext > .ext-icon {
-		background: #081523 url('../img/cap30.png') no-repeat center;
 		height: 37px;
 		position: relative;
 		top: 12px;
 	}
 
+	.cap > .ext-icon { background: #081523 url('../img/cap30.png') no-repeat center; } 
+	.hsp > .ext-icon {background: #081523 url('../img/hos40.png') no-repeat center;}
 
 
 
@@ -352,3 +360,32 @@ sup {
  	.cd-scroll-down{visibility: hidden;};
 	.main-link-wrapper{	}
 }
+
+
+/* Extra animations to hospitality and */
+ .hsp { 
+	-webkit-animation :jump 5s ease-in-out 7s 1;
+ 	animation: jump 5s ease-in-out 7s 1; 
+ }
+.cap { 
+	-webkit-animation :jump 5s ease-in-out 6s 1;
+ 	animation: jump 5s ease-in-out 6s 1; 
+ }
+
+@keyframes jump {
+	0%{transform: translateX(0%);}
+	10%{transform: translateX(-20%);}
+	30%{transform: translateX(100%);}
+	50%,60%{transform: translateX(-10%);}
+	80%{transform: translateX(0%);}
+	
+}
+
+@-webkit-keyframes jump {
+	0%{transform: translateX(0%);}
+	10%{transform: translateX(-20%);}
+	30%{transform: translateX(100%);}
+	50%,60%{transform: translateX(-10%);}
+	80%{transform: translateX(0%);}
+}	
+

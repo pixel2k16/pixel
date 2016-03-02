@@ -1,5 +1,6 @@
 // $(".cssload-preloader").css("display","none");
 jQuery(document).ready(function($){
+
 	var papptcontents = $(".event-content").filter(".pappt").children();
 		$("html,body").css({"overflow":"hidden","height":"100%"});
 		setTimeout(

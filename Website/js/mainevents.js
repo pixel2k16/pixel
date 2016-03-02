@@ -217,6 +217,32 @@ jQuery(document).ready(function($){
 			$(this).html("<p style='text-indent: 14px;padding: 0px;color: #fff;width: 100%;margin: 0px;font-size: 15px;'>"+ text +"</p>");
 			// Add anchor link tha was saved at the beginning to bring back the know more button behaviour. 
 			$(this).append(more_link);
+
+			// For appropriate links to open an event page
+			 more_link.click(function(event){
+			 		// alert("Adf");
+					event.preventDefault();
+					// alert(this.hash);
+					postwitheventname("events/index.php",this.hash);
+					
+			});
+			function postwitheventname (to,eventname) {
+				// alert("function");
+			  var myForm = document.createElement("form");
+			  myForm.method="post" ;
+			  myForm.action = to ;
+			  myForm.target = "_blank";
+			    var myInput = document.createElement("input") ;
+			    myInput.setAttribute("name", 'event') ;
+			    myInput.setAttribute("value", eventname );
+			    myForm.appendChild(myInput) ;
+			    $(myForm).css("display",'none');
+			  document.body.appendChild(myForm) ;
+			  myForm.submit() ;
+			  document.body.removeChild(myForm) ;
+			}
+
+
 	 	}); // For each div content. 
 		
 		//To remove backgrund for tooltip ( event icons )

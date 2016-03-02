@@ -46,7 +46,7 @@
 				 if(!empty($username)){
 				 	?>
 				 		<div class="usrname">Hi <?php echo $username; ?></div>
-						<a class="logout" href="#">Log out</a>
+						<a id="lgout" class="logout" href="#">Log out</a>
 						<style type="text/css">
 							/* For log out button */
 							.logout{
@@ -360,9 +360,3 @@
 	<script src="js/classie.js"></script>
 	<script src="js/borderMenu.js"></script>
 </html>
-
-
-
-
-
-

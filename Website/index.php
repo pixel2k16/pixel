@@ -30,6 +30,8 @@
 	<link rel="stylesheet" type="text/css" href="css/section1.css">
 	<link rel="stylesheet" type="text/css" href="css/linkstyles.css" />
 	<script type="text/javascript" src="js/video.js"></script>
+	<script type="text/javascript" src="js/ctype-min.js"></script>
+	<script type="text/javascript" src="js/jquery.lettering.js"></script>
 
 	<!-- For log in pop-up -->
 	<link rel="stylesheet" type="text/css" href="css/login.css" />

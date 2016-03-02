@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+	
 	$(".container").removeAttr("style").hide();
 	if(evtid != " "){
 		// alert(evtid);
