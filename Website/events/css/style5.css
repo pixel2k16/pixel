@@ -308,6 +308,7 @@ a.register:hover{
 	background:#141E29;
 	color:#fff;
 	box-shadow: 0px 0px 10px black;
+	transition: all 0.4s linear;
 }
 
 #ppt{display: block;}
@@ -396,6 +397,7 @@ a {
 	.contact{line-height: 1.6;}
 	.left{ margin-bottom: 20px; }
 	.main-link.loginb{right: 1%;padding: 13px 20px;background: #fff;color: #141E29;border-radius: 0px 12px;}
+	.reg-status{font-size: 120%; }
 }
 
 @media screen and (max-height: 29em) {

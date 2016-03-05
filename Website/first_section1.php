@@ -89,7 +89,7 @@
 		<span <span style="position:relative;">
 				<h3 class="temp" >Department of CSE Presents</h3>
 			<script>
-				$('.temp').circleType({fitText:true, radius: 384});
+				$('.temp').circleType({fitText:true, radius: 384 , dir:-1});
 			</script>
 		</span>
 	</div>
@@ -100,13 +100,13 @@
 	<div class="tagline wow zoomIn" data-wow-delay="4.5s">
 		<span class="temp1" style="position:relative;left:-1%" >Pixelate Ur Excellence</span>
 		<script>
-			$('.temp1').circleType({radius: 384, dir:-1});
+			$('.temp1').circleType({radius: 384});
 		</script>
 	</div>
 	<div class="date wow fadeIn" data-wow-delay="5.5s" 
  		data-wow-duration="1.5s">
 			<span style="position:relative;left:-1%">
-				<h3>March 19<sup>th</sup> &amp; 20<sup>th</sup>, 2016</h3>
+				<h3>March <b style="font-weight: bolder;font-size: 150%">19<sup>th</sup> &#45; 21<sup>st</sup></b> 2016</h3>
 			</span>
 	</div>
 </div>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Code Kshetra</title>
+		
+		
+		
+		<link rel="stylesheet" type="text/css" href="css/coding.css" />
+		<link rel="stylesheet" type="text/css" href="css/codingcom.css" />
+		<link rel="stylesheet" href="css/codemirror.css">
+<script src="js/codemirror.js"></script>
+<script src="js/matchbrackets.js"></script>
+<style>.CodeMirror {border: 2px inset #dee;}</style>
+		<script src="js/modernizr2.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="clearfix">
+				
+				<h1>Code kshetra</h1>
+				
+			</header>	
+			<div class="nav" style="position:relative; left:80%;">
+				<a href="leadboard.php" target= "_blank" >Leaderboard</a>
+				<a href="logout.php">logout.php</a>
+			</div>
+			<div class="main">
+				<ul class="cbp_tmtimeline">
+					<li>
+						<time class="cbp_tmtime" datetime="2013-04-11T12:04"><span>4/11/13</span> <span style="font-size:29px;">Problem Statement</span></time>
+						<div class="cbp_tmicon cbp_tmicon-phone"></div>
+						<div class="cbp_tmlabel">
+							<h2>No of Pairs</h2>
+							<p>Given N integers, count the total pairs of integers that have a difference of K.</p>
+  
+						</div>
+					</li>
+					<li>
+						<time class="cbp_tmtime" datetime="2013-04-11T12:04"><span>4/11/13</span> <span style="font-size:29px;">Input Format</span></time>
+						<div class="cbp_tmicon cbp_tmicon-screen"></div>
+						<div class="cbp_tmlabel">
+							<h2>Input Format</h2>
+							<p>1st line contains N & K (integers).<br>
+2nd line contains N numbers of the set. All the N numbers are assured to be distinct.</p>
+						</div>
+					</li>
+					<li>
+						<time class="cbp_tmtime" datetime="2013-04-13 05:36"><span>4/13/13</span> <span style="font-size:29px;">Output Format</span></time>
+						<div class="cbp_tmicon cbp_tmicon-mail"></div>
+						<div class="cbp_tmlabel">
+							<h2>Output Format</h2>
+							<p>One integer saying the number of pairs of numbers that have a diff K.</p>
+						</div>
+					</li>
+					<li>
+						<time class="cbp_tmtime" datetime="2013-04-15 13:15"><span>4/15/13</span> <span style="font-size:29px;">Constraints</span></time>
+						<div class="cbp_tmicon cbp_tmicon-phone"></div>
+						<div class="cbp_tmlabel">
+							<h2>Constraints</h2>
+							<p>N <= 10^5<br>
+							0 < K < 10^9<br>
+							Each integer will be greater than 0 and at least K away from 2^31-1</p>
+						</div>
+					</li>
+					<li>
+						<time class="cbp_tmtime" datetime="2013-04-16 21:30"><span>4/16/13</span> <span style="font-size:29px;" >Sample Input</span></time>
+						<div class="cbp_tmicon cbp_tmicon-earth"></div>
+						<div class="cbp_tmlabel">
+							<h2>1</h2>
+							<p>5 2 <br>
+							1 5 3 4 2 </p>
+							<h2>2</h2>
+							<p>10 1  <br>
+							363374326 364147530 61825163 1073065718 1281246024 1399469912 428047635 491595254 879792181 1069262793  </p>
+						</div>
+					</li>
+					<li>
+						<time class="cbp_tmtime" datetime="2013-04-17 12:11"><span>4/17/13</span> <span style="font-size:29px;">Sample Output</span></time>
+						<div class="cbp_tmicon cbp_tmicon-screen"></div>
+						<div class="cbp_tmlabel">
+							<h2>1</h2>
+							<p>3</p>
+							<h2>2</h2>
+							<p>0 </p>
+						</div>
+					</li>
+					<li>
+						<time class="cbp_tmtime" datetime="2013-04-18 09:56"><span>4/18/13</span> <span style="font-size:29px;">Explanation</span></time>
+						<div class="cbp_tmicon cbp_tmicon-phone"></div>
+						<div class="cbp_tmlabel">
+							<h2>Explanation</h2>
+							<p>Explanation is given when required</p>
+						</div>
+					</li>
+					<li>
+						<time class="cbp_tmtime" datetime="2013-04-18 09:56"><span>4/18/13</span> <span style="font-size:29px;">Program</span></time>
+						<div class="cbp_tmicon cbp_tmicon-phone"></div>
+						<div class="cbp_tmlabel">
+						<form method="post" action="uploading.php">
+                        	<input type="hidden" name="day" value="1"/>
+							<h2>Choose your language  &nbsp;&nbsp;<select name="ctype" style=" border:0px;width:100px; height:40px; font-size:29px; color:#1ABC9C;" id="lang" onchange="update();">
+								<option value=".c" >C</option>
+								<option value=".cpp">C++</option>
+								<option value=".java" selected="selected">Java</option>
+							</select></h2>
+
+							<div><textarea name="codefile" id="code" style="min-width:600px;
+							max-width:600px;min-height:400px;">
+/* your code */
+</textarea>
+
+
+<br>
+<input type="submit" value="submit" style="background:#ffffff; color:#1ABC9C;
+border: none;
+	padding: 0.6em 1.2em;
+	
+	
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-size: 1em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+	display: inline-block;
+	margin: 3px 2px;
+	border-radius: 2px;
+	">
+</form>
+</div>
+<script>
+      var cEditor = CodeMirror.fromTextArea(document.getElementById("code"), {
+        lineNumbers: true,
+        matchBrackets: true,
+       
+      });
+      
+    </script>
+
+
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

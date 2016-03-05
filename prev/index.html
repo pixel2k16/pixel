@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>PIXEL | 2014</title>
+        <meta name="description" content="Pixel techfest 2014 of CSE JNTU Anantapur" />
+        <meta name="keywords" content="pixel,www.pixelcse.org,pixel 2014,pixel 2k14,pixel 14,pixel2k14,pixelcse,org,www.pixel.jntuacea.ac.in,techfest,cse, jntu, jntua, anantapur" />
+
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/default.css" />
+        <link href="css/hexaflip.css" rel="stylesheet" type="text/css">
+        <link href="css/demo.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+			<div class="codrops-top clearfix">
+                 Welcome <br>to 
+            </div>
+        <div class="container">
+			
+            <div class="main">
+                <div id="hexaflip-demo5" class="demo"></div>
+                <div>
+                    <span id="submit" class="submit" >  ENTER  </span>
+                    <div id="output"></div>
+                </div>
+				<div class="giveup">
+                    <a href="location.php"> I Give UP!  </a>
+                </div>
+            </div>
+        </div>
+    <script src="hexaflip.js"></script>
+    <script>
+        var hexaDemo5,
+            set = [
+                {
+                    value: 'X',
+                    style: {
+                        backgroundColor: '#AA66CC'
+                    }
+                },
+                {
+                    value: 'P',
+                    style: {
+                        backgroundColor: '#BE3EA5'
+                    }
+                },
+                {
+                    value: 'I',
+                    style: {
+                        backgroundColor: '#006EA2'
+                    }
+                },
+                {
+                    value: 'E',
+                    style: {
+                        backgroundColor: '#527E11'
+                    }
+                },
+                {
+                    value: 'L',
+                    style: {
+                        backgroundColor: '#F7942C'
+                    }
+                },
+                {
+                    value: ' ',
+                    style: {
+                        backgroundColor: '#266360'
+                    }
+                },
+                {
+                    value: '1',
+                    style: {
+                        backgroundColor: '#7A6009'
+                    }
+                },
+                {
+                    value: '4',
+                    style: {
+                        backgroundColor: '#52351D'
+                    }
+                }
+            ];
+        document.addEventListener('DOMContentLoaded', function(){
+            var submit = document.getElementById('submit'),
+                output = document.getElementById('output');
+            hexaDemo5 = new HexaFlip(document.getElementById('hexaflip-demo5'),
+                {set1: set, set2: set, set3: set, set4: set, set5: set},
+                {fontSize: 120, margin: 10, perspective: 1000}
+            );
+            submit.addEventListener('click', function(){
+                if(hexaDemo5.getValue().join(' ') === 'P I X E L'){
+                    output.innerHTML = 'Entering The Site!';
+                    hexaDemo5.flip();
+                    hexaDemo5.flip();
+                    hexaDemo5.flip();
+                    hexaDemo5.flip();
+                    hexaDemo5.flip();
+                    hexaDemo5.flip();
+                    hexaDemo5.flip();
+                    hexaDemo5.flip();
+					
+					window.location='http://www.pixelcse.org/location.php';
+					
+                }else{
+                    output.innerHTML = 'allign the Cubes Correctly';
+					hexaDemo5.flip();
+                    hexaDemo5.flip();
+                    hexaDemo5.flip();
+                    hexaDemo5.flip();
+                    hexaDemo5.flip();
+                }
+            }, false);
+        }, false);
+
+    </script>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+
+
+/* black version of the overlay. simply uses a different background image */
+div.apple_overlay{
+background-image:url(assets/images/transparent.png);
+color:#fff;
+}
+
+div.apple_overlay h2 {
+margin:10px 0 -9px 0;
+font-weight:bold;
+font-size:14px;
+}
+
+
+

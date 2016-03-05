@@ -1,0 +1,101 @@
+body{
+	margin: 0px;
+	padding-left: 30px;
+	padding-top:0px; 
+	background: #f3f3f3;
+	
+}
+
+h3{
+	font-size: 48px;
+}
+
+h3 span{
+	color: #1ABC9C;
+}
+
+img{
+	position:absolute;
+	width:200px;
+	height: 100px;
+	right:100px;
+	top:100px;
+}
+form{
+	font-size: 32px;
+	line-height: 60px;
+}
+
+
+input[type=text],[type=email],[type=tel]{
+	border: 0px;
+	border-bottom: 2px dashed #1ABC9C;
+	color: #1ABC9C;
+	cursor:pointer;
+	font-size: 32px;
+	
+	width: 180px;
+	background: #f3f3f3;
+	text-align: center;
+}
+
+input[type=date]{
+	width:240px;
+	border: 0px;
+	border-bottom: 2px dashed #1ABC9C;
+	color: #1ABC9C;
+	cursor:pointer;
+	font-size: 32px;
+	background: #f3f3f3;
+	text-align: center;
+}
+input[type=password]{
+	font-size: 32px;
+	cursor:pointer;
+	border: 0px;
+	border-bottom: 2px dashed #1ABC9C;
+	color: #1ABC9C;
+	text-align: center;
+	background: #f3f3f3;
+	width: 160px;
+}
+
+input[type=checkbox]{
+	width: 22px;
+	height: 22px;
+	color: #1ABC9C;
+}
+
+select{
+	font-size: 32px;
+	cursor:pointer;
+	border: 0px;
+	border-bottom: 2px dashed #1ABC9C;
+	color: #1ABC9C;
+	width: auto;
+	background: #f3f3f3;
+
+}
+
+
+select option{
+	width:0px;
+}
+
+input[type=submit]{
+	width: 150px;
+	height: 40px;
+	  
+	border:none;
+	background: #1ABC9C;
+	color: #fff;
+	
+	border-radius: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 40px;  
+}
+
+::-webkit-input-placeholder {
+   color: #1ABC9C;
+}

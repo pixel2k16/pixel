@@ -42,7 +42,7 @@ src:url('fonts/TYPOGRAPH PRO Extra Bold.ttf');
 .tagline{
 	font-family: 'Raleway', sans-serif;
 	position: relative;
-	top: 1vh;
+	top: -2vh;
 	left: 0%;
 }
 	
