@@ -166,6 +166,7 @@
 					<span>&#128241; <a href="tel:9441339144">9441339144</a><br>
 				</div>
 			</div>	
+			<a href="https://www.codechef.com/COMN2016" target="_blank" class="comnreg">Check out</a>
 		</div> <!-- Online Coding-->
 
 		<div class="container" id="enigma">

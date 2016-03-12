@@ -5,26 +5,48 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 *{ transition: all 0.4s linear;}
+body::-webkit-scrollbar { display: none; }
+scrollbar { display: none; }
+html{ width: 100%;height: 100%; }
 
 body  {
     position: relative;
     font-family: 'Raleway','sans';
-    margin: 0px;padding: 0px;
+    margin: 0px;
+    padding: 0px;
+    background: #CC8D64 url(../img/ships.jpg) no-repeat;
+    width: 100%;
+    text-align: center;
+    background-attachment: fixed;
+}
+h1{display: inline-block;/* background: antiquewhite; */}
+
+
+.not-loggedin{
+    background: rgba(0, 0, 0, 0.53);
+    color: #fff;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
 
-h1{   }
-
 .not-enroll{
-    padding: 10%;
-    border: 2px solid green;
+    padding: 2%;
+    /* border: 2px solid rgba(192, 192, 192, 0.09); */
     width: 80%;
-    color: green;
-    margin: 10% auto;
-    font-weight: bold;
-    text-align: center;
+    color: #fff;
+    margin: 0px auto;
     max-width: 800px;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.44);
+    box-shadow: 0px 0px 2px #825A46;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 10vh;
 }
 
 .enroll {
@@ -33,7 +55,7 @@ h1{   }
     display: inline-block;
 }
 
-.enroll:hover{ color: #008000; background: #fff; border: 2px solid #008000; }
+.enroll:hover{color: #008000;background: #fff;/* border: 2px solid #008000; */}
 
 .enroll-status{
     padding: 10px 20px;
@@ -58,20 +80,20 @@ a {
 }
 div {position: relative;}
 .main-link {
-    background: #141E29;
+    background: #fff;
     display: inline-block;
     padding:  15px 30px;
-    color: #fff;
+    color: #141E29;
     position: fixed;
     top: 10px;
     transform: rotate(0deg);
     transition: all 0.4s ease;
     right: 30px;
+    border-radius: 20px;
 }
 .main-link:hover{
-    color: #1D293A;
-    background: #fff;
-    border-radius: 5px;
+    color: #141E29;
+    border-radius: 10px;
 }
 .usrname{
     color: #fff;
@@ -90,25 +112,47 @@ div {position: relative;}
 .total{
     width: 100%;
     position: relative;
-    padding: 7vh 2vh 0vh;
-    background-color: #DFE5EC;
+    padding: 10vh 2vh 0vh;
+    /* background-color: #DFE5EC; */
 }
 
 .riddle{
-    width: 70%;
     max-width: 750px;
     display: inline-block;
+    border-image: url(http://thumbs.dreamstime.com/z/treasure-map-gradient-3316093.jpg) 20% stretch;
+    border-width: 20px;
+    position: absolute;
+    left: 2%;
+    width: 60%;
+}
+.level-wrapper{
+    max-width: 750px;
+    display: inline-block;
+    position: absolute;
+    left: 2%;
+    width: 60%;
+    text-align: center;
+    top: 43%;
 }
 
-.image{ width: 100%;}
-.cover{ width: 100%;height: 100%; position: absolute;top: 0px;left: 0px;background: black; opacity: 0;}
-.form-container{position: absolute;
-    right: 5%;top: 40%;
+.image{
+    width: 100%;
+}
+.form-container{
+    position: absolute;
+    right: 5%;
+    top: 40vh;
     display: table-cell;
     vertical-align: middle;
-    /*background: #213;*/
 }
-#ansform{display: table-cell;padding: 50px;vertical-align: middle;background: brown;border-radius: 10px 10px 50% 50%;}
+#ansform{
+    display: table-cell;
+    padding: 50px;
+    vertical-align: middle;
+    background: rgba(165, 42, 42, 0.45) url(http://ecx.images-amazon.com/images/I/81jIoI7cbiL._SY355_.jpg) 25% no-repeat;
+    border-radius: 10px 10px 50% 50%;
+    background-size: 122%;
+    }
 #ansform input{ outline: none;}
 #ansform input[type="text"]{
     display: block;
@@ -157,4 +201,74 @@ div {position: relative;}
     bottom: 26%;
     }
 #equal{  }
-#updated{ { 
+#updated{   }
+
+/*For background mask */
+.bg-black{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    opacity: 0.5;
+    top: 0px;
+    left: 0;
+    z-index: -1;
+}
+
+.img-cover{
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    opacity: 0.1;
+}
+.savvy{
+    letter-spacing: 1px;
+}
+.rule{position: fixed;left: 20px;bottom: 20px;color: white;font-weight: bolder;}
+
+.leaderboard{
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    background: #5D4D06;
+    color: #fff;
+    transition: all 0.4s linear;
+}
+
+.leaderboard:hover {
+    color: #3E3409;
+    background: #fff;
+}
+.level-name{
+    display: inline-block;
+    background: #CDB284;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width: 480px){
+    .riddle {
+        width: 98%;
+        left: 1%;
+        top: 17vh;
+    }
+    .level-name{ top: -3vh; }
+    #ansform {padding: 10px;width: 100vw;}
+    .form-container{
+        position: relative;
+        left: 1;
+        top: 55vh;
+    }
+    #lgout{ right: 0; }
+    .usrname{ padding: 9px; }
+    .level-wrapper{width: 100%;top: 10vh;}
+    .rule{
+        font-size: 60%;
+        width: 50%;
+        left: 4px;
+    }
+    .leaderboard{ bottom: 3%;}
+    #ansform input[type="text"]{width: 100%;}
+}

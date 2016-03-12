@@ -361,6 +361,94 @@ sup {
 	.main-link-wrapper{	}
 }
 
+.codm{
+	 display: inline-block;
+	 z-index: 2;
+	 color:white;
+	 position: absolute;
+	 background: #071325;
+	 padding: 19px;
+	 border-radius: 50%;
+	 height: 110px;
+	 padding-top: 28px;
+	 left: 20%;
+}
+.engma{
+	 display: inline-block;
+	 z-index: 2;
+	 color:white;
+	 position: absolute;
+	 background: #071325;
+	 padding: 25px;
+	 border-radius: 50%;
+	 height: 110px;
+	 padding-top: 43px;
+	 right: 20%;
+	 /*border: 2px solid green;*/
+	 /*-webkit-animation: blinking 2s ease-in infinite;*/
+	 /*animation: blinking 2s ease-in infinite;*/
+}
+
+@-webkit-keyframes blinking {
+  50% { border-color: #000; } 
+}
+
+@keyframes blinking {
+  50% { border-color: #000; } 
+}
+
+
+
+.codm, .engma{
+	transition: all 0.4s ease-in-out;
+	transform-origin: top;
+	transform: rotateX(-10deg);
+	-webkit-perspective: 500px; /* Chrome, Safari, Opera */
+	perspective: 800px;
+	perspective-origin: top;
+	font-weight: normal;
+	font-size: 110%;
+}
+
+.codm > span {
+	position: absolute;
+	font-size: 76%;
+	left: 23%;
+	margin-top: 5px;
+	font-style: oblique;
+	letter-spacing: 2px;
+	font-weight: bolder;
+}
+
+.contest-active{
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	background-color: #7DCC22;
+	left: 10%;
+	position: absolute;
+	top: 46%;
+	border-radius: 50%;
+	display: none;
+	-webkit-animation: flash 3s ease-in infinite;
+	animation: flash 3s ease-in infinite;
+}
+
+.codm:hover , .engma:hover{
+	background: #E3E8DC;
+	color: #071325;
+}
+
+.engma  span:nth-of-type(2){
+	position: absolute;
+	font-size: 63%;
+	margin-top: 9%;
+	left: 24%;
+	font-weight: bolder;
+	letter-spacing: 1px;
+}
+
+
 
 /* Extra animations to hospitality and */
  .hsp { 

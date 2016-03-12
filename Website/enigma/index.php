@@ -30,11 +30,30 @@
 		<link rel="stylesheet" type="text/css" href="../css/login.css">
 
 		<script type="text/javascript" src="js/enigma.js"></script>
+		<script type="text/javascript" src="http://www.pixel2k16.in/js/wow.min.js"></script>
+		<script>
+			wow = new WOW({
+		      boxClass:'wow',            // default
+		      animateClass:'animated',   // default   
+		      offset: 0,                 // default
+		      mobile: true,              // default
+	          live:false                 // default
+	       	})
+	 		wow.init();
+	 	</script>
 	</head>
 	<body>
+		<div class="bg-black"></div>
 		<?php include_once '../events/login-popup.php'; ?>
-		<?php
-				 if(!empty($username)){
+		<?php 	if(empty($username)){
+					?>
+						<div class="not-loggedin">
+							<h1>It seems like you are not logged in.</h1><br>
+							<h1> Please log in to continue.</h1>
+						</div>
+					<?php
+				} 
+				if(!empty($username)){
 				 	?>
 				 		<div class="usrname">Hi <?php echo $username; ?></div>
 						<a id="lgout" class="logout" href="#">Log out</a>
@@ -66,10 +85,32 @@
 						 if($rows != 1){
 						 	if($rows == 0){
 						 		?>
-						 		<div class="not-enroll">
+						 		<div class="not-enroll wow fadeIn" data-wow-duraion="2s">
 						 			<div class="enroll-wrapper">
-						 				<h1> You are not enrolled in this contest. </h1>
-						 				<a class="enroll" href="#">Enroll</a>
+						 				<p> Ahoy matey, </p>
+						 				<p style="text-indent: 14px">
+						 					It's time for some treasure hunt fun, so off together you wil search, hunt and run.
+						 				</p>
+						 				<p style="text-indent: 14px">We have a little challenge for you to prove you are a pirate lord. Go and look for treasure and have lots of Grug. Set sail in the Carribean waters and say
+						 				<div style="text-align: center;width:100%;display:inline-block;position: relative;top: -5px;">
+						 					<span class="quote">"Arrrghhh! &nbspwe are pirates, beware"</span>.
+						 				</div>
+
+						 				</p>
+						 				<p style="text-indent: 14px"> They have hidden me treaaye (treasure) n' i don't think ye can find it. Follow the clues that be tellin' what I have be 'u may be you'll find me treaaye!
+						 				<div style="text-align: center;width:100%;display:inline-block;position: relative;top: -5px;">
+						 					<span class="savvy"> Savvy? </span>
+						 				</div>
+						 				</p>
+						 				<p style="text-indent: 14px;text-align: center;"> All ye pirates, shake with fear as cap'n Jack Sparrow's treaaye hunt draws near ! <br>
+						 				Put on yer eye patches <br>
+						 				And bring yer parrots, Spyglass and Quartermaster<br>
+						 				Set yer ship's course with full Canvas <br>
+						 				Keep yer deadlines open and raise yer Jolly Roger !</p>
+						 				 <p> Get ready ye scurvy landlubber? </p>
+						 				 <div style="text-align: center;width:100%;display:inline-block;position: relative;top: -5px;">
+						 					<a class="enroll" href="#"> Aye Aye</a>
+						 				 </div>
 						 			</div>
 						 			<div id="enroll-success" class="enroll-status"> Get ready for the enigma. &#x1f64c;</div>
 							 		<div id="enroll-error" class="enroll-status"> </div>
@@ -82,34 +123,36 @@
 						 }while ($row = mysqli_fetch_assoc($result)) {
 						 	 $level = $row['pixlevel'];
 						 } // pixlevel - while
-					 if($level >= 4){
+					 if($level >= 13){
 				 	 	?><h1>Congratulations. You've Unlocked The Treasure.<br>
 				 	 	 Let's check your position among other's. </h1>
 				 	 	<style>
 				 	 	h1{
 				 	 		padding: 10%;
-						    border: 2px solid green;
+						    border: 2px solid wheat;
 						    width: 80%;
-						    color: green;
+						    color: #fff;
 						    margin: 10% auto;
 						    font-weight: bold;
 						    text-align: center;
 						    max-width: 800px;
 				 	 	}
 				 	 	</style>
+				 	 	<!-- <script> setTimeout(function(){ window.location.href="leaderboard/";},3000);</script> -->
 					 	<?php
 					 	exit(0);
 					 }?>
-					<div class="total">
+					<div class="total animated pulse">
 					<?php
 					// For displaying image with respect to level 
 	 				$result = mysqli_query($con,"select * from images where pixlevel = '$level'");
 					if($result){
 						while($row = mysqli_fetch_assoc($result)){
 							?>
+							<div class="level-wrapper"><span class="level-name">Level <?php echo $level ?></span></div>
 							<div class="riddle">
 							  <?php echo '<img class="image" src="data:imgage/png;base64,'.base64_encode($row['image']).'">'; ?>
-							  <div class="cover"></div>
+							  <div class="img-cover"></div>
 							</div>
 							<?php
 						} // while
@@ -126,7 +169,9 @@
 					   <div id="equal" class="status"> Congrats. You cracked it.</div>
 					   <div id="updated" class="status"> You will be taken to next level (if any).</div>
 				   </div>
-			 	</div>
+			 	</div> <!-- End of total tag -->
+			 	<span class="rule">Only lowercase letters are allowed. Special characters like ' &nbsp ', ' &#44; ' and ' &#149; ' are not allowed. </span>
+			 	<a class="leaderboard" target="_blank" href="http://www.pixel2k16.in/enigma/leaderboard">Leaderboard</a>
 				 	<?php
 				 }else { // That means user is not logged in so display log in button. 
 				 	?> <a  href="#" class="main-link loginb"> Log in </a> <?php

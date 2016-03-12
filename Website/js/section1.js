@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+	
 	setTimeout(function(){
 		$(".cd-scroll-down").fadeIn("slow");
 	},9500);
@@ -117,5 +117,43 @@ $(document).ready(function(){
 		  myForm.submit();
 		  document.body.removeChild(myForm) ;
 		}
+
+
+		//For temperory enigma link in home page
+		$(".engma").click(function(event){
+			event.preventDefault();
+			// temp form to enter enigma page in events page. 
+			var myForm = document.createElement("form");
+			  myForm.method="post";
+			  myForm.action = "events/index.php";
+			  myForm.target = "_blank";
+			    var myInput = document.createElement("input") ;
+			    myInput.setAttribute("name", 'event') ;
+			    myInput.setAttribute("value", "#enigma");
+			    myForm.appendChild(myInput) ;
+			    $(myForm).css("display",'none');
+			  document.body.appendChild(myForm) ;
+			  myForm.submit();
+			  document.body.removeChild(myForm);
+			  
+		});
+
+		//For temperory code marathon link in home page
+		$(".codm").click(function(event){
+			event.preventDefault();
+			// temp form to enter code marathon page in events page. 
+			var myForm = document.createElement("form");
+			  myForm.method="post";
+			  myForm.action = "events/index.php";
+			  myForm.target = "_blank";
+			    var myInput = document.createElement("input") ;
+			    myInput.setAttribute("name", 'event') ;
+			    myInput.setAttribute("value", "#code");
+			    myForm.appendChild(myInput) ;
+			    $(myForm).css("display",'none');
+			  document.body.appendChild(myForm) ;
+			  myForm.submit();
+			  document.body.removeChild(myForm);
+		});
 
 });

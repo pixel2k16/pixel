@@ -1,0 +1,51 @@
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*{ transition: all 0.4s linear; text-align: center;}
+
+body  {
+    position: relative;
+    font-family: 'Raleway','sans';
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    padding-top: 10vh;
+    background: #CC8D64 url(../../img/ships.jpg) no-repeat;
+}
+
+.cover{
+    background: rgba(4, 1, 0, 0.61);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.total {
+    /* background: rgba(0, 0, 0, 0.7); */
+    width: auto;
+}
+.board{
+	padding: 2vh;
+	width: 100%;
+	text-align: center;
+	font-weight: 700;
+}
+table {
+	border: 2px solid black;
+	color: #ddd;
+	width: 70%;
+    margin: 0 auto;
+}
+th{background: #120435;}
+
+@media screen and (max-width: 480px){
+    .total > h1 
+}

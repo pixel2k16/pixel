@@ -1,3 +1,11 @@
+<!-- For Enigma and code marathon link-->
+<a href="https://www.codechef.com/COMN2016" target="_blank" class=" wow  bounceInDown codm" 
+	data-wow-delay="8.5s" data-wow-duration="1s" > 
+ 	Code <br> Marathon <span>13<sup>th</sup> Mar</span>
+</a>
+<a href="#" class=" wow  bounceInDown engma" data-wow-delay="8.5s" data-wow-duration="1s" > Enigma 
+<span class="contest-active"></span> <span> 18:00 IST</span></a>
+
 <!-- For campus ambassador link-->
 <div class="wow fadeInLeft" data-wow-delay="6s">
 	<div class="hsp ext" >
@@ -88,9 +96,6 @@
 		</span>
 		<span <span style="position:relative;">
 				<h3 class="temp" >Department of CSE Presents</h3>
-			<script>
-				$('.temp').circleType({fitText:true, radius: 384 , dir:-1});
-			</script>
 		</span>
 	</div>
 	<div id="pixel">
@@ -99,9 +104,6 @@
 	</div>
 	<div class="tagline wow zoomIn" data-wow-delay="4.5s">
 		<span class="temp1" style="position:relative;left:-1%" >Pixelate Ur Excellence</span>
-		<script>
-			$('.temp1').circleType({radius: 384});
-		</script>
 	</div>
 	<div class="date wow fadeIn" data-wow-delay="5.5s" 
  		data-wow-duration="1.5s">

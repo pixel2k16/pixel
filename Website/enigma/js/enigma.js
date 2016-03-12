@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	// script for handling enroll button
-	$(".enroll-wrapper > a").click(function(event){
+	$(".enroll-wrapper  a").click(function(event){
 		event.preventDefault();
 		var enrollwrapper = $(".enroll-wrapper"),
 			enrollsuccess = $("#enroll-success"),
@@ -16,6 +16,7 @@ $(document).ready(function(){
 			// alert(result);
 			if(result == "enrolled"){
 				enrollwrapper.addClass("animated fadeOutUp");
+				setTimeout(function(){ enrollwrapper.css("opacity","0") },1000);
 				enrollsuccess.show().addClass("animated fadeInUp");
 				setTimeout(function(){ location.reload(); },1000);
 			}else if(result == "error"){

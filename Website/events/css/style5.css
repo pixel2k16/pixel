@@ -380,7 +380,20 @@ a {
   opacity: 1;
 }
 
-
+.comnreg{
+	background: #17263A;
+	display: inline-block;
+	padding: 10px 20px;
+	position: relative;
+	left: 40%;
+	top: 50px;
+	transition: all 0.4s ease-out;
+}
+.comnreg:hover{
+	background: #fff;
+	color: #17263A;
+	box-shadow: 0px 0px 5px #111; 
+}
 
 @media screen and (max-width: 480px) {
 	body {
