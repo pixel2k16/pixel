@@ -4,21 +4,21 @@
 	Aaaaaaaaarrrrrrrrrggg smooth salin' mateys. 
 </div>
 <!-- For Enigma and code marathon link-->
-<a style="display: none;" href="https://www.codechef.com/COMN2016" target="_blank" class=" wow  bounceInDown codm" 
+<a  href="https://www.codechef.com/COMN2016" target="_blank" class=" wow  bounceInDown codm" 
 	data-wow-delay="8.5s" data-wow-duration="1s" > 
  	Code <br> Marathon <span>13<sup>th</sup> Mar</span>
 </a>
-<a href="#" style="display: none;" class=" wow  bounceInDown engma" data-wow-delay="8.5s" data-wow-duration="1s" > Enigma 
+<a href="#"  class=" wow  bounceInDown engma" data-wow-delay="8.5s" data-wow-duration="1s" > Enigma 
 <span class="contest-active"></span> <span> 18:00 IST</span></a>
 
 <!-- For campus ambassador link-->
-<div style="display: none;" class="wow fadeInLeft" data-wow-delay="6s">
+<div  class="wow fadeInLeft" data-wow-delay="6s">
 	<div class="hsp ext" >
 		<a href="hospitality" target="_blank">Hospitality</a>
 		<a class="ext-icon"></a>
 	</div>	
 </div>
-<div style="display: none;" class="wow fadeInLeft" data-wow-delay="5s">
+<div  class="wow fadeInLeft" data-wow-delay="5s">
 	<div class="cap ext">
 		<a href="cap/" target="=_blank">Be an ambassador</a>
 		<a class="ext-icon"></a>
@@ -121,7 +121,7 @@
 <?php 
 	if(empty($username)){
 		?>
-			<div style="display: none;" class="main-link-wrapper wow bounceIn" data-wow-duration="1.5s" data-wow-delay="7s">
+			<div  class="main-link-wrapper wow bounceIn" data-wow-duration="1.5s" data-wow-delay="7s">
 				<a href="/register/" target="_blank" class=" main-link register"> Register </a>
 				<a href="#" class=" main-link loginb"> Log in </a>
 			</div>
