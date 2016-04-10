@@ -1,6 +1,6 @@
 <?php
 	
-	require_once 'PHPMailer/PHPMailerAutoload.php';
+	require_once 'phpmailer/PHPMailerAutoload.php';
 	
 	 // New PHPMailer Instance.
 	$mail = new PHPMailer;
@@ -50,13 +50,15 @@
 
 	// Set to address
 	$mail->addAddress('ramanareddysane@gmail.com','ramana');
-	$mail->addAddress('praveen.kadimi534@gmail.com','Praveen');
+	// $mail->addAddress('praveen.kadimi534@gmail.com','Praveen');
 	// Set Reply adderss by using addReplyTo
 	$mail->addReplyTo('pixel.jntua@gmail.com','Team Pixel');
 
 	//Set Recipient mail address
-	// $mail->addBcc('swwyrik@gmail.com','Swyrik');
-	// $mail->addBcc('ramanareddysane@gmail.com');
+	 // $mail->addBcc('swwyrik@gmail.com','Swyrik');
+	 $mail->addBcc('ramanareddysane@gmail.com','ram');
+	 $mail->addBcc('suryatheza@gmail.com','surya');
+	 $mail->addBcc('tejasurya1994@gmail.com','surya');
 
 	// Add mail main contents
 	$mail->Subject = 'Pixel is coming soon!!';
@@ -124,7 +126,7 @@
 	// $mail->addBcc('ramanareddysane@gmail.com','Ram');
 
 	// $mail->msgHTML(file_get_contents("snr.php"));
-	$mail->msgHTML(file_get_contents("final.html"));
+	$mail->msgHTML(file_get_contents("workshop.html"));
 
 	// $mail->Body = "Hi! \n\n This is my first e-mail sent through PHPMailer.";
 

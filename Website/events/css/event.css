@@ -1,0 +1,162 @@
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*{transition: all 0.4s linear;position: relative;}
+body::-webkit-scrollbar { display: none; }
+scrollbar { display: none; }
+html{ width: 100%;height: 100%; }
+
+body  {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+    background: darkgray url(http://nursing-midwifery.tcd.ie/assets/img/events-collage.jpg);
+    background-size: contain;
+    color: #fff;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.32);
+    z-index: -1;
+}
+
+header {
+    font-size: 200%;
+    padding: 10%;
+    background: rgba(0, 0, 0, 0.77);
+}
+.events{
+    background: rgba(0, 0, 0, 0.72);
+    padding-bottom: 3%;
+}
+
+.events {}
+.event-header{margin-top: 10px;font-size: 200%;padding: 2% 0;padding-left: 0%;}
+.event{
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.49);
+    border: 5px solid;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 2%;
+}
+ .event > .image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    z-index: 1;
+    transform-origin: left;
+ }
+
+ /* For event images*/
+ .event:nth-of-type(2) > .image{
+    background: url(../img/ppt.jpg);
+    background-size: cover;
+ }
+ 
+ .event:nth-of-type(3) > .image{
+    background: url(../img/ppt.jpg);
+    background-size: cover;
+ }
+
+ .event:nth-of-type(4) > .image{
+    background: url(../img/ppt.jpg);
+    background-size: cover;
+ }
+
+
+  .event:nth-of-type(5) > .image{
+    background: url(../img/ppt.jpg);
+    background-size: cover;
+ }
+ 
+ .event:nth-of-type(6) > .image{
+    background: url(../img/ppt.jpg);
+    background-size: cover;
+ }
+
+ .event:nth-of-type(7) > .image{
+    background:  url(../img/ppt.jpg);
+    background-size: cover;
+ }
+
+  .event:nth-of-type(8) > .image{
+    background: url(../img/poster.png);
+    background-size: cover;
+ }
+ 
+ .event:nth-of-type(9) > .image{
+    background: url(../img/debug.png);
+    background-size: cover;
+ }
+
+ .event:nth-of-type(10) > .image{
+    background: url(../img/hunt.jpg);
+    background-size: cover;
+ }
+
+
+ .event:nth-of-type(11) > .image{
+    background: url(../img/code.png);
+    background-size: cover;
+ }
+
+
+ .event:nth-of-type(12) > .image{
+    background: url(../img/quiz.jpg);
+    background-size: cover;
+ }
+
+
+ .event:nth-of-type(13) > .image{
+    background: url(../img/short.png);
+    background-size: cover;
+ }
+
+ .event:nth-of-type(14) > .image{
+    background: url(../img/photo.png);
+    background-size: cover;
+ }
+
+
+ .event > .name {
+    position: absolute;
+    bottom: 0px;
+    height: 10%;
+    background: #521D0F;
+    width: 100%;
+    padding: 10px;
+    transform: translateY(100%);
+ }
+ .winners{background: rgba(0, 0, 0, 0.4);display: table-cell;width: 300px;height: 400px;vertical-align: middle;position: initial;transform: perspective(700px) translateX(50%);}
+ .winners span{
+        display: block;
+        background: #AD3718;
+        padding: 10%;
+        margin-bottom: 10px;
+        font-weight: inherit;
+        line-height: 1.5;
+        word-spacing: 4px;
+}
+.event:hover > .image{
+    transform: perspective(700px) rotateY(90deg);
+}
+.event:hover > .winners{
+    transform: perspective(700px) translateX(0%);
+}
+.event:hover > .name{
+    transform: perspective(700px) translateY(0%);
+}

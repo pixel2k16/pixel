@@ -264,7 +264,7 @@ jQuery(document).ready(function($){
 			
 	});
 	function postwitheventname (to,eventname) {
-		alert(eventname);
+		// alert(eventname);
 	  var myForm = document.createElement("form");
 	  myForm.method="post" ;
 	  myForm.action = to ;

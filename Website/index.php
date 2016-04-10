@@ -20,7 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="css/stars.css">
  	<script type="text/javascript" src="js/canv.js"></script>
  	<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
-
+ 	
 
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->

@@ -1,19 +1,24 @@
+<!-- for thanking all partcipants for making this event a grant success -->
+<div style='display: none;' class="thanks">
+	Hi-ho buckos, hearty thanks to all fer makin' 'tis event a grant success. <br>
+	Aaaaaaaaarrrrrrrrrggg smooth salin' mateys. 
+</div>
 <!-- For Enigma and code marathon link-->
-<a href="https://www.codechef.com/COMN2016" target="_blank" class=" wow  bounceInDown codm" 
+<a style="display: none;" href="https://www.codechef.com/COMN2016" target="_blank" class=" wow  bounceInDown codm" 
 	data-wow-delay="8.5s" data-wow-duration="1s" > 
  	Code <br> Marathon <span>13<sup>th</sup> Mar</span>
 </a>
-<a href="#" class=" wow  bounceInDown engma" data-wow-delay="8.5s" data-wow-duration="1s" > Enigma 
+<a href="#" style="display: none;" class=" wow  bounceInDown engma" data-wow-delay="8.5s" data-wow-duration="1s" > Enigma 
 <span class="contest-active"></span> <span> 18:00 IST</span></a>
 
 <!-- For campus ambassador link-->
-<div class="wow fadeInLeft" data-wow-delay="6s">
+<div style="display: none;" class="wow fadeInLeft" data-wow-delay="6s">
 	<div class="hsp ext" >
 		<a href="hospitality" target="_blank">Hospitality</a>
 		<a class="ext-icon"></a>
 	</div>	
 </div>
-<div class="wow fadeInLeft" data-wow-delay="5s">
+<div style="display: none;" class="wow fadeInLeft" data-wow-delay="5s">
 	<div class="cap ext">
 		<a href="cap/" target="=_blank">Be an ambassador</a>
 		<a class="ext-icon"></a>
@@ -116,7 +121,7 @@
 <?php 
 	if(empty($username)){
 		?>
-			<div class="main-link-wrapper wow bounceIn" data-wow-duration="1.5s" data-wow-delay="7s">
+			<div style="display: none;" class="main-link-wrapper wow bounceIn" data-wow-duration="1.5s" data-wow-delay="7s">
 				<a href="/register/" target="_blank" class=" main-link register"> Register </a>
 				<a href="#" class=" main-link loginb"> Log in </a>
 			</div>
